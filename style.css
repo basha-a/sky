@@ -1,0 +1,22 @@
+.ls-1 {
+  letter-spacing: 0.05em;
+}
+
+.ls-2 {
+  letter-spacing: 0.1em;
+}
+
+.ls-tight {
+  letter-spacing: -0.02em;
+}
+.hero{
+    background-image:url("https://geeksui.codescandy.com/geeks/assets/images/background/gradient-bg.png");
+    background-size: cover;
+}
+
+*{
+  /* font-family: "Josefin Sans", sans-serif;
+   */
+   /* font-family: "Inter", sans-serif; */
+   font-family: "Montserrat", sans-serif;
+}
