@@ -60,3 +60,46 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+.why-chooseus-card {
+    display: flex;
+    width: 30rem;
+    height: 7rem;
+    border-radius: 10px;
+    margin: 30px 0px;
+}
+
+.whychoose-video{
+  background-image: url("https://geeksui.codescandy.com/geeks/assets/images/education/edu-video-img.jpg"); 
+  height: 350px;
+  background-size: cover;
+}
+
+
+.text-primary{
+  color: #754ffe !important;
+}
+
+.btn-primary{
+  background-color: #754ffe;
+  border-color: #754ffe;
+}
+
+.btn-primary:hover{
+  background-color: #593cc1;
+  
+}
+
+.bg-primary{
+  background-color: #754ffe !important;
+}
+
+a{
+  color: #754ffe;
+}
+
+.text-success{
+  color: #19cb98 !important;
+}
