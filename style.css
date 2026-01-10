@@ -20,3 +20,43 @@
    /* font-family: "Inter", sans-serif; */
    font-family: "Montserrat", sans-serif;
 }
+
+
+.left {
+  width: 50%;
+}
+
+.service {
+  min-height: 100vh;
+  padding: 40px;
+  padding-left: 0px;
+  padding-top: 100px;
+}
+
+.right {
+  /* background-image: url("https://img.freepik.com/free-vector/vector-backgrond-lines_2065-248.jpg?t=st=1768047462~exp=1768051062~hmac=e37f5dc5debf588e1705957c87b18903e3858c3856c823163e80378221a76bdf"); */
+
+  width: 50%;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+
+  
+
+  position: absolute;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+
+}
+
+.content.active {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+.container {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+.service {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.right {
+  width: 50%;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.content.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+</style>
+<div class="container">
+  <div class="left">
+    <section class="service" data-service="1">
+        Service 1
+      
+    </section>
+    <section class="service" data-service="2">Service 2</section>
+    <section class="service" data-service="3">Service 3</section>
+    <section class="service" data-service="4">Service 4</section>
+    <section class="service" data-service="5">Service 5</section>
+  </div>
+
+  <div class="right">
+    <div class="content" data-content="1">Content 1</div>
+    <div class="content" data-content="2">Content 2</div>
+    <div class="content" data-content="3">Content 3</div>
+    <div class="content" data-content="4">Content 4</div>
+    <div class="content" data-content="5">Content 5</div>
+  </div>
+</div>
+
+
+
+<script>
+const services = document.querySelectorAll('.service');
+const contents = document.querySelectorAll('.content');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.dataset.service;
+
+        contents.forEach(content => {
+          content.classList.remove('active');
+        });
+
+        document
+          .querySelector(`.content[data-content="${id}"]`)
+          .classList.add('active');
+      }
+    });
+  },
+  {
+    threshold: 0.6 // 60% of service visible
+  }
+);
+
+services.forEach(service => observer.observe(service));
+
+</script>
+
+</body>
+</html>
