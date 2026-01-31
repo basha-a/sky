@@ -1,3 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 .ls-1 {
   letter-spacing: 0.05em;
 }
@@ -102,4 +108,25 @@ a{
 
 .text-success{
   color: #19cb98 !important;
+}
+
+
+.video-thumbnil{
+  width: 50%;
+}
+
+@media (max-width: 658px) {
+
+  /* Your mobile styles here */
+
+  body {
+    font-size: 14px;
+  }
+
+  .video-thumbnil{
+  width: 100%;
+}
+
+
+
 }
