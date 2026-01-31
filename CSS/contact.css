@@ -1,0 +1,50 @@
+.contact-label {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: #6c757d;
+    font-weight: 600;
+}
+
+.main-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0b2e2e;
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+    color: #0b2e2e;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.form-control, .form-select {
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.career-link {
+    /* color: #198754; */
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.levelup{
+    width: 250px !important;
+}
+.arrow{
+    width: 100px;
+    position: absolute;
+    right: 0px;
+}
+
+
+@media (max-width: 658px) {
+
+  /* Your mobile styles here */
+
+  body {
+    font-size: 14px;
+  }
+
+}
