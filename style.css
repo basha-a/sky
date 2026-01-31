@@ -126,7 +126,19 @@ a{
   .video-thumbnil{
   width: 100%;
 }
-
-
+#services .display-5{
+  font-size: 16px;
+}
+#services p{
+  font-size: 12px;
+}
+#services ul li{
+  font-size: 12px;
+}
+.why-chooseus-card {
+    width: 28rem;
+    height: 5rem;
+   
+}
 
 }
