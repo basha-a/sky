@@ -31,5 +31,8 @@
     .vision-box{
       position: relative; left: 0px;
     }
+    .vision{
+      width: 100%;
+    }
 
   }
