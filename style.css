@@ -139,6 +139,9 @@ body {
   overflow-x: hidden;
 }
 
+.text-justify {
+  text-align: justify;
+}
 @media (max-width: 658px) {
 
   /* Your mobile styles here */
