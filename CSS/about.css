@@ -18,3 +18,18 @@
       font-size: 28px;
       margin-bottom: 20px;
     }
+
+.vision-box{
+  background-color: #c2c7ff; position: relative; left: 50px;
+}
+
+@media (max-width: 658px) {
+
+    .mission{
+      width: 100%;
+    }
+    .vision-box{
+      position: relative; left: 0px;
+    }
+
+  }
