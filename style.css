@@ -142,12 +142,33 @@ body {
 .text-justify {
   text-align: justify;
 }
+
+.hero-img{
+  width: 940px !important;
+}
+
+.whychoose-container{
+  width: 50%;
+}
+
 @media (max-width: 658px) {
 
   /* Your mobile styles here */
 
   body {
     font-size: 14px;
+  }
+
+  .display-5{
+    font-size: 24px !important;
+  }
+
+  .lead{
+    font-size: 18px !important;
+  }
+
+  .list-unstyled{
+    font-size: 18px !important;
   }
 
   .video-thumbnil{
@@ -163,10 +184,19 @@ body {
     font-size: 12px;
   }
   .why-chooseus-card {
-      width: 28rem;
+      /* width: 25rem; */
+      align-items: center;
+      /* justify-content: center; */
+      width: 24rem;
       height: 5rem;
     
   }
+  .whychoose-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .glow {
    
@@ -175,6 +205,9 @@ body {
     height: 300px;
     aspect-ratio: 1.5;
 
+}
+.left {
+  width: 100%;
 }
 
 }
