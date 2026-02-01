@@ -210,4 +210,8 @@ body {
   width: 100%;
 }
 
+.card-body h5{
+  font-size: 13px;
+}
+
 }
