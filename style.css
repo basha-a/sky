@@ -17,7 +17,9 @@ html {
   letter-spacing: -0.02em;
 }
 .hero{
-    background-image:url("https://geeksui.codescandy.com/geeks/assets/images/background/gradient-bg.png");
+    /* background-image:url("https://geeksui.codescandy.com/geeks/assets/images/background/gradient-bg.png"); */
+    background-image:url("ASSETS/red-bg-overlay.svg");
+
     background-size: cover;
 }
 
@@ -86,28 +88,53 @@ html {
 
 
 .text-primary{
-  color: #754ffe !important;
+  /* color: #754ffe !important; */
+  color: #eb1d25 !important;
 }
 .text-primary-light{
-  color: #e3dcff !important;
+  color: #ffe1e3 !important;
+}
+.bg-primary-light{
+  background-color: #ffe1e3 !important;
+}
+.text-secondary-red{
+  color: #FF6B6B;
 }
 
 .btn-primary{
-  background-color: #754ffe;
-  border-color: #754ffe;
+  /* background-color: #754ffe;
+  border-color: #754ffe; */
+
+  background-color: #eb1d25;
+  border-color: #eb1d25 !important;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-primary:hover{
-  background-color: #593cc1;
+  /* background-color: #593cc1; */
+
+  border-color: #eb1d25 !important;
+  color: #eb1d25 !important;
+  background-color: #00000000;
+
   
 }
 
+.bg-dark-blue{
+  background-color: #16005c;
+}
+
 .bg-primary{
-  background-color: #754ffe !important;
+  /* background-color: #754ffe !important; */
+  background-color: #eb1d25 !important;
+
 }
 
 a{
-  color: #754ffe;
+  color: #eb1d25;
+}
+a:hover{
+  color: #FF6B6B;
 }
 
 .text-success{
