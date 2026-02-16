@@ -247,3 +247,62 @@ body {
 }
 
 }
+
+
+/* slider  */
+
+.industry-card {
+  position: relative; /* IMPORTANT: needed for ::before pseudo-element */
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.industry-card img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.industry-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  border-radius: 15px;
+  z-index: 1; /* sits above the image */
+  pointer-events: none; /* allows clicks to pass through */
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.industry-card:hover img {
+  transform: scale(1.05);
+}
+
+.card-img-overlay {
+  z-index: 2;
+}
+
+/* Fix carousel control positioning */
+#industryCarousel .carousel-control-prev,
+#industryCarousel .carousel-control-next {
+  width: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  margin-top: -25px;
+}
+
+#industryCarousel .carousel-control-prev-icon,
+#industryCarousel .carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
