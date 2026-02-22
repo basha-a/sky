@@ -135,30 +135,33 @@ Get in touch with us today. No bots, no automated replies — just real experts 
 
     <!-- RIGHT SECTION (FORM) -->
     <div class="col-lg-6 order-1 order-md-2">
-      <form>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSc7JFfM3SFYnT482qYLJ2QoCBAORgE82269kt5lPA1WAJUbow/formResponse"
+            method="POST"
+            target="hidden_iframe"
+            onsubmit="submitted=true;">
         <div class="mb-3">
           <label class="form-label">Company Name*</label>
-          <input type="text" class="form-control" placeholder="Enter your company name" required>
+          <input type="text" name="entry.269971357" class="form-control" placeholder="Enter your company name" required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Name*</label>
-          <input type="text" class="form-control" placeholder="Enter your full name" required>
+          <input type="text" name="entry.1121312151" class="form-control" placeholder="Enter your full name" required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Email*</label>
-          <input type="email" class="form-control" placeholder="Enter your email" required>
+          <input type="email" name="entry.214954488" class="form-control" placeholder="Enter your email" required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Phone Number*</label>
-          <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+          <input type="tel" name="entry.2107585185" class="form-control" placeholder="Enter your phone number" required>
         </div>
 
         <div class="mb-4">
           <label class="form-label">Interested Product</label>
-          <select class="form-select">
+          <select name="entry.2145460468" class="form-select">
             <option selected value="Custom Development">Custom Development</option>
             <option value="Sales &amp; Marketing">Sales &amp; Marketing</option>
             <option value="Email &amp; Collaboration">Email &amp; Collaboration</option>
@@ -174,7 +177,7 @@ Get in touch with us today. No bots, no automated replies — just real experts 
 
         <div class="mb-3">
           <label class="form-label">Requirment*</label>
-          <textarea class="form-control" placeholder="Enter your Requirment" rows="5" required> </textarea>
+          <textarea class="form-control" name="entry.1207277993" placeholder="Enter your Requirment" rows="5" required> </textarea>
         </div>
 
 
@@ -182,6 +185,17 @@ Get in touch with us today. No bots, no automated replies — just real experts 
           Submit
         </button>
       </form>
+
+      <script>
+  var submitted = false;
+</script>
+
+<iframe name="hidden_iframe" style="display:none;"
+  onload="if(submitted){ 
+    alert('Message sent successfully!'); 
+    document.querySelector('form').reset();
+    }">
+</iframe>
     </div>
 
   </div>
