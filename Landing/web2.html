@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Kinetic Logic | High-Performance Web Development Agency</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f3fe",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#bc4800",
+                        "primary-fixed": "#dbe1ff",
+                        "inverse-primary": "#b4c5ff",
+                        "on-surface": "#191b23",
+                        "surface-container-highest": "#e1e2ed",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#faf8ff",
+                        "secondary-container": "#645efb",
+                        "surface-container-high": "#e7e7f3",
+                        "secondary": "#4b41e1",
+                        "outline": "#737686",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#ffede6",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#360f00",
+                        "primary": "#004ac6",
+                        "secondary-fixed": "#e2dfff",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "on-secondary-fixed-variant": "#3323cc",
+                        "tertiary": "#943700",
+                        "on-secondary-container": "#fffbff",
+                        "background": "#faf8ff",
+                        "on-secondary-fixed": "#0f0069",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#2563eb",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "inverse-surface": "#2e3039",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "tertiary-fixed": "#ffdbcd",
+                        "outline-variant": "#c3c6d7",
+                        "on-primary-container": "#eeefff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#434655",
+                        "secondary-fixed-dim": "#c3c0ff",
+                        "surface-dim": "#d9d9e5",
+                        "surface-container": "#ededf9",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "surface-variant": "#e1e2ed",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#00174b",
+                        "surface-tint": "#0053db",
+                        "inverse-on-surface": "#f0f0fb",
+                        "on-background": "#191b23",
+                        "surface": "#faf8ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "2xl": "16px",
+                        "3xl": "24px"
+                    },
+                    "spacing": {
+                        "2xl": "80px",
+                        "sm": "8px",
+                        "lg": "24px",
+                        "xs": "4px",
+                        "xl": "48px",
+                        "3xl": "120px",
+                        "md": "16px"
+                    },
+                    "fontFamily": {
+                        "code": ["monospace"],
+                        "body-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "code": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #004ac6 0%, #4b41e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+    <!-- TopAppBar -->
+    <header
+        class="fixed top-0 w-full bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-xl border-b border-outline-variant/10 shadow-sm z-50">
+        <nav class="flex justify-between items-center h-20 px-12 max-w-screen-2xl mx-auto">
+            <div class="flex items-center gap-md cursor-pointer active:scale-95 transition-all">
+                <img alt="Kinetic Logic Logo" class="h-10 w-auto"
+                    src="https://lh3.googleusercontent.com/aida/AP1WRLtqNhGVI_QbReYmb4z6FEN1A3MITH1QnYJPtP2kWR6wIroAAtIrb670cQKluC79z15K1fTo8iQfZFzOtDlyr5D1g3v1rzSaYnBXezla4ajYrIRViAR0WsaeQ3zFaxbhuf_bJQOzaWSvouaJ7KIwdcmHuwXdluI4s8oR6jwQnx3PVm8wIsA_6qVMEAEnsu7SlydBUqrgxOk_fdEHOQhHtBGDjkymQ0F6PaWC_Yq7OlEXvaze5r9k0GUAbA">
+                <span
+                    class="font-headline-sm text-headline-sm font-extrabold tracking-tighter text-on-surface dark:text-inverse-on-surface">NEXUS</span>
+            </div>
+            <div class="hidden md:flex items-center gap-xl font-body-md text-body-md">
+                <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors"
+                    href="#services">Services</a>
+                <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors"
+                    href="#portfolio">Portfolio</a>
+                <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors"
+                    href="#process">Process</a>
+                <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors"
+                    href="#pricing">Pricing</a>
+                <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors"
+                    href="#faq">FAQ</a>
+            </div>
+            <button
+                class="bg-primary-container text-on-primary-container px-lg py-sm rounded-xl font-label-md hover:scale-105 transition-all active:scale-95">
+                Work with us
+            </button>
+        </nav>
+    </header>
+    <main class="mt-20">
+        <!-- Hero Section -->
+        <section class="relative min-h-[90vh] flex items-center px-12 max-w-screen-2xl mx-auto py-3xl overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center relative z-10 opacity-100">
+                <div class="space-y-lg">
+                    <div
+                        class="inline-flex items-center gap-xs px-md py-xs bg-primary-fixed rounded-full text-on-primary-fixed-variant font-label-md">
+                        <span class="material-symbols-outlined text-[18px]">verified</span>
+                        Top Rated Web Agency 2024
+                    </div>
+                    <h1 class="font-display-lg text-display-lg text-on-surface leading-tight">
+                        Build Websites That <span class="text-gradient">Convert Visitors</span> Into Customers
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        We engineer high-performance digital experiences and scalable SaaS solutions that drive
+                        measurable business growth through technical excellence.
+                    </p>
+                    <div class="flex flex-wrap gap-md pt-md">
+                        <button
+                            class="bg-primary-container text-on-primary-container px-xl py-md rounded-xl font-label-md text-lg shadow-lg hover:translate-y-[-2px] transition-all active:scale-95">
+                            Get Free Consultation
+                        </button>
+                        <button
+                            class="border border-outline-variant px-xl py-md rounded-xl font-label-md text-lg hover:bg-surface-container transition-all">
+                            View Our Work
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-md pt-xl border-t border-outline-variant/20">
+                        <div class="flex -space-x-3">
+                            <img alt="Client 1" class="h-10 w-10 rounded-full border-2 border-white"
+                                data-alt="A professional headshot of a female executive in a modern office setting, smiling warmly toward the camera. The image has a clean, high-key lighting style consistent with a premium corporate aesthetic, using soft blue and white tones to reflect professional trust and high-end technical services."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7bAqvCzHyGghoOJqqGS4lB2KxjfByvFp4wOfLoibNNokxUBoXVAHlcADpQ5h1mnbZiSqHy3eior0Ab3KZyZoqk2XluVbkETtBc9Cex5pltHYI9fEzmKa4D1i8yAYPMDJDK4Ug6UHaR4YKkURN5a6lbh3G13glbgD3f_BlqSdEdB6z7XGsTvaGEDE_SGWVW6EiWBSLsBUCScdK_o_58gilSgD5rrbvTiTNdyD_PX99Ai7DG8sKpAfRlwsd0nYTbq7atSzpbSjIDw">
+                            <img alt="Client 2" class="h-10 w-10 rounded-full border-2 border-white"
+                                data-alt="A professional headshot of a male tech entrepreneur with a thoughtful expression, wearing a stylish navy blazer. The background is a subtly blurred modern tech office with soft lighting and a crisp white and blue color palette, maintaining the ultra-modern corporate identity of the Kinetic Logic agency."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvng6ati3faKHD44KiLhJLxmylpc2bb3vwvyUjg_O6MwXAoJt0pB-OFXVpqXwLi8vKKb3BZacmxNVdaqNJskYPMPQ9svoy2o0w6jC8MF0qoA8DhQSwhN6v_htmE-MPVgdjv4CJPTW3rP3tdPbl8RWnuT5mkbEFjzqtoPQ74krM1v0NICtHgHsBIS5cF5ixpchOZwtHG9kH33jHSGYkrEITX1fpX2L-kDgUvaHYXl3rbKupUZKDtaNE7GD08atn-CBSTaT7L2RoOA">
+                            <img alt="Client 3" class="h-10 w-10 rounded-full border-2 border-white"
+                                data-alt="A professional headshot of a diverse tech lead in a minimalist workspace. The lighting is soft and even, highlighting a serene and capable persona, with the overall image color-graded to match a high-end web development agency's brand identity of precision and technical excellence."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnF9CE_D57BCfAulq_59VBVcXk6U2wNSFJG-6mIcVN_HrM0ygIxLoLFYXVpeRYDfFhSeekCUixFhuD56QEoeNRzZXnyir6XCAY2W_pjUIQ5pd0YME3ac5VjLutgN8rX-bLeYCBvoDvcjAa5TxYuCvNh2VWbabp8hAZe-uVmOq6KIW75w_FD4kUzjILrOvmkqNeOAhnp01nhyHWhi-HTg3bFZUkeuY_O8Bruaq3lW80IJPlOmaN0aHBGBx1Rt3VqU8JOnSL8J8j8w">
+                        </div>
+                        <div>
+                            <div class="flex text-[#FFD700]">
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                            </div>
+                            <p class="font-label-md text-on-surface-variant text-sm">Trusted by 500+ High-Growth
+                                Companies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative animate-float">
+                    <img alt="Technical Innovation 3D Illustration" class="w-full h-auto drop-shadow-2xl"
+                        src="https://lh3.googleusercontent.com/aida/AP1WRLuGknXDZX9KB3Cy04xDz0lNz4dGxP5IU2l0tYQFegqAL_4xuyva-QPOvbgAMHR98hFDnow8M7VXJ61OZwiO9jJmnvBn9pZri1w6d9bD5v4fEx9uAnZegwm6U-IopoTvwUSV_3fZK2JVq_2zgWig9Zs3i-orMvjAdYeXlmbK5gs8YxFS1nJ_ug-FOR1tF-KKbSqDLU4ooBHabTq1lRZ6Jgbw3qMdVwJzjjQSYvG18arTepg8XWJ24vdcNw">
+                </div>
+            </div>
+            <!-- Atmospheric effects -->
+            <div
+                class="absolute -top-24 -right-24 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none opacity-100">
+            </div>
+            <div
+                class="absolute -bottom-24 -left-24 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[100px] pointer-events-none opacity-100">
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="py-3xl bg-surface-container-low/50" id="services">
+            <div class="px-12 max-w-screen-2xl mx-auto opacity-100">
+                <div class="text-center mb-2xl space-y-md">
+                    <h2 class="font-headline-xl text-headline-xl text-on-surface">Our Engineering Expertise</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                        Precision-crafted digital solutions designed to solve complex business challenges.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+                    <!-- Service Card 1 -->
+                    <div class="glass-card p-xl rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-lg group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">developer_mode</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm mb-md">Custom Web Apps</h3>
+                        <p class="text-on-surface-variant">Scalable, secure, and lightning-fast web applications built
+                            with React, Next.js, and robust backends.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="glass-card p-xl rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-lg group-hover:bg-secondary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">shopping_cart</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm mb-md">Enterprise E-commerce</h3>
+                        <p class="text-on-surface-variant">High-conversion Shopify and custom storefronts designed for
+                            maximum revenue and global scale.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="glass-card p-xl rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-tertiary/10 rounded-2xl flex items-center justify-center mb-lg group-hover:bg-tertiary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">cloud_sync</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm mb-md">SaaS Development</h3>
+                        <p class="text-on-surface-variant">End-to-end SaaS engineering from initial architecture to
+                            multi-tenant infrastructure and API design.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="glass-card p-xl rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-lg group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">brush</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm mb-md">UI/UX Strategy</h3>
+                        <p class="text-on-surface-variant">Research-driven interfaces that blend editorial elegance with
+                            intuitive user journey optimization.</p>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="glass-card p-xl rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-lg group-hover:bg-secondary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">speed</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm mb-md">Performance Audit</h3>
+                        <p class="text-on-surface-variant">Deep-dive technical audits to optimize Core Web Vitals,
+                            accessibility, and SEO infrastructure.</p>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="glass-card p-xl rounded-3xl hover:translate-y-[-8px] transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-tertiary/10 rounded-2xl flex items-center justify-center mb-lg group-hover:bg-tertiary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">monitoring</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm mb-md">AI Integration</h3>
+                        <p class="text-on-surface-variant">Implementing generative AI and machine learning models
+                            directly into your existing digital workflow.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Process Section -->
+        <section class="py-3xl overflow-hidden" id="process">
+            <div class="px-12 max-w-screen-2xl mx-auto">
+                <div class="mb-2xl">
+                    <h2 class="font-headline-xl text-headline-xl text-on-surface">Our Technical Blueprint</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mt-md">A systematic approach to digital
+                        product engineering.</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute top-1/2 left-0 w-full h-[1px] bg-outline-variant/30 hidden lg:block"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-xl relative">
+                        <!-- Step 1 -->
+                        <div class="bg-surface p-md rounded-2xl relative z-10">
+                            <div
+                                class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-md shadow-lg shadow-primary/20">
+                                01</div>
+                            <h4 class="font-label-md text-lg mb-sm">Discovery</h4>
+                            <p class="text-body-sm text-on-surface-variant">Deep diving into your business goals, target
+                                audience, and market landscape.</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="bg-surface p-md rounded-2xl relative z-10">
+                            <div
+                                class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-md shadow-lg shadow-primary/20">
+                                02</div>
+                            <h4 class="font-label-md text-lg mb-sm">Strategy</h4>
+                            <p class="text-body-sm text-on-surface-variant">Defining technical architecture, user flows,
+                                and product roadmap milestones.</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="bg-surface p-md rounded-2xl relative z-10">
+                            <div
+                                class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-md shadow-lg shadow-primary/20">
+                                03</div>
+                            <h4 class="font-label-md text-lg mb-sm">Design</h4>
+                            <p class="text-body-sm text-on-surface-variant">Crafting high-fidelity UI systems and
+                                interactive prototypes for validation.</p>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="bg-surface p-md rounded-2xl relative z-10">
+                            <div
+                                class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-md shadow-lg shadow-primary/20">
+                                04</div>
+                            <h4 class="font-label-md text-lg mb-sm">Dev</h4>
+                            <p class="text-body-sm text-on-surface-variant">High-performance coding using
+                                industry-standard modern technology stacks.</p>
+                        </div>
+                        <!-- Step 5 -->
+                        <div class="bg-surface p-md rounded-2xl relative z-10">
+                            <div
+                                class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-md shadow-lg shadow-primary/20">
+                                05</div>
+                            <h4 class="font-label-md text-lg mb-sm">Testing</h4>
+                            <p class="text-body-sm text-on-surface-variant">Rigorous QA, cross-browser testing, and
+                                security auditing for launch readiness.</p>
+                        </div>
+                        <!-- Step 6 -->
+                        <div class="bg-surface p-md rounded-2xl relative z-10">
+                            <div
+                                class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold mb-md shadow-lg shadow-primary/20">
+                                06</div>
+                            <h4 class="font-label-md text-lg mb-sm">Launch</h4>
+                            <p class="text-body-sm text-on-surface-variant">Seamless deployment and transition to
+                                long-term growth and maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature Section: Performance -->
+        <section class="py-3xl bg-inverse-surface text-inverse-on-surface overflow-hidden">
+            <div class="px-12 max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-3xl items-center">
+                    <div class="space-y-lg">
+                        <span class="text-primary-fixed-dim font-label-md uppercase tracking-widest">Built for
+                            Performance</span>
+                        <h2 class="font-headline-xl text-headline-xl">Speed is a Feature, Not an Afterthought.</h2>
+                        <p class="font-body-lg text-body-lg text-outline-variant">
+                            Every millisecond counts. Our engineering focuses on achieving 100/100 Lighthouse scores,
+                            ensuring your users never wait and search engines reward your speed.
+                        </p>
+                        <div class="grid grid-cols-2 gap-lg">
+                            <div class="p-lg bg-white/5 rounded-2xl border border-white/10">
+                                <span class="text-primary-fixed-dim font-bold text-4xl">0.4s</span>
+                                <p class="text-body-sm mt-xs">Avg. LCP</p>
+                            </div>
+                            <div class="p-lg bg-white/5 rounded-2xl border border-white/10">
+                                <span class="text-primary-fixed-dim font-bold text-4xl">100</span>
+                                <p class="text-body-sm mt-xs">SEO Score</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="bg-gradient-to-tr from-primary to-secondary p-1 rounded-3xl shadow-2xl">
+                            <div class="bg-inverse-surface rounded-[23px] overflow-hidden">
+                                <img alt="Performance Metrics Dashboard" class="w-full h-auto opacity-90"
+                                    data-alt="A high-contrast, professional screenshot of a performance monitoring dashboard showing clean, minimalist charts and 100-score circular progress bars. The interface is dark-themed with glowing royal blue and indigo accents, reflecting the technical precision and advanced capabilities of the Kinetic Logic agency's engineering team."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAytfxGy1TYRhc8NPj2NNkE5AfX-l1T3UkfjJWIEd9t5GpEktYVlYs578X4VkIj2Q0siDhI0rla6exffOn17Wa5_LRbLIMFHA5yx5D4HdnHVgZD01zYw7ebsNHDmGkrT8fWYdsIKAxWVvErPnzLXfzYCiJdgA3ltIgjCWOTCZwLcb2VsgwU12QYbOYBtJwdHkL5hm6w97r3kOLDv8T2mBnh__P4gwSfW_oz54WH5MOTBZn-8T8uTwnHLHEWKNIhbqxq25L48rL0w">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="py-3xl" id="portfolio">
+            <div class="px-12 max-w-screen-2xl mx-auto">
+                <div class="flex justify-between items-end mb-2xl">
+                    <div class="max-w-2xl">
+                        <h2 class="font-headline-xl text-headline-xl text-on-surface">Selected Projects</h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant mt-md">A portfolio of technical
+                            precision and digital craftsmanship.</p>
+                    </div>
+                    <button
+                        class="text-primary font-label-md flex items-center gap-xs hover:translate-x-1 transition-transform">
+                        Explore Full Portfolio <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
+                    <!-- Project 1 -->
+                    <div class="group cursor-pointer">
+                        <div
+                            class="relative aspect-[16/10] rounded-3xl overflow-hidden mb-lg shadow-xl bg-surface-container">
+                            <img alt="Fintech App Design"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="A high-end, detailed close-up of a modern fintech mobile application interface displayed on a sleek smartphone. The design is characterized by crisp typography, smooth gradients of blue and violet, and clean white cards against a soft gray background, emphasizing the premium quality and user-centric approach of Kinetic Logic's web development services."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb7EmWZYCLR9BR7sOWb3_ctgrpDWoK1hYpFmHe82TBbjJfkWrzU6WbG9J6UXzXKr0ARWaSEkJz3poQy8Gk8xvl4gIZPhrmUtMehaxJNGgX71VONWXZDW1xSn3AiROBTLWWD0gIROKSXOXmdIIpQOfJK6BFQErjwtzmSeQv2r4MLV91OyLdBLmt6y2W-7RrXeAnU4Cd5YZJqI9Bz0g0qEGHGLZDZx5nigeFHP4OapYfZK16pOAo3THjmSNrMKjPmQUrXJDUzjGyCA">
+                            <div
+                                class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span
+                                    class="bg-white text-primary px-xl py-md rounded-full font-label-md shadow-2xl">View
+                                    Case Study</span>
+                            </div>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm">Stellar Finance Dashboard</h3>
+                        <p class="text-on-surface-variant mt-xs">Enterprise SaaS • React / Node.js</p>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="group cursor-pointer">
+                        <div
+                            class="relative aspect-[16/10] rounded-3xl overflow-hidden mb-lg shadow-xl bg-surface-container">
+                            <img alt="E-commerce Experience"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="A sophisticated lifestyle e-commerce website interface being scrolled on a large desktop monitor. The UI features minimalist layout patterns, high-resolution product photography, and elegant serif typography mixed with clean sans-serif bodies, presented in a bright, modern studio environment with soft shadows and professional lighting."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT2LPT1jOXH6a1QskxexckIVflbX_c0K196AHN5f9qCcTrE5Y4MvHIMoTGqwAuz9oHEhCjgC0yDqCzJUtEgmUgoPUT1p1rkHlxph8U9ezfriRfjAUxCEzTnwZpe9XCWedGdTfDrByC1EUKjRvjmTUhY1_clyv5zRIeF2YhPxxkAS5F9xvQu4Bdiqb-flLXo8O0KvT5JGVljEJhZ8GLGQiQmj8vcZKN_GQPS6abM5Upy4nX9RfeTYRz5jmu9eM1MML12SqaiL799g">
+                            <div
+                                class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span
+                                    class="bg-white text-primary px-xl py-md rounded-full font-label-md shadow-2xl">View
+                                    Case Study</span>
+                            </div>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm">Vellum Luxury Retail</h3>
+                        <p class="text-on-surface-variant mt-xs">E-commerce • Headless Shopify</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing Section -->
+        <section class="py-3xl bg-surface-container-low" id="pricing">
+            <div class="px-12 max-w-screen-2xl mx-auto">
+                <div class="text-center mb-2xl">
+                    <h2 class="font-headline-xl text-headline-xl">Investment Plans</h2>
+                    <p class="text-on-surface-variant mt-md">Flexible engagement models for startups and enterprise.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-lg">
+                    <!-- Basic -->
+                    <div class="bg-white p-xl rounded-3xl border border-outline-variant/30 flex flex-col">
+                        <div class="mb-xl">
+                            <h3 class="font-headline-sm text-headline-sm mb-sm">Launch</h3>
+                            <div class="flex items-baseline gap-xs">
+                                <span class="text-4xl font-extrabold text-on-surface">$2,500</span>
+                                <span class="text-on-surface-variant">/mo</span>
+                            </div>
+                            <p class="text-on-surface-variant text-sm mt-md">Perfect for early-stage startups needing a
+                                solid foundation.</p>
+                        </div>
+                        <ul class="space-y-md mb-xl flex-grow">
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> 1 Dedicated
+                                Project Manager</li>
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Up to 5 Pages
+                                Modern UI</li>
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Core Web Vitals
+                                Optimization</li>
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> 30 Days
+                                Post-Launch Support</li>
+                        </ul>
+                        <button
+                            class="w-full py-md border border-outline-variant rounded-xl font-label-md hover:bg-surface-container transition-all">Get
+                            Started</button>
+                    </div>
+                    <!-- Growth - Highlighted -->
+                    <div
+                        class="bg-primary text-white p-xl rounded-3xl shadow-2xl shadow-primary/20 scale-105 relative z-10 flex flex-col border-2 border-primary">
+                        <div
+                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary px-lg py-xs rounded-full text-xs font-bold uppercase tracking-widest">
+                            Most Popular</div>
+                        <div class="mb-xl">
+                            <h3 class="font-headline-sm text-headline-sm mb-sm">Growth</h3>
+                            <div class="flex items-baseline gap-xs text-white">
+                                <span class="text-4xl font-extrabold">$5,000</span>
+                                <span class="opacity-70">/mo</span>
+                            </div>
+                            <p class="opacity-70 text-sm mt-md">Comprehensive engineering for scaling businesses.</p>
+                        </div>
+                        <ul class="space-y-md mb-xl flex-grow">
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-white">check_circle</span> Full SaaS
+                                Architecture</li>
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-white">check_circle</span> Unlimited Custom
+                                Sections</li>
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-white">check_circle</span> Advanced CMS
+                                Integration</li>
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-white">check_circle</span> Weekly Analytics
+                                &amp; Audits</li>
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-white">check_circle</span> Priority Technical
+                                Support</li>
+                        </ul>
+                        <button
+                            class="w-full py-md bg-white text-primary rounded-xl font-label-md hover:shadow-xl transition-all">Select
+                            Plan</button>
+                    </div>
+                    <!-- Enterprise -->
+                    <div class="bg-white p-xl rounded-3xl border border-outline-variant/30 flex flex-col">
+                        <div class="mb-xl">
+                            <h3 class="font-headline-sm text-headline-sm mb-sm">Custom</h3>
+                            <div class="flex items-baseline gap-xs">
+                                <span class="text-4xl font-extrabold text-on-surface">Custom</span>
+                            </div>
+                            <p class="text-on-surface-variant text-sm mt-md">Tailored solutions for complex enterprise
+                                infrastructure.</p>
+                        </div>
+                        <ul class="space-y-md mb-xl flex-grow">
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Custom API
+                                Engineering</li>
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Multi-Tenant
+                                Infrastructure</li>
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Dedicated Team of
+                                3 Eng.</li>
+                            <li class="flex items-center gap-md"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> 24/7 Uptime
+                                Monitoring</li>
+                        </ul>
+                        <button
+                            class="w-full py-md border border-outline-variant rounded-xl font-label-md hover:bg-surface-container transition-all">Talk
+                            to Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="py-3xl">
+            <div class="px-12 max-w-screen-2xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-xl items-center">
+                    <div class="w-full md:w-1/3">
+                        <h2 class="font-headline-xl text-headline-xl">What Global Leaders Say</h2>
+                        <div class="flex gap-md mt-xl">
+                            <button
+                                class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container transition-all"><span
+                                    class="material-symbols-outlined">chevron_left</span></button>
+                            <button
+                                class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container transition-all"><span
+                                    class="material-symbols-outlined">chevron_right</span></button>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <div class="glass-card p-2xl rounded-3xl relative">
+                            <span class="material-symbols-outlined text-primary/20 text-6xl absolute top-6 left-6"
+                                style="font-variation-settings: 'FILL' 1">format_quote</span>
+                            <p class="font-body-lg text-body-lg text-on-surface relative z-10 italic">
+                                "Kinetic Logic didn't just build us a website; they built a conversion machine. Our
+                                sales increased by 140% within the first three months of launching. Their technical
+                                prowess is unmatched in the industry."
+                            </p>
+                            <div class="mt-2xl flex items-center gap-md">
+                                <img alt="Sarah Chen" class="w-14 h-14 rounded-full"
+                                    data-alt="A professional portrait of a successful tech CEO, Sarah Chen, in a high-end corporate setting. She is wearing a modern minimalist white blouse, and the background is a soft-focus architectural detail of a glass skyscraper. The lighting is bright and airy, matching the Kinetic Logic agency's premium light-mode visual brand."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIjFA_8fabkrfYwEDChEwxGo1Tn6r2jRtQtoJ7ivpO7RmZFQz-rE__neeJOB-rRhRw2gSkGh3IDTYjPzOrigggroADosh1psOXDsbvnRWEqonUhqLaX2SuDKsA1_sVAGkOVuEECEipWLYfuw2MGuqcmQKaqZzuDum9ETfWJR55L5noue-xDZuXhFqz2ddIt_tR6Oub0xqaRxLDeAO9udHKGFq8G6JaEZmVGbruenM9tlf3_2w5jrXQ17GRE8wXMwSK9cc06mRfhg">
+                                <div>
+                                    <h4 class="font-label-md text-lg">Sarah Chen</h4>
+                                    <p class="text-on-surface-variant text-sm">CEO @ InnovateTech</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="py-3xl bg-surface-container-low/30" id="faq">
+            <div class="px-12 max-w-screen-2xl mx-auto max-w-4xl">
+                <div class="text-center mb-2xl">
+                    <h2 class="font-headline-xl text-headline-xl">Common Questions</h2>
+                </div>
+                <div class="space-y-md">
+                    <!-- FAQ 1 -->
+                    <details class="group bg-white rounded-2xl border border-outline-variant/30 overflow-hidden"
+                        open="">
+                        <summary class="flex justify-between items-center p-lg cursor-pointer list-none">
+                            <h4 class="font-headline-sm text-lg">How long does a typical project take?</h4>
+                            <span
+                                class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <div class="px-lg pb-lg text-on-surface-variant">
+                            Typical projects range from 4 to 12 weeks depending on complexity. Our systematic
+                            Discovery-to-Launch process ensures we meet milestones efficiently without compromising on
+                            technical quality.
+                        </div>
+                    </details>
+                    <!-- FAQ 2 -->
+                    <details class="group bg-white rounded-2xl border border-outline-variant/30 overflow-hidden">
+                        <summary class="flex justify-between items-center p-lg cursor-pointer list-none">
+                            <h4 class="font-headline-sm text-lg">Do you work with existing technology stacks?</h4>
+                            <span
+                                class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <div class="px-lg pb-lg text-on-surface-variant">
+                            Yes, we can integrate with most modern stacks including React, Vue, Next.js, and headless
+                            CMS platforms. We also specialize in modernizing legacy systems through phased technical
+                            migrations.
+                        </div>
+                    </details>
+                    <!-- FAQ 3 -->
+                    <details class="group bg-white rounded-2xl border border-outline-variant/30 overflow-hidden">
+                        <summary class="flex justify-between items-center p-lg cursor-pointer list-none">
+                            <h4 class="font-headline-sm text-lg">What happens after the site is launched?</h4>
+                            <span
+                                class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <div class="px-lg pb-lg text-on-surface-variant">
+                            We provide 30 days of post-launch hyper-care standard. Most clients transition to our Growth
+                            or Enterprise monthly maintenance plans for continuous optimization, security updates, and
+                            performance monitoring.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full py-2xl border-t border-outline-variant/20 bg-surface-container-lowest dark:bg-inverse-surface">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-xl px-12 max-w-screen-2xl mx-auto">
+            <div class="space-y-md">
+                <div class="flex items-center gap-md">
+                    <img alt="Kinetic Logic Logo" class="h-8 w-auto"
+                        src="https://lh3.googleusercontent.com/aida/AP1WRLtqNhGVI_QbReYmb4z6FEN1A3MITH1QnYJPtP2kWR6wIroAAtIrb670cQKluC79z15K1fTo8iQfZFzOtDlyr5D1g3v1rzSaYnBXezla4ajYrIRViAR0WsaeQ3zFaxbhuf_bJQOzaWSvouaJ7KIwdcmHuwXdluI4s8oR6jwQnx3PVm8wIsA_6qVMEAEnsu7SlydBUqrgxOk_fdEHOQhHtBGDjkymQ0F6PaWC_Yq7OlEXvaze5r9k0GUAbA">
+                    <span
+                        class="font-headline-sm text-headline-sm font-black text-on-surface dark:text-inverse-on-surface">NEXUS</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Engineering the next generation of
+                    high-performance digital experiences for forward-thinking brands.</p>
+            </div>
+            <div>
+                <h4 class="font-label-md text-primary mb-md">Company</h4>
+                <ul class="space-y-sm font-body-sm text-body-sm">
+                    <li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-all hover:translate-x-1 inline-block"
+                            href="#services">Services</a></li>
+                    <li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-all hover:translate-x-1 inline-block"
+                            href="#portfolio">Portfolio</a></li>
+                    <li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-all hover:translate-x-1 inline-block"
+                            href="#process">Process</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-label-md text-primary mb-md">Support</h4>
+                <ul class="space-y-sm font-body-sm text-body-sm">
+                    <li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-all hover:translate-x-1 inline-block"
+                            href="#pricing">Pricing</a></li>
+                    <li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-all hover:translate-x-1 inline-block"
+                            href="#faq">FAQ</a></li>
+                    <li><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-all hover:translate-x-1 inline-block"
+                            href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="space-y-md">
+                <h4 class="font-label-md text-primary mb-md">Subscribe</h4>
+                <div class="flex gap-xs">
+                    <input
+                        class="bg-surface-container-low border-none rounded-lg flex-grow text-sm focus:ring-2 focus:ring-primary"
+                        placeholder="Email address" type="email">
+                    <button
+                        class="bg-primary text-white px-md py-sm rounded-lg hover:scale-105 transition-transform"><span
+                            class="material-symbols-outlined">send</span></button>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant opacity-70">© 2024 Nexus Dev Agency. All
+                    rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>

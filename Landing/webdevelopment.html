@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>VoltVave Services | High-Performance Web Development Agency</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#4b41e1",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e1e2ed",
+                        "on-surface-variant": "#434655",
+                        "surface-bright": "#faf8ff",
+                        "on-primary-container": "#eeefff",
+                        "on-secondary-fixed": "#0f0069",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "surface-container": "#ededf9",
+                        "surface-container-low": "#f3f3fe",
+                        "outline": "#737686",
+                        "surface": "#faf8ff",
+                        "surface-dim": "#d9d9e5",
+                        "inverse-primary": "#b4c5ff",
+                        "on-secondary-container": "#fffbff",
+                        "on-background": "#191b23",
+                        "secondary-fixed": "#e2dfff",
+                        "primary-container": "#2563eb",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e7e7f3",
+                        "secondary-container": "#645efb",
+                        "tertiary": "#943700",
+                        "outline-variant": "#c3c6d7",
+                        "surface-variant": "#e1e2ed",
+                        "background": "#faf8ff",
+                        "surface-tint": "#0053db",
+                        "tertiary-fixed": "#ffdbcd",
+                        "primary": "#004ac6",
+                        "secondary-fixed-dim": "#c3c0ff",
+                        "inverse-on-surface": "#f0f0fb",
+                        "on-primary-fixed": "#00174b",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#dbe1ff",
+                        "on-tertiary-fixed": "#360f00",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#3323cc",
+                        "inverse-surface": "#2e3039",
+                        "on-surface": "#191b23",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#ffede6",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#bc4800"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "24px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "xs": "4px",
+                        "lg": "24px",
+                        "sm": "8px",
+                        "xl": "48px",
+                        "2xl": "80px",
+                        "3xl": "120px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "label-md": ["Inter"],
+                        "code": ["monospace"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "code": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #004ac6 0%, #4b41e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md">
+    <!-- 1. Header -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-screen-2xl mx-auto px-12 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-sm">
+                <img alt="VoltVave Services Logo" class="h-10 w-10"
+                    src="data:image/png;base64,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">
+                <span class="font-headline-sm text-headline-sm font-extrabold tracking-tighter text-on-surface">VoltVave
+                    Services</span>
+            </div>
+            <div class="hidden md:flex items-center gap-xl">
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md"
+                    href="#services">Services</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md"
+                    href="#portfolio">Work</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md"
+                    href="#process">Process</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md"
+                    href="#pricing">Pricing</a>
+                <button
+                    class="bg-primary hover:scale-105 active:scale-95 transition-all text-on-primary px-lg py-sm rounded-xl font-label-md shadow-lg shadow-primary/20">Book
+                    a Call</button>
+            </div>
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- 2. Hero Section -->
+    <header class="relative pt-3xl pb-2xl px-12 overflow-hidden">
+        <div class="absolute top-0 right-0 -z-10 translate-x-1/4 -translate-y-1/4">
+            <div class="w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px]"></div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-2xl items-center">
+            <div class="reveal">
+                <div
+                    class="inline-flex items-center gap-sm bg-surface-container-low px-md py-xs rounded-full border border-outline-variant/30 mb-lg">
+                    <span>🚀</span>
+                    <span class="text-label-md font-label-md text-primary">Trusted by 100+ Businesses Worldwide</span>
+                </div>
+                <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-md">
+                    Build Websites That <span class="gradient-text">Convert Visitors</span> Into Customers
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-xl max-w-xl">
+                    We design and develop high-performance websites, SaaS products, and eCommerce experiences that drive
+                    measurable growth for your business.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-md">
+                    <button
+                        class="bg-primary text-on-primary px-xl py-md rounded-xl font-label-md text-body-md hover:scale-105 transition-transform shadow-xl shadow-primary/20">
+                        Get Free Consultation
+                    </button>
+                    <button
+                        class="bg-surface-container-lowest border border-outline-variant text-on-surface px-xl py-md rounded-xl font-label-md text-body-md hover:bg-surface-container-low transition-colors">
+                        View Our Work
+                    </button>
+                </div>
+                <div class="flex items-center gap-md pt-xl border-t border-outline-variant/20">
+                        <div class="flex -space-x-3">
+                            <img alt="Client 1" class="h-10 w-10 rounded-full border-2 border-white"
+                                data-alt="A professional headshot of a female executive in a modern office setting, smiling warmly toward the camera. The image has a clean, high-key lighting style consistent with a premium corporate aesthetic, using soft blue and white tones to reflect professional trust and high-end technical services."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7bAqvCzHyGghoOJqqGS4lB2KxjfByvFp4wOfLoibNNokxUBoXVAHlcADpQ5h1mnbZiSqHy3eior0Ab3KZyZoqk2XluVbkETtBc9Cex5pltHYI9fEzmKa4D1i8yAYPMDJDK4Ug6UHaR4YKkURN5a6lbh3G13glbgD3f_BlqSdEdB6z7XGsTvaGEDE_SGWVW6EiWBSLsBUCScdK_o_58gilSgD5rrbvTiTNdyD_PX99Ai7DG8sKpAfRlwsd0nYTbq7atSzpbSjIDw">
+                            <img alt="Client 2" class="h-10 w-10 rounded-full border-2 border-white"
+                                data-alt="A professional headshot of a male tech entrepreneur with a thoughtful expression, wearing a stylish navy blazer. The background is a subtly blurred modern tech office with soft lighting and a crisp white and blue color palette, maintaining the ultra-modern corporate identity of the VoltVave Services agency."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvng6ati3faKHD44KiLhJLxmylpc2bb3vwvyUjg_O6MwXAoJt0pB-OFXVpqXwLi8vKKb3BZacmxNVdaqNJskYPMPQ9svoy2o0w6jC8MF0qoA8DhQSwhN6v_htmE-MPVgdjv4CJPTW3rP3tdPbl8RWnuT5mkbEFjzqtoPQ74krM1v0NICtHgHsBIS5cF5ixpchOZwtHG9kH33jHSGYkrEITX1fpX2L-kDgUvaHYXl3rbKupUZKDtaNE7GD08atn-CBSTaT7L2RoOA">
+                            <img alt="Client 3" class="h-10 w-10 rounded-full border-2 border-white"
+                                data-alt="A professional headshot of a diverse tech lead in a minimalist workspace. The lighting is soft and even, highlighting a serene and capable persona, with the overall image color-graded to match a high-end web development agency's brand identity of precision and technical excellence."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnF9CE_D57BCfAulq_59VBVcXk6U2wNSFJG-6mIcVN_HrM0ygIxLoLFYXVpeRYDfFhSeekCUixFhuD56QEoeNRzZXnyir6XCAY2W_pjUIQ5pd0YME3ac5VjLutgN8rX-bLeYCBvoDvcjAa5TxYuCvNh2VWbabp8hAZe-uVmOq6KIW75w_FD4kUzjILrOvmkqNeOAhnp01nhyHWhi-HTg3bFZUkeuY_O8Bruaq3lW80IJPlOmaN0aHBGBx1Rt3VqU8JOnSL8J8j8w">
+                        </div>
+                        <div>
+                            <div class="flex text-[#FFD700]">
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1">star</span>
+                            </div>
+                            <p class="font-label-md text-on-surface-variant text-sm">Trusted by 500+ High-Growth
+                                Companies</p>
+                        </div>
+                    </div>
+            </div>
+             <div class="relative animate-float">
+                    <img alt="Technical Innovation 3D Illustration" class="w-full h-auto drop-shadow-2xl"
+                        src="https://lh3.googleusercontent.com/aida/AP1WRLuGknXDZX9KB3Cy04xDz0lNz4dGxP5IU2l0tYQFegqAL_4xuyva-QPOvbgAMHR98hFDnow8M7VXJ61OZwiO9jJmnvBn9pZri1w6d9bD5v4fEx9uAnZegwm6U-IopoTvwUSV_3fZK2JVq_2zgWig9Zs3i-orMvjAdYeXlmbK5gs8YxFS1nJ_ug-FOR1tF-KKbSqDLU4ooBHabTq1lRZ6Jgbw3qMdVwJzjjQSYvG18arTepg8XWJ24vdcNw">
+                </div>
+        </div>
+    </header>
+    <!-- 3. Trust Section -->
+    <!-- <section class="py-xl border-y border-outline-variant/10 bg-surface-container-lowest">
+        <div class="max-w-screen-2xl mx-auto px-12">
+            <p class="text-center text-body-sm font-label-md uppercase tracking-widest text-outline mb-xl">Trusted By Brands</p>
+            <div
+                class="flex flex-wrap justify-center items-center gap-2xl opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+                <img alt="Google" class="h-8"
+                    data-alt="Official Google logo in a minimalist grayscale vector format, representing high-end corporate partnerships and industry trust. The logo is clean and professional, integrated into a high-performance web agency landing page."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsWhTtUy7v9Q993c2YOhmJ5BcmC7-KiegbxOEl3LvCs-ytFUggKXzGhEdfobEKhPWwMffICWDMlGFyYenejrXMN_59SLo-InEJRPTjHJy1W5GIMEniSUJLiwCt7_olpxGxswzbx0wPpmB2mO9kx5usv2B-xC8bwwFhGHn7FtE6EMSH7QFIO9OjGSJi3DtZhw5K_ZkkP1KE5fQSpjonDMgt6INYA5lYsP4M6ZgBrRXWv3ON7IFpZag9e0HJfnRj6_sIlg3uQJ-p2g">
+                <img alt="Amazon" class="h-8"
+                    data-alt="Official Amazon logo in a minimalist grayscale vector format, showing scale and reliability. Part of a trust-building section for an ultra-modern corporate design system."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP4nlAGkelCGK-vcxQ-J02vTYkT4ItOwRTNEpAabWyH7NMn_JUsun6spSx9_s6MBTo9BrzwAHhCWs0kZJV3bLX4qim0npOMnjekKfU-GZrVM13O23HZBsn1OFLUUmpyYmyQXkxNEQGMg9WcV5PkfJKgV9akub6d7ar_CcgxsBdP9XJSmgKFV2B6s0fer20v8UMM3Tz4Uvib3GvmkmaYc7o0ba4dn_0CUJoY7OWkxLczognEUfNbf8RKA0pkYFp0r99DYKods_iQQ">
+                <img alt="Adidas" class="h-8"
+                    data-alt="Official Adidas logo in a minimalist grayscale vector format, signifying global brand reach and design excellence."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuJr4e354FJTOdk--18Uws3ftnTg6CBUMgOY8_WL2OAsfuJFuPfvFON35Tj-Hf97h6KlHrxmlCINowMlL_cRXYIdHJNwM4ayL9UWrS5r6jbG_QvMS1XjYvnMItaX3qVSdw4c3OuKLkZ2lOBx_dqlVDHR0AMJbHTctq-tFPeXUpVONHUKj6YE00apu7LFXB4fwW4ol-z1lpbpIou2rSsBKnN8W4JZK7_pDdW8ECdmugzvruclvQKgreII09hnztcg59m5cZuoO6gQ">
+                <img alt="Netflix" class="h-8"
+                    data-alt="Official Netflix logo in a minimalist grayscale vector format, emphasizing digital-first performance and streaming technology alignment."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkfKLpqnuzOwguoiJa7AkAK1IoJWmb-vGrDvGwUfuaFVGTLDOxRC0qC_UER9QaOYCnlyW3Dmq4-BFMeBSaHe5Y-zCVPGIHXvRew2n3_HkUONmjZFEAoUBTjDFXJqOtPV2i657WqGz06yCJpjDFoEaUevPOZcOId7SX2K9P8Q2vdqW-zR3BoBOOJcwhLVOYbRxsSTBHCbJik7FkE0r3Vjaq7dqLa2xzON-fNPFZcdTLZsl831xXJcqQvo1oAHCUFpHaS26kjLF5HA">
+            </div>
+        </div>
+    </section> -->
+    <section class="flex flex-col items-center justify-center px-4 md:px-0 w-full border-outline-variant/10 bg-surface-container-lowest py-16">
+        <h3 class="text-center text-body-sm font-label-md uppercase tracking-widest text-outline mb-xl">Trusted by world's leading companies</h3>
+        <div class="max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-full mt-14">
+            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
+                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/clickup.svg"
+                    alt="Logo" />
+            </div>
+            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
+                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/airtable.svg"
+                    alt="Logo" />
+            </div>
+            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
+                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/miro.svg"
+                    alt="Logo" />
+            </div>
+            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
+                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/slack.svg"
+                    alt="Logo" />
+            </div>
+            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
+                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/huawei.svg"
+                    alt="Logo" />
+            </div>
+            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
+                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/asana.svg"
+                    alt="Logo" />
+            </div>
+        </div>
+    </section>
+    <!-- 4. Services Section -->
+    <section class="py-3xl px-12" id="services">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="text-center mb-2xl reveal">
+                <h2 class="font-headline-xl text-headline-xl mb-md">Our Expertise</h2>
+                <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Full-stack solutions tailored to your
+                    unique business challenges and goals.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-lg">
+                <!-- Card 1 -->
+                <div
+                    class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 border-t-2 border-t-primary reveal">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-md">code</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-sm">Custom Web Dev</h3>
+                    <p class="text-body-md text-on-surface-variant">High-performance React/Next.js architectures built
+                        for speed and scalability.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 reveal">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-md">devices</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-sm">Web App Dev</h3>
+                    <p class="text-body-md text-on-surface-variant">Complex SaaS platforms and internal tools with
+                        seamless user management.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 reveal">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-md">shopping_cart</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-sm">eCommerce</h3>
+                    <p class="text-body-md text-on-surface-variant">Conversion-optimized stores built on Shopify,
+                        Headless CMS, or Custom builds.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 reveal">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-md">palette</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-sm">UI/UX Design</h3>
+                    <p class="text-body-md text-on-surface-variant">Modern, editorial designs that emphasize clarity and
+                        technical precision.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 reveal">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-md">search</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-sm">SEO Strategy</h3>
+                    <p class="text-body-md text-on-surface-variant">Technical SEO audits and performance tuning to
+                        ensure search dominance.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 reveal">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-md">settings</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-sm">Maintenance</h3>
+                    <p class="text-body-md text-on-surface-variant">Ongoing support, security updates, and performance
+                        monitoring 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 5. Process Section -->
+    <section class="py-3xl px-12 bg-surface-container-low" id="process">
+        <div class="max-w-screen-2xl mx-auto">
+            <h2 class="font-headline-xl text-headline-xl text-center mb-2xl reveal">Simple 6 Step Process</h2>
+            <div class="relative">
+                <div class="hidden md:block absolute top-1/2 w-full h-[2px] bg-outline-variant/30 -translate-y-1/2 z-0">
+                </div>
+                <div class="grid md:grid-cols-6 gap-md relative z-10">
+                    <div class="text-center group reveal">
+                        <div
+                            class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
+                            1</div>
+                        <h4 class="font-label-md text-headline-sm">Discovery</h4>
+                    </div>
+                    <div class="text-center group reveal">
+                        <div
+                            class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
+                            2</div>
+                        <h4 class="font-label-md text-headline-sm">Strategy</h4>
+                    </div>
+                    <div class="text-center group reveal">
+                        <div
+                            class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
+                            3</div>
+                        <h4 class="font-label-md text-headline-sm">Design</h4>
+                    </div>
+                    <div class="text-center group reveal">
+                        <div
+                            class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
+                            4</div>
+                        <h4 class="font-label-md text-headline-sm">Dev</h4>
+                    </div>
+                    <div class="text-center group reveal">
+                        <div
+                            class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
+                            5</div>
+                        <h4 class="font-label-md text-headline-sm">Testing</h4>
+                    </div>
+                    <div class="text-center group reveal">
+                        <div
+                            class="w-16 h-16 bg-secondary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
+                            6</div>
+                        <h4 class="font-label-md text-headline-sm">Launch</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 6. Feature Showcase -->
+    <section class="py-3xl px-12 overflow-hidden">
+        <div class="max-w-screen-2xl mx-auto space-y-3xl">
+            <!-- Feature 1 -->
+            <div class="grid md:grid-cols-2 gap-2xl items-center reveal">
+                <div>
+                    <span class="text-primary font-label-md tracking-widest uppercase mb-sm block">Performance
+                        First</span>
+                    <h2 class="font-headline-xl text-headline-xl mb-md">Built For Performance</h2>
+                    <p class="text-body-lg text-on-surface-variant mb-xl">Speed is a feature. We optimize every line of
+                        code to ensure your site loads instantly, improving both SEO and user retention.</p>
+                    <ul class="space-y-md">
+                        <li class="flex items-center gap-sm"><span class="material-symbols-outlined text-primary"
+                                style="font-variation-settings: 'FILL' 1;">check_circle</span> 99+ Core Web Vitals</li>
+                        <li class="flex items-center gap-sm"><span class="material-symbols-outlined text-primary"
+                                style="font-variation-settings: 'FILL' 1;">check_circle</span> Static Site Generation
+                        </li>
+                    </ul>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img alt="Data performance dashboard"
+                        data-alt="A sophisticated data visualization dashboard shown on a high-resolution display. The UI features sleek charts, glowing blue data points, and a clean white background. The aesthetic is ultra-modern and corporate, emphasizing precision and technical depth."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbsYv9FOcRrxRNjxTOr7AHvxysMlmAoqLiWU1CzUTMbx8_q0uAW-OrrWAlNo61q14GhKj1MBfiNIGLR2-CnQwupYvLG5N_R6278K9Yj5WfREJYK5Ugx71lXPFYSodQBr6CQpAJ_qeQOJHJ9IgOOk8V9SlbF0SRxh7CypvUbLIfdbqp7-d-6RTtGrZowMZh6dds33AxXXwYgFNXHwPZYvEhrVDO3ku_PeXRCJBAlTLPuglBVZShrxjRw-rJnmvxNYIrcZIHPXoqyA">
+                </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="grid md:grid-cols-2 gap-2xl items-center reveal md:flex-row-reverse">
+                <div class="md:order-2">
+                    <span class="text-primary font-label-md tracking-widest uppercase mb-sm block">User
+                        Experience</span>
+                    <h2 class="font-headline-xl text-headline-xl mb-md">Designed For Conversion</h2>
+                    <p class="text-body-lg text-on-surface-variant mb-xl">Beautiful design means nothing if it doesn't
+                        convert. Our UX process focuses on guiding the user effortlessly toward your business goals.</p>
+                    <button
+                        class="bg-surface-container text-primary font-label-md px-lg py-md rounded-xl hover:bg-surface-container-high transition-colors">See
+                        UX Case Studies</button>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl md:order-1">
+                    <img alt="Design process sketches and screens"
+                        data-alt="A clean desktop workspace showing professional UI/UX design tools and mobile wireframes. Soft daylight illuminates the scene, highlighting a minimalist and elegant design atmosphere. The color palette is composed of soft whites and deep indigo accents."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAffRNqImhfK1MbwN-idSLG_4knAy2Zy0vcARWfDnXIzB_C72PszH_0p6ba06AVHyO-idyM4HgTF31jW08KyLdMW9CD3___eSLqpQqPuPwQqBerkC_5B4L9k2FsP8C36OM1d3J-NWnnxe9_BWt7bxYniwlYSO_QGW87R82GaNEHDPF255FUfmdHh2Uuvp3SNSzAGFM4_Og83mBTnUulVAtRTYBp2kc_aXSLd85uD3UcUwtzTKff0pyh6vzvO3iYEuAQvoD41iI2zA">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 7. Portfolio -->
+    <section class="py-3xl px-12 bg-surface-container-lowest" id="portfolio">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="flex justify-between items-end mb-2xl reveal">
+                <div>
+                    <h2 class="font-headline-xl text-headline-xl">Selected Projects</h2>
+                    <p class="text-body-lg text-on-surface-variant">Real results for real businesses.</p>
+                </div>
+                <button class="hidden md:block text-primary font-label-md border-b-2 border-primary pb-1">Browse All
+                    Work</button>
+            </div>
+            <div class="grid md:grid-cols-2 gap-xl">
+                <div class="group cursor-pointer reveal">
+                    <div class="rounded-2xl overflow-hidden mb-lg relative">
+                        <img alt="Fintech Project" class="group-hover:scale-105 transition-transform duration-500"
+                            data-alt="A high-end fintech application dashboard showcasing complex financial data with elegant glassmorphic components. The lighting is soft and ambient, casting gentle shadows that create a sense of depth and luxury in an ultra-modern corporate style."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6zNYcXJijN7trxFnYFLUfqE_SnzNboEw19oJQsI6w_R_xcX8zssbfmQwlISsPztifm_NXuQUGdy3vKiJfDTguLyayKAmD6t17xzetcrlaqYrTQjLdT9vQ0pzp-kRwAbnVu0FniXPWdB-mIgNwJ3bJEHxc5-Hx1JwvTMHflLkuo2ySo3FBfHvbx2XjLVsI-zWP5tTPoB93ZO4uMYSotUeS5RHLl-zHRmZ9fGCEYxJZyNML6FYIjJiZE7ugUOO4Vp4ZQlEo7ucmTg">
+                        <div
+                            class="absolute bottom-md right-md glass px-md py-xs rounded-full font-label-md text-primary">
+                            +310% Leads</div>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm mb-xs">Nova Fintech Platform</h3>
+                    <p class="text-on-surface-variant">Web App • FinTech • 2024</p>
+                </div>
+                <div class="group cursor-pointer reveal">
+                    <div class="rounded-2xl overflow-hidden mb-lg relative">
+                        <img alt="Fashion Store" class="group-hover:scale-105 transition-transform duration-500"
+                            data-alt="A minimalist eCommerce storefront for a premium fashion brand. The design is clean with ample white space, featuring high-quality product photography and sophisticated typography. The mood is editorial and high-end, using a refined light-mode aesthetic."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoMXkAmPuO0yfsf323-oAmYWOV8cK8CmcoEAEBSFJh-SosuXjDICgKAK0zAG46rkwItk1OCJNtpacTeqYGpjl4hMp3QGN8C8TpYwQIzCfZQeo2yN852y_n9HA_-8mhy5_umPkI3QHRtXdsJ8AJq4B1ZLHNDMXOHk6ittBWCmU7CQyFmfst11FUTGcBoz8b4Jc2GOpHGqRhWKy0CzDnKnzn4BM-DXp0HU7TVoymCUCd--YH1qL60STmYpRa5fu-gUc4zGys5jS-qg">
+                        <div
+                            class="absolute bottom-md right-md glass px-md py-xs rounded-full font-label-md text-primary">
+                            €2.4M Revenue Incr.</div>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm mb-xs">Aura Fashion Haus</h3>
+                    <p class="text-on-surface-variant">eCommerce • Fashion • 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 8. Testimonials -->
+    <section class="py-3xl px-12 overflow-hidden bg-primary text-on-primary">
+        <div class="max-w-screen-2xl mx-auto">
+            <h2 class="font-headline-xl text-headline-xl mb-2xl text-center reveal">What Our Partners Say</h2>
+            <div class="flex gap-lg overflow-x-auto pb-xl scroll-hide">
+                <div class="min-w-[350px] bg-white/10 backdrop-blur-md p-xl rounded-2xl border border-white/20 reveal">
+                    <div class="flex gap-xs text-yellow-400 mb-md">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-body-lg italic mb-xl">"VoltVave Services transformed our outdated site into a
+                        lead-generation machine. Their technical expertise is unmatched."</p>
+                    <div class="flex items-center gap-md">
+                        <div class="w-12 h-12 rounded-full bg-surface-container"></div>
+                        <div>
+                            <div class="font-label-md">Sarah Jenkins</div>
+                            <div class="text-body-sm opacity-70">CEO at SkyFlow</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-[350px] bg-white/10 backdrop-blur-md p-xl rounded-2xl border border-white/20 reveal">
+                    <div class="flex gap-xs text-yellow-400 mb-md">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-body-lg italic mb-xl">"The ROI we saw after launch was immediate. They didn't just
+                        build a site; they built a growth engine."</p>
+                    <div class="flex items-center gap-md">
+                        <div class="w-12 h-12 rounded-full bg-surface-container"></div>
+                        <div>
+                            <div class="font-label-md">Michael Chen</div>
+                            <div class="text-body-sm opacity-70">Founder of TechCore</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-[350px] bg-white/10 backdrop-blur-md p-xl rounded-2xl border border-white/20 reveal">
+                    <div class="flex gap-xs text-yellow-400 mb-md">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+                    </div>
+                    <p class="text-body-lg italic mb-xl">"Professional, responsive, and insanely fast. They are our
+                        go-to partner for all things web development."</p>
+                    <div class="flex items-center gap-md">
+                        <div class="w-12 h-12 rounded-full bg-surface-container"></div>
+                        <div>
+                            <div class="font-label-md">David Miller</div>
+                            <div class="text-body-sm opacity-70">Head of Product at Nexus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 9. Results/Stats -->
+    <section class="py-2xl px-12">
+        <div class="max-w-screen-2xl mx-auto grid md:grid-cols-3 gap-xl text-center">
+            <div class="reveal">
+                <div class="text-[80px] font-black text-primary leading-none mb-sm">100+</div>
+                <div class="text-headline-sm text-on-surface-variant">Projects Delivered</div>
+            </div>
+            <div class="reveal">
+                <div class="text-[80px] font-black text-primary leading-none mb-sm">98%</div>
+                <div class="text-headline-sm text-on-surface-variant">Client Satisfaction</div>
+            </div>
+            <div class="reveal">
+                <div class="text-[80px] font-black text-primary leading-none mb-sm">15+</div>
+                <div class="text-headline-sm text-on-surface-variant">Industry Awards</div>
+            </div>
+        </div>
+    </section>
+    <!-- 10. Pricing Preview -->
+    <section class="py-3xl px-12 bg-surface-container-low" id="pricing">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="text-center mb-2xl reveal">
+                <h2 class="font-headline-xl text-headline-xl mb-md">Simple, Transparent Pricing</h2>
+                <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Investment levels designed to grow
+                    with your business.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-xl">
+                <!-- Starter -->
+                <div class="glass p-2xl rounded-2xl flex flex-col reveal">
+                    <h4 class="font-headline-sm text-headline-sm mb-xs">Starter</h4>
+                    <p class="text-body-sm text-on-surface-variant mb-xl">Perfect for early startups.</p>
+                    <div class="text-headline-xl mb-xl">from $4,999</div>
+                    <ul class="space-y-md mb-2xl flex-grow">
+                        <li class="flex items-center gap-sm text-body-md"><span
+                                class="material-symbols-outlined text-primary text-sm">check</span> 5 Page Custom Site
+                        </li>
+                        <li class="flex items-center gap-sm text-body-md"><span
+                                class="material-symbols-outlined text-primary text-sm">check</span> SEO Optimized</li>
+                        <li class="flex items-center gap-sm text-body-md"><span
+                                class="material-symbols-outlined text-primary text-sm">check</span> CMS Integration</li>
+                    </ul>
+                    <button
+                        class="w-full py-md border border-outline text-on-surface rounded-xl font-label-md hover:bg-surface-container transition-colors">Choose
+                        Starter</button>
+                </div>
+                <!-- Growth -->
+                <div
+                    class="bg-primary text-on-primary p-2xl rounded-2xl flex flex-col relative reveal scale-105 shadow-2xl">
+                    <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary px-md py-xs rounded-full text-xs font-black uppercase tracking-widest">
+                        Recommended</div>
+                    <h4 class="font-headline-sm text-headline-sm mb-xs">Growth</h4>
+                    <p class="text-body-sm opacity-80 mb-xl">For scale-ups needing results.</p>
+                    <div class="text-headline-xl mb-xl">from $9,999</div>
+                    <ul class="space-y-md mb-2xl flex-grow">
+                        <li class="flex items-center gap-sm text-body-md"><span
+                                class="material-symbols-outlined text-secondary-fixed text-sm">check</span> 10+ Page
+                            Site</li>
+                        <li class="flex items-center gap-sm text-body-md"><span
+                                class="material-symbols-outlined text-secondary-fixed text-sm">check</span> Conversion
+                            Optimization</li>
+                        <li class="flex items-center gap-sm text-body-md"><span
+                                class="material-symbols-outlined text-secondary-fixed text-sm">check</span> CRM &amp;
+                            API Integrations</li>
+                    </ul>
+                    <button
+                        class="w-full py-md bg-on-primary text-primary rounded-xl font-label-md hover:scale-[1.02] transition-transform">Get
+                        Started</button>
+                </div>
+                <!-- Enterprise -->
+                <div class="glass p-2xl rounded-2xl flex flex-col reveal">
+                    <h4 class="font-headline-sm text-headline-sm mb-xs">Enterprise</h4>
+                    <p class="text-body-sm text-on-surface-variant mb-xl">Complex custom solutions.</p>
+                    <div class="text-headline-xl mb-xl">Custom</div>
+                    <ul class="space-y-md mb-2xl flex-grow">
+                        <li class="flex items-center gap-sm text-body-md"><span
+                                class="material-symbols-outlined text-primary text-sm">check</span> SaaS Development
+                        </li>
+                        <li class="flex items-center gap-sm text-body-md"><span
+                                class="material-symbols-outlined text-primary text-sm">check</span> Dedicated Team</li>
+                        <li class="flex items-center gap-sm text-body-md"><span
+                                class="material-symbols-outlined text-primary text-sm">check</span> Priority 24/7
+                            Support</li>
+                    </ul>
+                    <button
+                        class="w-full py-md border border-outline text-on-surface rounded-xl font-label-md hover:bg-surface-container transition-colors">Inquire
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 11. FAQ -->
+    <section class="py-3xl px-12">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-headline-xl text-headline-xl text-center mb-2xl reveal">Common Questions</h2>
+            <div class="space-y-md reveal">
+                <details class="group glass p-lg rounded-2xl cursor-pointer">
+                    <summary class="flex justify-between items-center font-headline-sm text-headline-sm list-none">
+                        How long does a typical project take?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <p class="mt-md text-on-surface-variant text-body-md">Typical marketing websites take 4-6 weeks,
+                        while complex web applications can range from 3-6 months depending on the scope and features.
+                    </p>
+                </details>
+                <details class="group glass p-lg rounded-2xl cursor-pointer">
+                    <summary class="flex justify-between items-center font-headline-sm text-headline-sm list-none">
+                        Do you provide maintenance after launch?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <p class="mt-md text-on-surface-variant text-body-md">Yes, we offer ongoing maintenance packages
+                        that include security updates, speed optimization, and content updates.</p>
+                </details>
+                <details class="group glass p-lg rounded-2xl cursor-pointer">
+                    <summary class="flex justify-between items-center font-headline-sm text-headline-sm list-none">
+                        Can you work with our existing brand?
+                        <span
+                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <p class="mt-md text-on-surface-variant text-body-md">Absolutely. We are experts at integrating
+                        existing brand guidelines into modern, high-performance web experiences.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+    <!-- 12. Final CTA -->
+    <section class="py-3xl px-12">
+        <div
+            class="max-w-screen-2xl mx-auto rounded-3xl bg-gradient-to-br from-primary to-secondary p-3xl text-center text-on-primary reveal shadow-3xl">
+            <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-md">Ready To Build Something
+                Amazing?</h2>
+            <p class="text-body-lg mb-2xl max-w-2xl mx-auto opacity-90">Join 100+ businesses already growing with
+                VoltVave Services. Book your free strategy session today.</p>
+            <button
+                class="bg-on-primary text-primary px-3xl py-xl rounded-2xl font-headline-sm text-headline-sm hover:scale-105 active:scale-95 transition-all shadow-xl">
+                Book Your Call Now
+            </button>
+        </div>
+    </section>
+    <!-- 13. Footer -->
+    <footer class="bg-surface-container-low pt-3xl pb-xl px-12 border-t border-outline-variant/20">
+        <div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-2xl mb-2xl">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-sm mb-lg">
+                    <img alt="Logo" class="h-8 w-8"
+                        src="data:image/png;base64,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">
+                    <span class="font-headline-sm text-headline-sm font-black tracking-tighter text-on-surface">VoltVave
+                        Services</span>
+                </div>
+                <p class="text-body-sm text-on-surface-variant">Defining the future of high-performance web development
+                    for ambitious brands.</p>
+            </div>
+            <div>
+                <h5 class="font-label-md text-on-surface mb-lg">Navigation</h5>
+                <ul class="space-y-sm text-body-sm text-on-surface-variant">
+                    <li><a class="hover:text-primary transition-colors" href="#services">Services</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#portfolio">Portfolio</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#process">Process</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-label-md text-on-surface mb-lg">Legal</h5>
+                <ul class="space-y-sm text-body-sm text-on-surface-variant">
+                    <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-label-md text-on-surface mb-lg">Contact</h5>
+                <ul class="space-y-sm text-body-sm text-on-surface-variant">
+                    <li>hello@voltvave.io</li>
+                    <li>+1 (555) 000-0000</li>
+                    <li>San Francisco, CA</li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-screen-2xl mx-auto pt-xl border-t border-outline-variant/20 flex flex-col md:row justify-between items-center gap-md">
+            <p class="text-body-sm text-on-surface-variant">© 2026 VoltVave Services Agency. All rights reserved.</p>
+            <div class="flex gap-lg">
+                <span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">language</span>
+                <span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">share</span>
+                <span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">public</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Reveal animation on scroll
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Run once on load
+        window.onload = reveal;
+
+        // Smooth scroll implementation enhancement
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
