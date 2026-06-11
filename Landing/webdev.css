@@ -1,0 +1,55 @@
+/* Devicon CDN */
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css");
+
+.marquee {
+    width: max-content;
+    animation: marquee 25s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.tech-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 220px;
+
+    padding: 18px 24px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+
+    color: rgb(7, 7, 7);
+
+    transition: all 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(59, 130, 246, 0.5);
+
+    box-shadow:
+        0 10px 40px rgba(59, 130, 246, 0.15);
+}
+
+.tech-card span {
+    font-size: 1rem;
+    font-weight: 600;
+}
