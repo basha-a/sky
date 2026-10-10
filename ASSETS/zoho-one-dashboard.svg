@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" font-family="Montserrat, 'Segoe UI', Arial, sans-serif">
+<defs><clipPath id="win"><rect width="1200" height="860" rx="20"/></clipPath></defs>
+<g clip-path="url(#win)">
+<rect width="1200" height="860" fill="#f8fafc"/>
+<rect width="1200" height="44" fill="#fff"/><line x1="0" y1="44" x2="1200" y2="44" stroke="#eef0f4"/>
+<circle cx="24" cy="22" r="6" fill="#ff5f57"/>
+<circle cx="44" cy="22" r="6" fill="#febc2e"/>
+<circle cx="64" cy="22" r="6" fill="#28c840"/>
+<rect x="450" y="11" width="300" height="22" rx="11" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="600" y="26" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="middle" >one.your-business.com</text>
+<rect x="0" y="44" width="200" height="816" fill="#0f172a"/>
+<rect x="20" y="66" width="36" height="36" rx="10" fill="#f59e0b"/>
+<rect x="29" y="75" width="8" height="8" rx="2" fill="#fff" opacity="1"/>
+<rect x="29" y="85" width="8" height="8" rx="2" fill="#fff" opacity="0.75"/>
+<rect x="39" y="75" width="8" height="8" rx="2" fill="#fff" opacity="0.75"/>
+<rect x="39" y="85" width="8" height="8" rx="2" fill="#fff" opacity="1"/>
+<text x="66" y="90" font-size="18" fill="#fff" font-weight="700" text-anchor="start" >One</text>
+<rect x="12" y="116" width="176" height="38" rx="10" fill="#1e293b"/>
+<rect x="12" y="124" width="3" height="22" rx="1.5" fill="#eb1d25"/>
+<rect x="28" y="126" width="14" height="14" rx="4" fill="#f59e0b"/>
+<text x="54" y="138" font-size="13" fill="#fff" font-weight="600" text-anchor="start" >Home</text>
+<rect x="28" y="170" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="182" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >All Apps</text>
+<rect x="28" y="214" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="226" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Users</text>
+<rect x="28" y="258" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="270" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Analytics</text>
+<rect x="28" y="302" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="314" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Workflows</text>
+<rect x="28" y="346" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="358" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Security</text>
+<rect x="28" y="390" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="402" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Admin Panel</text>
+<rect x="28" y="434" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="446" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Settings</text>
+<rect x="16" y="736" width="168" height="100" rx="12" fill="#1e1b4b"/>
+<text x="32" y="764" font-size="13" fill="#fff" font-weight="700" text-anchor="start" >User Licenses</text>
+<text x="32" y="784" font-size="11" fill="#a5b4fc" font-weight="400" text-anchor="start" >48 of 50 in use</text>
+<rect x="32" y="800" width="136" height="6" rx="3" fill="#312e81"/><rect x="32" y="800" width="130" height="6" rx="3" fill="#fbbf24"/>
+<text x="32" y="824" font-size="10" fill="#c7d2fe" font-weight="400" text-anchor="start" >Upgrade anytime</text>
+<text x="224" y="90" font-size="24" fill="#0f172a" font-weight="700" text-anchor="start" >Business Overview</text>
+<text x="224" y="112" font-size="12" fill="#64748b" font-weight="400" text-anchor="start" >All departments · One login · Real-time</text>
+<rect x="824" y="72" width="224" height="34" rx="17" fill="#fff" stroke="#e2e8f0"/>
+<circle cx="846" cy="88" r="6" fill="none" stroke="#94a3b8" stroke-width="2"/><line x1="850" y1="92" x2="855" y2="97" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+<text x="864" y="93" font-size="12" fill="#94a3b8" font-weight="400" text-anchor="start" >Search across all apps…</text>
+<rect x="1058" y="72" width="118" height="34" rx="17" fill="#eb1d25"/>
+<text x="1117" y="93" font-size="12" fill="#fff" font-weight="700" text-anchor="middle" >+ Add User</text>
+<rect x="224" y="128" width="226" height="112" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="240" y="158" font-size="12" fill="#64748b" font-weight="500" text-anchor="start" >Pipeline Value</text>
+<rect x="395" y="144" width="39" height="20" rx="10" fill="#eef2ff"/>
+<text x="414.5" y="158" font-size="10" fill="#4f46e5" font-weight="700" text-anchor="middle" >CRM</text>
+<text x="240" y="198" font-size="24" fill="#0f172a" font-weight="700" text-anchor="start" >₹48.2L</text>
+<text x="240" y="224" font-size="11" fill="#16a34a" font-weight="600" text-anchor="start" >▲ 9% this month</text>
+<rect x="466" y="128" width="226" height="112" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="482" y="158" font-size="12" fill="#64748b" font-weight="500" text-anchor="start" >Open Tickets</text>
+<rect x="630" y="144" width="46" height="20" rx="10" fill="#e0f2fe"/>
+<text x="653.0" y="158" font-size="10" fill="#0ea5e9" font-weight="700" text-anchor="middle" >Desk</text>
+<text x="482" y="198" font-size="24" fill="#0f172a" font-weight="700" text-anchor="start" >23</text>
+<text x="482" y="224" font-size="11" fill="#16a34a" font-weight="600" text-anchor="start" >▼ 14% this week</text>
+<rect x="708" y="128" width="226" height="112" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="724" y="158" font-size="12" fill="#64748b" font-weight="500" text-anchor="start" >Employees</text>
+<rect x="858" y="144" width="60" height="20" rx="10" fill="#ccfbf1"/>
+<text x="888.0" y="158" font-size="10" fill="#0f766e" font-weight="700" text-anchor="middle" >People</text>
+<text x="724" y="198" font-size="24" fill="#0f172a" font-weight="700" text-anchor="start" >128</text>
+<text x="724" y="224" font-size="11" fill="#64748b" font-weight="600" text-anchor="start" >6 joined this month</text>
+<rect x="950" y="128" width="226" height="112" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="966" y="158" font-size="12" fill="#64748b" font-weight="500" text-anchor="start" >Projects on Track</text>
+<rect x="1086" y="144" width="74" height="20" rx="10" fill="#fef3c6"/>
+<text x="1123.0" y="158" font-size="10" fill="#b45309" font-weight="700" text-anchor="middle" >Projects</text>
+<text x="966" y="198" font-size="24" fill="#0f172a" font-weight="700" text-anchor="start" >17 / 20</text>
+<rect x="966" y="214" width="194" height="6" rx="3" fill="#f1f5f9"/><rect x="966" y="214" width="165" height="6" rx="3" fill="#f59e0b"/>
+<text x="966" y="233" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="start" >85% on schedule</text>
+<rect x="224" y="256" width="600" height="296" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="244" y="286" font-size="15" fill="#0f172a" font-weight="700" text-anchor="start" >Your Apps</text>
+<text x="804" y="286" font-size="12" fill="#b45309" font-weight="600" text-anchor="end" >+ 38 more apps →</text>
+<rect x="244" y="304" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="264" y="320" width="44" height="44" rx="12.3" fill="#4f46e5"/>
+<text x="286.0" y="347.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >CR</text>
+<text x="286.5" y="388" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >CRM</text>
+<rect x="339" y="304" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="359" y="320" width="44" height="44" rx="12.3" fill="#14b8a6"/>
+<text x="381.0" y="347.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >Bk</text>
+<text x="381.5" y="388" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >Books</text>
+<rect x="434" y="304" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="454" y="320" width="44" height="44" rx="12.3" fill="#0ea5e9"/>
+<text x="476.0" y="347.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >Ds</text>
+<text x="476.5" y="388" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >Desk</text>
+<rect x="529" y="304" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="549" y="320" width="44" height="44" rx="12.3" fill="#f59e0b"/>
+<text x="571.0" y="347.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >Pe</text>
+<text x="571.5" y="388" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >People</text>
+<rect x="624" y="304" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="644" y="320" width="44" height="44" rx="12.3" fill="#8b5cf6"/>
+<text x="666.0" y="347.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >Pr</text>
+<text x="666.5" y="388" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >Projects</text>
+<rect x="719" y="304" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="739" y="320" width="44" height="44" rx="12.3" fill="#f43f5e"/>
+<text x="761.0" y="347.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >Ml</text>
+<text x="761.5" y="388" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >Mail</text>
+<rect x="244" y="420" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="264" y="436" width="44" height="44" rx="12.3" fill="#0f766e"/>
+<text x="286.0" y="463.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >An</text>
+<text x="286.5" y="504" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >Analytics</text>
+<rect x="339" y="420" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="359" y="436" width="44" height="44" rx="12.3" fill="#6366f1"/>
+<text x="381.0" y="463.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >Cr</text>
+<text x="381.5" y="504" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >Creator</text>
+<rect x="434" y="420" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="454" y="436" width="44" height="44" rx="12.3" fill="#ec4899"/>
+<text x="476.0" y="463.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >Cp</text>
+<text x="476.5" y="504" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >Campaigns</text>
+<rect x="529" y="420" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="549" y="436" width="44" height="44" rx="12.3" fill="#22c55e"/>
+<text x="571.0" y="463.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >Sg</text>
+<text x="571.5" y="504" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >Sign</text>
+<rect x="624" y="420" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="644" y="436" width="44" height="44" rx="12.3" fill="#b45309"/>
+<text x="666.0" y="463.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >In</text>
+<text x="666.5" y="504" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >Inventory</text>
+<rect x="719" y="420" width="85" height="104" rx="12" fill="#f8fafc" stroke="#f1f5f9"/>
+<rect x="739" y="436" width="44" height="44" rx="12.3" fill="#06b6d4"/>
+<text x="761.0" y="463.4" font-size="15" fill="#fff" font-weight="700" text-anchor="middle" >Cl</text>
+<text x="761.5" y="504" font-size="11" fill="#334155" font-weight="600" text-anchor="middle" >Cliq</text>
+<rect x="840" y="256" width="336" height="296" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="860" y="286" font-size="15" fill="#0f172a" font-weight="700" text-anchor="start" >Department Activity</text>
+<text x="1156" y="286" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="end" >This week</text>
+<text x="860" y="326" font-size="12" fill="#334155" font-weight="600" text-anchor="start" >Sales</text>
+<text x="1156" y="326" font-size="12" fill="#0f172a" font-weight="700" text-anchor="end" >86%</text>
+<rect x="860" y="336" width="296" height="8" rx="4" fill="#f1f5f9"/><rect x="860" y="336" width="255" height="8" rx="4" fill="#4f46e5"/>
+<text x="860" y="370" font-size="12" fill="#334155" font-weight="600" text-anchor="start" >Support</text>
+<text x="1156" y="370" font-size="12" fill="#0f172a" font-weight="700" text-anchor="end" >72%</text>
+<rect x="860" y="380" width="296" height="8" rx="4" fill="#f1f5f9"/><rect x="860" y="380" width="213" height="8" rx="4" fill="#0ea5e9"/>
+<text x="860" y="414" font-size="12" fill="#334155" font-weight="600" text-anchor="start" >Finance</text>
+<text x="1156" y="414" font-size="12" fill="#0f172a" font-weight="700" text-anchor="end" >64%</text>
+<rect x="860" y="424" width="296" height="8" rx="4" fill="#f1f5f9"/><rect x="860" y="424" width="189" height="8" rx="4" fill="#14b8a6"/>
+<text x="860" y="458" font-size="12" fill="#334155" font-weight="600" text-anchor="start" >HR</text>
+<text x="1156" y="458" font-size="12" fill="#0f172a" font-weight="700" text-anchor="end" >58%</text>
+<rect x="860" y="468" width="296" height="8" rx="4" fill="#f1f5f9"/><rect x="860" y="468" width="172" height="8" rx="4" fill="#f59e0b"/>
+<text x="860" y="502" font-size="12" fill="#334155" font-weight="600" text-anchor="start" >Marketing</text>
+<text x="1156" y="502" font-size="12" fill="#0f172a" font-weight="700" text-anchor="end" >49%</text>
+<rect x="860" y="512" width="296" height="8" rx="4" fill="#f1f5f9"/><rect x="860" y="512" width="145" height="8" rx="4" fill="#ec4899"/>
+<rect x="224" y="568" width="600" height="268" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="244" y="598" font-size="15" fill="#0f172a" font-weight="700" text-anchor="start" >Automated Workflows</text>
+<rect x="716" y="583" width="88" height="22" rx="11" fill="#dcfce7"/><circle cx="731" cy="594" r="4" fill="#22c55e"/>
+<text x="766" y="598" font-size="11" fill="#15803d" font-weight="700" text-anchor="middle" >4 running</text>
+<rect x="244" y="622" width="32" height="32" rx="9.0" fill="#4f46e5"/>
+<text x="260.0" y="641.96" font-size="11" fill="#fff" font-weight="700" text-anchor="middle" >CR</text>
+<path d="M282 638 h14 m-5 -5 l5 5 l-5 5" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="302" y="622" width="32" height="32" rx="9.0" fill="#14b8a6"/>
+<text x="318.0" y="641.96" font-size="11" fill="#fff" font-weight="700" text-anchor="middle" >Bk</text>
+<text x="350" y="636" font-size="13" fill="#0f172a" font-weight="600" text-anchor="start" >Deal won → Invoice created</text>
+<text x="350" y="653" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="start" >CRM to Books</text>
+<text x="744" y="643" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="end" >2m ago</text>
+<circle cx="784" cy="638" r="11" fill="#dcfce7"/><path d="M779 638 l3.5 3.5 l6 -7" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="244" y1="664" x2="804" y2="664" stroke="#f1f5f9"/>
+<rect x="244" y="674" width="32" height="32" rx="9.0" fill="#8b5cf6"/>
+<text x="260.0" y="693.96" font-size="11" fill="#fff" font-weight="700" text-anchor="middle" >Fm</text>
+<path d="M282 690 h14 m-5 -5 l5 5 l-5 5" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="302" y="674" width="32" height="32" rx="9.0" fill="#4f46e5"/>
+<text x="318.0" y="693.96" font-size="11" fill="#fff" font-weight="700" text-anchor="middle" >CR</text>
+<text x="350" y="688" font-size="13" fill="#0f172a" font-weight="600" text-anchor="start" >Web form → New lead added</text>
+<text x="350" y="705" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="start" >Forms to CRM</text>
+<text x="744" y="695" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="end" >9m ago</text>
+<circle cx="784" cy="690" r="11" fill="#dcfce7"/><path d="M779 690 l3.5 3.5 l6 -7" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="244" y1="716" x2="804" y2="716" stroke="#f1f5f9"/>
+<rect x="244" y="726" width="32" height="32" rx="9.0" fill="#0ea5e9"/>
+<text x="260.0" y="745.96" font-size="11" fill="#fff" font-weight="700" text-anchor="middle" >Ds</text>
+<path d="M282 742 h14 m-5 -5 l5 5 l-5 5" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="302" y="726" width="32" height="32" rx="9.0" fill="#06b6d4"/>
+<text x="318.0" y="745.96" font-size="11" fill="#fff" font-weight="700" text-anchor="middle" >Cl</text>
+<text x="350" y="740" font-size="13" fill="#0f172a" font-weight="600" text-anchor="start" >Urgent ticket → Team alerted</text>
+<text x="350" y="757" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="start" >Desk to Cliq</text>
+<text x="744" y="747" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="end" >18m ago</text>
+<circle cx="784" cy="742" r="11" fill="#dcfce7"/><path d="M779 742 l3.5 3.5 l6 -7" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="244" y1="768" x2="804" y2="768" stroke="#f1f5f9"/>
+<rect x="244" y="778" width="32" height="32" rx="9.0" fill="#f59e0b"/>
+<text x="260.0" y="797.96" font-size="11" fill="#fff" font-weight="700" text-anchor="middle" >Pe</text>
+<path d="M282 794 h14 m-5 -5 l5 5 l-5 5" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="302" y="778" width="32" height="32" rx="9.0" fill="#0f766e"/>
+<text x="318.0" y="797.96" font-size="11" fill="#fff" font-weight="700" text-anchor="middle" >Py</text>
+<text x="350" y="792" font-size="13" fill="#0f172a" font-weight="600" text-anchor="start" >Leave approved → Payroll updated</text>
+<text x="350" y="809" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="start" >People to Payroll</text>
+<text x="744" y="799" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="end" >1h ago</text>
+<circle cx="784" cy="794" r="11" fill="#dcfce7"/><path d="M779 794 l3.5 3.5 l6 -7" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="840" y="568" width="336" height="268" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="860" y="598" font-size="15" fill="#0f172a" font-weight="700" text-anchor="start" >Sales Pipeline</text>
+<text x="1156" y="598" font-size="11" fill="#4f46e5" font-weight="700" text-anchor="end" >CRM</text>
+<rect x="860.0" y="618" width="296" height="40" rx="10" fill="#4f46e5"/>
+<text x="1008" y="635" font-size="11" fill="#fff" font-weight="600" text-anchor="middle" opacity=".85">Leads</text>
+<text x="1008" y="651" font-size="14" fill="#fff" font-weight="700" text-anchor="middle" >1,240</text>
+<rect x="890.0" y="670" width="236" height="40" rx="10" fill="#6366f1"/>
+<text x="1008" y="687" font-size="11" fill="#fff" font-weight="600" text-anchor="middle" opacity=".85">Qualified</text>
+<text x="1008" y="703" font-size="14" fill="#fff" font-weight="700" text-anchor="middle" >620</text>
+<rect x="920.0" y="722" width="176" height="40" rx="10" fill="#818cf8"/>
+<text x="1008" y="739" font-size="11" fill="#fff" font-weight="600" text-anchor="middle" opacity=".85">Proposal</text>
+<text x="1008" y="755" font-size="14" fill="#fff" font-weight="700" text-anchor="middle" >248</text>
+<rect x="950.0" y="774" width="116" height="40" rx="10" fill="#14b8a6"/>
+<text x="1008" y="791" font-size="11" fill="#fff" font-weight="600" text-anchor="middle" opacity=".85">Won</text>
+<text x="1008" y="807" font-size="14" fill="#fff" font-weight="700" text-anchor="middle" >96</text>
+</g>
+<rect x=".5" y=".5" width="1199" height="859" rx="20" fill="none" stroke="#e2e8f0"/>
+</svg>

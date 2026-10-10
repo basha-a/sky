@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" font-family="Montserrat, 'Segoe UI', Arial, sans-serif">
+<defs>
+  <clipPath id="win"><rect width="1200" height="860" rx="20"/></clipPath>
+  <linearGradient id="inArea" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#14b8a6" stop-opacity=".28"/><stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<g clip-path="url(#win)">
+<rect width="1200" height="860" fill="#f8fafc"/>
+<rect width="1200" height="44" fill="#fff"/><line x1="0" y1="44" x2="1200" y2="44" stroke="#eef0f4"/>
+<circle cx="24" cy="22" r="6" fill="#ff5f57"/>
+<circle cx="44" cy="22" r="6" fill="#febc2e"/>
+<circle cx="64" cy="22" r="6" fill="#28c840"/>
+<rect x="450" y="11" width="300" height="22" rx="11" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="600" y="26" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="middle" >books.your-business.com</text>
+<rect x="0" y="44" width="200" height="816" fill="#0f172a"/>
+<rect x="20" y="66" width="36" height="36" rx="10" fill="#14b8a6"/>
+<path d="M30 76h10a4 4 0 0 1 4 4v14h-10a4 4 0 0 0-4 4z" fill="#fff" opacity=".95"/><path d="M46 76h-2v20" stroke="#fff" stroke-width="2" fill="none" opacity=".6"/>
+<text x="66" y="90" font-size="18" fill="#fff" font-weight="700" text-anchor="start" >Books</text>
+<rect x="12" y="116" width="176" height="38" rx="10" fill="#1e293b"/>
+<rect x="12" y="124" width="3" height="22" rx="1.5" fill="#eb1d25"/>
+<rect x="28" y="126" width="14" height="14" rx="4" fill="#14b8a6"/>
+<text x="54" y="138" font-size="13" fill="#fff" font-weight="600" text-anchor="start" >Dashboard</text>
+<rect x="28" y="170" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="182" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Customers</text>
+<rect x="28" y="214" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="226" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Items</text>
+<rect x="28" y="258" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="270" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Sales</text>
+<rect x="28" y="302" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="314" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Purchases</text>
+<rect x="28" y="346" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="358" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Banking</text>
+<rect x="28" y="390" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="402" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Reports</text>
+<rect x="28" y="434" width="14" height="14" rx="4" fill="#334155"/>
+<text x="54" y="446" font-size="13" fill="#94a3b8" font-weight="500" text-anchor="start" >Settings</text>
+<rect x="16" y="736" width="168" height="100" rx="12" fill="#1e1b4b"/>
+<text x="32" y="764" font-size="13" fill="#fff" font-weight="700" text-anchor="start" >GST Filing</text>
+<text x="32" y="784" font-size="11" fill="#a5b4fc" font-weight="400" text-anchor="start" >Due in 5 days</text>
+<rect x="32" y="800" width="136" height="6" rx="3" fill="#312e81"/><rect x="32" y="800" width="98" height="6" rx="3" fill="#818cf8"/>
+<text x="32" y="824" font-size="10" fill="#c7d2fe" font-weight="400" text-anchor="start" >72% ready</text>
+<text x="224" y="90" font-size="24" fill="#0f172a" font-weight="700" text-anchor="start" >Dashboard</text>
+<text x="224" y="112" font-size="12" fill="#64748b" font-weight="400" text-anchor="start" >Financial overview · FY 2026–27</text>
+<rect x="908" y="72" width="140" height="34" rx="17" fill="#fff" stroke="#e2e8f0"/>
+<text x="978" y="93" font-size="12" fill="#334155" font-weight="600" text-anchor="middle" >This Fiscal Year ▾</text>
+<rect x="1058" y="72" width="118" height="34" rx="17" fill="#eb1d25"/>
+<text x="1117" y="93" font-size="12" fill="#fff" font-weight="700" text-anchor="middle" >+ New Invoice</text>
+<rect x="224" y="128" width="226" height="112" rx="14" fill="#fff" stroke="#eef0f4"/>
+<rect x="240" y="144" width="30" height="30" rx="9" fill="#ccfbf1"/><circle cx="255" cy="159" r="6" fill="none" stroke="#0f766e" stroke-width="2.5"/>
+<text x="280" y="164" font-size="12" fill="#64748b" font-weight="500" text-anchor="start" >Total Receivables</text>
+<text x="240" y="202" font-size="22" fill="#0f172a" font-weight="700" text-anchor="start" >₹12,48,500</text>
+<rect x="240" y="214" width="194" height="6" rx="3" fill="#eb1d25"/><rect x="240" y="214" width="136" height="6" rx="3" fill="#14b8a6"/>
+<text x="240" y="233" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="start" >Current ₹8.7L · Overdue ₹3.7L</text>
+<rect x="466" y="128" width="226" height="112" rx="14" fill="#fff" stroke="#eef0f4"/>
+<rect x="482" y="144" width="30" height="30" rx="9" fill="#eef2ff"/><circle cx="497" cy="159" r="6" fill="none" stroke="#4f46e5" stroke-width="2.5"/>
+<text x="522" y="164" font-size="12" fill="#64748b" font-weight="500" text-anchor="start" >Total Payables</text>
+<text x="482" y="202" font-size="22" fill="#0f172a" font-weight="700" text-anchor="start" >₹4,32,900</text>
+<rect x="482" y="214" width="194" height="6" rx="3" fill="#f59e0b"/><rect x="482" y="214" width="107" height="6" rx="3" fill="#6366f1"/>
+<text x="482" y="233" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="start" >Current ₹2.4L · Overdue ₹1.9L</text>
+<rect x="708" y="128" width="226" height="112" rx="14" fill="#fff" stroke="#eef0f4"/>
+<rect x="724" y="144" width="30" height="30" rx="9" fill="#fef3c6"/><circle cx="739" cy="159" r="6" fill="none" stroke="#b45309" stroke-width="2.5"/>
+<text x="764" y="164" font-size="12" fill="#64748b" font-weight="500" text-anchor="start" >Cash in Hand</text>
+<text x="724" y="202" font-size="22" fill="#0f172a" font-weight="700" text-anchor="start" >₹8,15,600</text>
+<text x="724" y="226" font-size="11" fill="#16a34a" font-weight="600" text-anchor="start" >▲ 12.4% vs last month</text>
+<rect x="950" y="128" width="226" height="112" rx="14" fill="#fff" stroke="#eef0f4"/>
+<rect x="966" y="144" width="30" height="30" rx="9" fill="#e0f2fe"/><circle cx="981" cy="159" r="6" fill="none" stroke="#0369a1" stroke-width="2.5"/>
+<text x="1006" y="164" font-size="12" fill="#64748b" font-weight="500" text-anchor="start" >Net Profit</text>
+<text x="966" y="202" font-size="22" fill="#0f172a" font-weight="700" text-anchor="start" >₹6,90,200</text>
+<text x="966" y="226" font-size="11" fill="#16a34a" font-weight="600" text-anchor="start" >▲ 18% this year</text>
+<rect x="224" y="256" width="600" height="296" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="244" y="286" font-size="15" fill="#0f172a" font-weight="700" text-anchor="start" >Cash Flow</text>
+<circle cx="640" cy="281" r="5" fill="#14b8a6"/>
+<text x="650" y="285" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" >Incoming</text>
+<circle cx="730" cy="281" r="5" fill="#818cf8"/>
+<text x="740" y="285" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" >Outgoing</text>
+<line x1="276" y1="320" x2="804" y2="320" stroke="#eef0f4" stroke-dasharray="4 4"/>
+<text x="266" y="324" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="end" >10L</text>
+<line x1="276" y1="370" x2="804" y2="370" stroke="#eef0f4" stroke-dasharray="4 4"/>
+<text x="266" y="374" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="end" >7.5L</text>
+<line x1="276" y1="420" x2="804" y2="420" stroke="#eef0f4" stroke-dasharray="4 4"/>
+<text x="266" y="424" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="end" >5L</text>
+<line x1="276" y1="470" x2="804" y2="470" stroke="#eef0f4" stroke-dasharray="4 4"/>
+<text x="266" y="474" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="end" >2.5L</text>
+<line x1="276" y1="520" x2="804" y2="520" stroke="#eef0f4" stroke-dasharray="4 4"/>
+<text x="266" y="524" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="end" >0</text>
+<path d="M290,468 C313.0,468 313.0,452 336,452 C359.0,452 359.0,458 382,458 C405.0,458 405.0,424 428,424 C451.0,424 451.0,432 474,432 C497.0,432 497.0,398 520,398 C543.0,398 543.0,404 566,404 C589.0,404 589.0,374 612,374 C635.0,374 635.0,382 658,382 C681.0,382 681.0,352 704,352 C727.0,352 727.0,346 750,346 C773.0,346 773.0,330 796,330 L796,520 L290,520 Z" fill="url(#inArea)"/>
+<path d="M290,496 C313.0,496 313.0,488 336,488 C359.0,488 359.0,492 382,492 C405.0,492 405.0,478 428,478 C451.0,478 451.0,484 474,484 C497.0,484 497.0,468 520,468 C543.0,468 543.0,474 566,474 C589.0,474 589.0,460 612,460 C635.0,460 635.0,466 658,466 C681.0,466 681.0,452 704,452 C727.0,452 727.0,450 750,450 C773.0,450 773.0,444 796,444" fill="none" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 5"/>
+<path d="M290,468 C313.0,468 313.0,452 336,452 C359.0,452 359.0,458 382,458 C405.0,458 405.0,424 428,424 C451.0,424 451.0,432 474,432 C497.0,432 497.0,398 520,398 C543.0,398 543.0,404 566,404 C589.0,404 589.0,374 612,374 C635.0,374 635.0,382 658,382 C681.0,382 681.0,352 704,352 C727.0,352 727.0,346 750,346 C773.0,346 773.0,330 796,330" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round"/>
+<text x="290" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Apr</text>
+<text x="336" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >May</text>
+<text x="382" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Jun</text>
+<text x="428" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Jul</text>
+<text x="474" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Aug</text>
+<text x="520" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Sep</text>
+<text x="566" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Oct</text>
+<text x="612" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Nov</text>
+<text x="658" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Dec</text>
+<text x="704" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Jan</text>
+<text x="750" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Feb</text>
+<text x="796" y="540" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Mar</text>
+<line x1="704" y1="352" x2="704" y2="520" stroke="#14b8a6" stroke-dasharray="3 3"/>
+<circle cx="704" cy="352" r="11" fill="#14b8a6" opacity=".18"/><circle cx="704" cy="352" r="5.5" fill="#fff" stroke="#14b8a6" stroke-width="3"/>
+<rect x="646" y="294" width="116" height="42" rx="9" fill="#0f172a"/>
+<text x="704" y="311" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Jan 2027</text>
+<text x="704" y="328" font-size="13" fill="#fff" font-weight="700" text-anchor="middle" >₹9.4L in</text>
+<rect x="840" y="256" width="336" height="296" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="860" y="286" font-size="15" fill="#0f172a" font-weight="700" text-anchor="start" >Top Expenses</text>
+<text x="1156" y="286" font-size="11" fill="#94a3b8" font-weight="400" text-anchor="end" >This month</text>
+<circle cx="1008" cy="384" r="56" fill="none" stroke="#f1f5f9" stroke-width="22"/>
+<circle cx="1008" cy="384" r="56" fill="none" stroke="#6366f1" stroke-width="22" pathLength="100" stroke-dasharray="41 59" stroke-dashoffset="0" transform="rotate(-90 1008 384)"/>
+<circle cx="1008" cy="384" r="56" fill="none" stroke="#14b8a6" stroke-width="22" pathLength="100" stroke-dasharray="21 79" stroke-dashoffset="-42" transform="rotate(-90 1008 384)"/>
+<circle cx="1008" cy="384" r="56" fill="none" stroke="#f59e0b" stroke-width="22" pathLength="100" stroke-dasharray="17 83" stroke-dashoffset="-64" transform="rotate(-90 1008 384)"/>
+<circle cx="1008" cy="384" r="56" fill="none" stroke="#38bdf8" stroke-width="22" pathLength="100" stroke-dasharray="9 91" stroke-dashoffset="-82" transform="rotate(-90 1008 384)"/>
+<circle cx="1008" cy="384" r="56" fill="none" stroke="#cbd5e1" stroke-width="22" pathLength="100" stroke-dasharray="7 93" stroke-dashoffset="-92" transform="rotate(-90 1008 384)"/>
+<text x="1008" y="386" font-size="18" fill="#0f172a" font-weight="700" text-anchor="middle" >₹5.6L</text>
+<text x="1008" y="402" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >spent</text>
+<rect x="864" y="465" width="10" height="10" rx="3" fill="#6366f1"/>
+<text x="882" y="474" font-size="11" fill="#334155" font-weight="500" text-anchor="start" >Salaries</text>
+<text x="996" y="474" font-size="11" fill="#0f172a" font-weight="700" text-anchor="end" >42%</text>
+<rect x="1020" y="465" width="10" height="10" rx="3" fill="#14b8a6"/>
+<text x="1038" y="474" font-size="11" fill="#334155" font-weight="500" text-anchor="start" >Rent</text>
+<text x="1152" y="474" font-size="11" fill="#0f172a" font-weight="700" text-anchor="end" >22%</text>
+<rect x="864" y="489" width="10" height="10" rx="3" fill="#f59e0b"/>
+<text x="882" y="498" font-size="11" fill="#334155" font-weight="500" text-anchor="start" >Marketing</text>
+<text x="996" y="498" font-size="11" fill="#0f172a" font-weight="700" text-anchor="end" >18%</text>
+<rect x="1020" y="489" width="10" height="10" rx="3" fill="#38bdf8"/>
+<text x="1038" y="498" font-size="11" fill="#334155" font-weight="500" text-anchor="start" >Software</text>
+<text x="1152" y="498" font-size="11" fill="#0f172a" font-weight="700" text-anchor="end" >10%</text>
+<rect x="864" y="513" width="10" height="10" rx="3" fill="#cbd5e1"/>
+<text x="882" y="522" font-size="11" fill="#334155" font-weight="500" text-anchor="start" >Other</text>
+<text x="996" y="522" font-size="11" fill="#0f172a" font-weight="700" text-anchor="end" >8%</text>
+<rect x="224" y="568" width="600" height="268" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="244" y="598" font-size="15" fill="#0f172a" font-weight="700" text-anchor="start" >Recent Invoices</text>
+<text x="804" y="598" font-size="12" fill="#0f766e" font-weight="600" text-anchor="end" >View all →</text>
+<text x="244" y="630" font-size="10" fill="#94a3b8" font-weight="600" text-anchor="start" letter-spacing="1">INVOICE</text>
+<text x="344" y="630" font-size="10" fill="#94a3b8" font-weight="600" text-anchor="start" letter-spacing="1">CUSTOMER</text>
+<text x="500" y="630" font-size="10" fill="#94a3b8" font-weight="600" text-anchor="start" letter-spacing="1">DUE DATE</text>
+<text x="624" y="630" font-size="10" fill="#94a3b8" font-weight="600" text-anchor="start" letter-spacing="1">AMOUNT</text>
+<text x="744" y="630" font-size="10" fill="#94a3b8" font-weight="600" text-anchor="start" letter-spacing="1">STATUS</text>
+<line x1="244" y1="646" x2="804" y2="646" stroke="#f1f5f9"/>
+<text x="244" y="668" font-size="12" fill="#4f46e5" font-weight="600" text-anchor="start" >INV-00142</text>
+<text x="344" y="668" font-size="12" fill="#0f172a" font-weight="500" text-anchor="start" >Apex Traders</text>
+<text x="500" y="668" font-size="12" fill="#64748b" font-weight="400" text-anchor="start" >12 Oct 2026</text>
+<text x="624" y="668" font-size="12" fill="#0f172a" font-weight="700" text-anchor="start" >₹1,24,000</text>
+<rect x="744" y="653" width="62" height="22" rx="11" fill="#dcfce7"/>
+<text x="775" y="668" font-size="11" fill="#15803d" font-weight="700" text-anchor="middle" >Paid</text>
+<line x1="244" y1="688" x2="804" y2="688" stroke="#f1f5f9"/>
+<text x="244" y="710" font-size="12" fill="#4f46e5" font-weight="600" text-anchor="start" >INV-00141</text>
+<text x="344" y="710" font-size="12" fill="#0f172a" font-weight="500" text-anchor="start" >Nova Retail</text>
+<text x="500" y="710" font-size="12" fill="#64748b" font-weight="400" text-anchor="start" >08 Oct 2026</text>
+<text x="624" y="710" font-size="12" fill="#0f172a" font-weight="700" text-anchor="start" >₹86,500</text>
+<rect x="744" y="695" width="62" height="22" rx="11" fill="#ffe1e3"/>
+<text x="775" y="710" font-size="11" fill="#c8141b" font-weight="700" text-anchor="middle" >Overdue</text>
+<line x1="244" y1="730" x2="804" y2="730" stroke="#f1f5f9"/>
+<text x="244" y="752" font-size="12" fill="#4f46e5" font-weight="600" text-anchor="start" >INV-00140</text>
+<text x="344" y="752" font-size="12" fill="#0f172a" font-weight="500" text-anchor="start" >Bluefin Logistics</text>
+<text x="500" y="752" font-size="12" fill="#64748b" font-weight="400" text-anchor="start" >05 Oct 2026</text>
+<text x="624" y="752" font-size="12" fill="#0f172a" font-weight="700" text-anchor="start" >₹2,10,000</text>
+<rect x="744" y="737" width="62" height="22" rx="11" fill="#eef2ff"/>
+<text x="775" y="752" font-size="11" fill="#4f46e5" font-weight="700" text-anchor="middle" >Sent</text>
+<line x1="244" y1="772" x2="804" y2="772" stroke="#f1f5f9"/>
+<text x="244" y="794" font-size="12" fill="#4f46e5" font-weight="600" text-anchor="start" >INV-00139</text>
+<text x="344" y="794" font-size="12" fill="#0f172a" font-weight="500" text-anchor="start" >Greenleaf Foods</text>
+<text x="500" y="794" font-size="12" fill="#64748b" font-weight="400" text-anchor="start" >01 Oct 2026</text>
+<text x="624" y="794" font-size="12" fill="#0f172a" font-weight="700" text-anchor="start" >₹54,200</text>
+<rect x="744" y="779" width="62" height="22" rx="11" fill="#dcfce7"/>
+<text x="775" y="794" font-size="11" fill="#15803d" font-weight="700" text-anchor="middle" >Paid</text>
+<rect x="840" y="568" width="336" height="268" rx="14" fill="#fff" stroke="#eef0f4"/>
+<text x="860" y="598" font-size="15" fill="#0f172a" font-weight="700" text-anchor="start" >Income vs Expense</text>
+<rect x="860" y="612" width="10" height="10" rx="3" fill="#14b8a6"/>
+<text x="876" y="621" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" >Income</text>
+<rect x="940" y="612" width="10" height="10" rx="3" fill="#c7d2fe"/>
+<text x="956" y="621" font-size="11" fill="#64748b" font-weight="400" text-anchor="start" >Expense</text>
+<rect x="874" y="708" width="15" height="92" rx="4" fill="#14b8a6"/>
+<rect x="892" y="730" width="15" height="70" rx="4" fill="#c7d2fe"/>
+<text x="890" y="820" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >May</text>
+<rect x="924" y="696" width="15" height="104" rx="4" fill="#14b8a6"/>
+<rect x="942" y="724" width="15" height="76" rx="4" fill="#c7d2fe"/>
+<text x="940" y="820" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Jun</text>
+<rect x="974" y="702" width="15" height="98" rx="4" fill="#14b8a6"/>
+<rect x="992" y="718" width="15" height="82" rx="4" fill="#c7d2fe"/>
+<text x="990" y="820" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Jul</text>
+<rect x="1024" y="674" width="15" height="126" rx="4" fill="#14b8a6"/>
+<rect x="1042" y="720" width="15" height="80" rx="4" fill="#c7d2fe"/>
+<text x="1040" y="820" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Aug</text>
+<rect x="1074" y="682" width="15" height="118" rx="4" fill="#14b8a6"/>
+<rect x="1092" y="712" width="15" height="88" rx="4" fill="#c7d2fe"/>
+<text x="1090" y="820" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Sep</text>
+<rect x="1124" y="660" width="15" height="140" rx="4" fill="#14b8a6"/>
+<rect x="1142" y="714" width="15" height="86" rx="4" fill="#c7d2fe"/>
+<text x="1140" y="820" font-size="10" fill="#94a3b8" font-weight="400" text-anchor="middle" >Oct</text>
+<line x1="860" y1="800" x2="1160" y2="800" stroke="#e2e8f0"/>
+</g>
+<rect x=".5" y=".5" width="1199" height="859" rx="20" fill="none" stroke="#e2e8f0"/>
+</svg>

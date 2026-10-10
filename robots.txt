@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /TESTAREA/
+
+Sitemap: https://www.voltvaveservices.com/sitemap.xml

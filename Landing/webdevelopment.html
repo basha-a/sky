@@ -1,1136 +1,959 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>VoltVave Services | High-Performance Web Development Agency</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="webdev.css">
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "secondary": "#4b41e1",
-                        "on-tertiary": "#ffffff",
-                        "on-error-container": "#93000a",
-                        "surface-container-highest": "#e1e2ed",
-                        "on-surface-variant": "#434655",
-                        "surface-bright": "#faf8ff",
-                        "on-primary-container": "#eeefff",
-                        "on-secondary-fixed": "#0f0069",
-                        "on-tertiary-fixed-variant": "#7d2d00",
-                        "surface-container": "#ededf9",
-                        "surface-container-low": "#f3f3fe",
-                        "outline": "#737686",
-                        "surface": "#faf8ff",
-                        "surface-dim": "#d9d9e5",
-                        "inverse-primary": "#b4c5ff",
-                        "on-secondary-container": "#fffbff",
-                        "on-background": "#191b23",
-                        "secondary-fixed": "#e2dfff",
-                        "primary-container": "#2563eb",
-                        "on-primary": "#ffffff",
-                        "error": "#ba1a1a",
-                        "surface-container-high": "#e7e7f3",
-                        "secondary-container": "#645efb",
-                        "tertiary": "#943700",
-                        "outline-variant": "#c3c6d7",
-                        "surface-variant": "#e1e2ed",
-                        "background": "#faf8ff",
-                        "surface-tint": "#0053db",
-                        "tertiary-fixed": "#ffdbcd",
-                        "primary": "#004ac6",
-                        "secondary-fixed-dim": "#c3c0ff",
-                        "inverse-on-surface": "#f0f0fb",
-                        "on-primary-fixed": "#00174b",
-                        "error-container": "#ffdad6",
-                        "primary-fixed": "#dbe1ff",
-                        "on-tertiary-fixed": "#360f00",
-                        "primary-fixed-dim": "#b4c5ff",
-                        "on-secondary": "#ffffff",
-                        "on-secondary-fixed-variant": "#3323cc",
-                        "inverse-surface": "#2e3039",
-                        "on-surface": "#191b23",
-                        "on-error": "#ffffff",
-                        "on-tertiary-container": "#ffede6",
-                        "on-primary-fixed-variant": "#003ea8",
-                        "tertiary-fixed-dim": "#ffb596",
-                        "surface-container-lowest": "#ffffff",
-                        "tertiary-container": "#bc4800"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "2xl": "24px",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "md": "16px",
-                        "xs": "4px",
-                        "lg": "24px",
-                        "sm": "8px",
-                        "xl": "48px",
-                        "2xl": "80px",
-                        "3xl": "120px"
-                    },
-                    "fontFamily": {
-                        "body-md": ["Inter"],
-                        "headline-md": ["Plus Jakarta Sans"],
-                        "display-lg-mobile": ["Plus Jakarta Sans"],
-                        "headline-sm": ["Plus Jakarta Sans"],
-                        "body-lg": ["Inter"],
-                        "body-sm": ["Inter"],
-                        "display-lg": ["Plus Jakarta Sans"],
-                        "headline-xl": ["Plus Jakarta Sans"],
-                        "label-md": ["Inter"],
-                        "code": ["monospace"]
-                    },
-                    "fontSize": {
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-md": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
-                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800" }],
-                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
-                        "code": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }]
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .glass {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Development Company in Bengaluru | VoltVave Services</title>
+  <meta name="description" content="Fast, mobile-first, SEO-ready websites that turn visitors into customers. Business websites, landing pages and eCommerce stores from ₹9,999. Get a free quote from VoltVave Services, Bengaluru.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#004ac6">
+  <link rel="canonical" href="https://www.voltvaveservices.com/Landing/webdevelopment.html">
 
-        .gradient-text {
-            background: linear-gradient(135deg, #004ac6 0%, #4b41e1 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VoltVave Services">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Website Development That Brings You Customers | VoltVave Services">
+  <meta property="og:description" content="Fast, mobile-first, SEO-ready websites for growing businesses. Plans from ₹9,999. Get a free quote.">
+  <meta property="og:url" content="https://www.voltvaveservices.com/Landing/webdevelopment.html">
+  <meta property="og:image" content="https://voltvave.com/images/voltvave.png">
+  <meta name="twitter:card" content="summary">
 
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1);
-        }
+  <link rel="icon" href="../favicon.ico">
 
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- tech logos are below the fold, so load them without blocking the page -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="webdev.css">
 
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-    </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Website Development",
+    "serviceType": "Website design and development",
+    "description": "Business websites, landing pages, eCommerce stores, UI/UX design, SEO and website maintenance.",
+    "areaServed": "IN",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "VoltVave Services",
+      "url": "https://www.voltvaveservices.com/",
+      "logo": "https://voltvave.com/images/voltvave.png",
+      "email": "zoho@voltvave.com",
+      "telephone": "+91-84314-68340",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "609 Gallium at Brigade Eldorado, Gummanahalli",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "addressCountry": "IN"
+      }
+    },
+    "offers": [
+      { "@type": "Offer", "name": "Starter", "price": "9999", "priceCurrency": "INR" },
+      { "@type": "Offer", "name": "Growth", "price": "14999", "priceCurrency": "INR" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How long does it take to build a website?", "acceptedAnswer": { "@type": "Answer", "text": "Typical business websites take 4–6 weeks, while complex web applications can take 3–6 months depending on scope and features." } },
+      { "@type": "Question", "name": "How much does a website cost?", "acceptedAnswer": { "@type": "Answer", "text": "Our Starter plan begins at ₹9,999 and our Growth plan at ₹14,999. Larger or custom projects are quoted after a free consultation." } },
+      { "@type": "Question", "name": "Will my website work on mobile and be SEO-ready?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every website is designed mobile-first and built with SEO best practices so it is ready to be found on Google." } },
+      { "@type": "Question", "name": "Can you connect my website to Zoho CRM or other tools?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. As Zoho specialists we can send your website enquiries straight into Zoho CRM and connect other tools you already use." } },
+      { "@type": "Question", "name": "Do you provide maintenance after launch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer ongoing maintenance that includes security updates, speed optimisation and content updates." } },
+      { "@type": "Question", "name": "Can you work with our existing brand?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We follow your existing logo, colours and brand guidelines and bring them into a modern, high-performance website." } }
+    ]
+  }
+  </script>
 </head>
 
-<body class="bg-background text-on-background font-body-md">
-    <!-- 1. Header -->
-    <nav class="fixed top-0 w-full z-50 glass">
-        <div class="max-w-screen-2xl mx-auto px-12 h-20 flex justify-between items-center">
-            <div class="flex items-center gap-sm">
-                <img alt="VoltVave Services Logo" class="h-10 w-10"
-                    src="https://voltvave.com/images/voltvave.png">
-                <span class="font-headline-sm text-headline-sm font-extrabold tracking-tighter text-on-surface">VoltVave
-                    Services</span>
-            </div>
-            <div class="hidden md:flex items-center gap-xl">
-                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md"
-                    href="#services">Services</a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md"
-                    href="#portfolio">Work</a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md"
-                    href="#process">Process</a>
-                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md"
-                    href="#pricing">Pricing</a>
-                <button
-                    class="bg-primary hover:scale-105 active:scale-95 transition-all text-on-primary px-lg py-sm rounded-xl font-label-md shadow-lg shadow-primary/20">Book
-                    a Call</button>
-            </div>
-            <button class="md:hidden text-primary">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-        </div>
-    </nav>
-    <!-- 2. Hero Section -->
-    <header class="relative pt-3xl pb-2xl px-12 overflow-hidden">
-        <div class="absolute top-0 right-0 -z-10 translate-x-1/4 -translate-y-1/4">
-            <div class="w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px]"></div>
-        </div>
-        <div class="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-2xl items-center">
-            <div class="reveal">
-                <div
-                    class="inline-flex items-center gap-sm bg-surface-container-low px-md py-xs rounded-full border border-outline-variant/30 mb-lg">
-                    <span>🚀</span>
-                    <span class="text-label-md font-label-md text-primary">Trusted by 100+ Businesses Worldwide</span>
-                </div>
-                <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-md">
-                    Build Websites That <span class="gradient-text">Convert Visitors</span> Into Customers
-                </h1>
-                <p class="font-body-lg text-body-lg text-on-surface-variant mb-xl max-w-xl">
-                    We design and develop high-performance websites, SaaS products, and eCommerce experiences that drive
-                    measurable growth for your business.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-md">
-                    <button
-                        class="bg-primary text-on-primary px-xl py-md rounded-xl font-label-md text-body-md hover:scale-105 transition-transform shadow-xl shadow-primary/20">
-                        Get Free Consultation
-                    </button>
-                    <button
-                        class="bg-surface-container-lowest border border-outline-variant text-on-surface px-xl py-md rounded-xl font-label-md text-body-md hover:bg-surface-container-low transition-colors">
-                        View Our Work
-                    </button>
-                </div>
-                <div class="flex items-center gap-md pt-xl border-t border-outline-variant/20">
-                        <div class="flex -space-x-3">
-                            <img alt="Client 1" class="h-10 w-10 rounded-full border-2 border-white"
-                                data-alt="A professional headshot of a female executive in a modern office setting, smiling warmly toward the camera. The image has a clean, high-key lighting style consistent with a premium corporate aesthetic, using soft blue and white tones to reflect professional trust and high-end technical services."
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7bAqvCzHyGghoOJqqGS4lB2KxjfByvFp4wOfLoibNNokxUBoXVAHlcADpQ5h1mnbZiSqHy3eior0Ab3KZyZoqk2XluVbkETtBc9Cex5pltHYI9fEzmKa4D1i8yAYPMDJDK4Ug6UHaR4YKkURN5a6lbh3G13glbgD3f_BlqSdEdB6z7XGsTvaGEDE_SGWVW6EiWBSLsBUCScdK_o_58gilSgD5rrbvTiTNdyD_PX99Ai7DG8sKpAfRlwsd0nYTbq7atSzpbSjIDw">
-                            <img alt="Client 2" class="h-10 w-10 rounded-full border-2 border-white"
-                                data-alt="A professional headshot of a male tech entrepreneur with a thoughtful expression, wearing a stylish navy blazer. The background is a subtly blurred modern tech office with soft lighting and a crisp white and blue color palette, maintaining the ultra-modern corporate identity of the VoltVave Services agency."
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvng6ati3faKHD44KiLhJLxmylpc2bb3vwvyUjg_O6MwXAoJt0pB-OFXVpqXwLi8vKKb3BZacmxNVdaqNJskYPMPQ9svoy2o0w6jC8MF0qoA8DhQSwhN6v_htmE-MPVgdjv4CJPTW3rP3tdPbl8RWnuT5mkbEFjzqtoPQ74krM1v0NICtHgHsBIS5cF5ixpchOZwtHG9kH33jHSGYkrEITX1fpX2L-kDgUvaHYXl3rbKupUZKDtaNE7GD08atn-CBSTaT7L2RoOA">
-                            <img alt="Client 3" class="h-10 w-10 rounded-full border-2 border-white"
-                                data-alt="A professional headshot of a diverse tech lead in a minimalist workspace. The lighting is soft and even, highlighting a serene and capable persona, with the overall image color-graded to match a high-end web development agency's brand identity of precision and technical excellence."
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnF9CE_D57BCfAulq_59VBVcXk6U2wNSFJG-6mIcVN_HrM0ygIxLoLFYXVpeRYDfFhSeekCUixFhuD56QEoeNRzZXnyir6XCAY2W_pjUIQ5pd0YME3ac5VjLutgN8rX-bLeYCBvoDvcjAa5TxYuCvNh2VWbabp8hAZe-uVmOq6KIW75w_FD4kUzjILrOvmkqNeOAhnp01nhyHWhi-HTg3bFZUkeuY_O8Bruaq3lW80IJPlOmaN0aHBGBx1Rt3VqU8JOnSL8J8j8w">
-                        </div>
-                        <div>
-                            <div class="flex text-[#FFD700]">
-                                <span class="material-symbols-outlined"
-                                    style="font-variation-settings: 'FILL' 1">star</span>
-                                <span class="material-symbols-outlined"
-                                    style="font-variation-settings: 'FILL' 1">star</span>
-                                <span class="material-symbols-outlined"
-                                    style="font-variation-settings: 'FILL' 1">star</span>
-                                <span class="material-symbols-outlined"
-                                    style="font-variation-settings: 'FILL' 1">star</span>
-                                <span class="material-symbols-outlined"
-                                    style="font-variation-settings: 'FILL' 1">star</span>
-                            </div>
-                            <p class="font-label-md text-on-surface-variant text-sm">Trusted by 500+ High-Growth
-                                Companies</p>
-                        </div>
-                    </div>
-            </div>
-             <div class="relative animate-float">
-                    <img alt="Technical Innovation 3D Illustration" class="w-full h-auto drop-shadow-2xl"
-                        src="../ASSETS/ultra_modern_3d_illustration_for_a_web_development_agency_hero_section._a.png">
-                </div>
-        </div>
-    </header>
-    <!-- 3. Trust Section -->
-    <!-- <section class="py-xl border-y border-outline-variant/10 bg-surface-container-lowest">
-        <div class="max-w-screen-2xl mx-auto px-12">
-            <p class="text-center text-body-sm font-label-md uppercase tracking-widest text-outline mb-xl">Trusted By Brands</p>
-            <div
-                class="flex flex-wrap justify-center items-center gap-2xl opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
-                <img alt="Google" class="h-8"
-                    data-alt="Official Google logo in a minimalist grayscale vector format, representing high-end corporate partnerships and industry trust. The logo is clean and professional, integrated into a high-performance web agency landing page."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsWhTtUy7v9Q993c2YOhmJ5BcmC7-KiegbxOEl3LvCs-ytFUggKXzGhEdfobEKhPWwMffICWDMlGFyYenejrXMN_59SLo-InEJRPTjHJy1W5GIMEniSUJLiwCt7_olpxGxswzbx0wPpmB2mO9kx5usv2B-xC8bwwFhGHn7FtE6EMSH7QFIO9OjGSJi3DtZhw5K_ZkkP1KE5fQSpjonDMgt6INYA5lYsP4M6ZgBrRXWv3ON7IFpZag9e0HJfnRj6_sIlg3uQJ-p2g">
-                <img alt="Amazon" class="h-8"
-                    data-alt="Official Amazon logo in a minimalist grayscale vector format, showing scale and reliability. Part of a trust-building section for an ultra-modern corporate design system."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP4nlAGkelCGK-vcxQ-J02vTYkT4ItOwRTNEpAabWyH7NMn_JUsun6spSx9_s6MBTo9BrzwAHhCWs0kZJV3bLX4qim0npOMnjekKfU-GZrVM13O23HZBsn1OFLUUmpyYmyQXkxNEQGMg9WcV5PkfJKgV9akub6d7ar_CcgxsBdP9XJSmgKFV2B6s0fer20v8UMM3Tz4Uvib3GvmkmaYc7o0ba4dn_0CUJoY7OWkxLczognEUfNbf8RKA0pkYFp0r99DYKods_iQQ">
-                <img alt="Adidas" class="h-8"
-                    data-alt="Official Adidas logo in a minimalist grayscale vector format, signifying global brand reach and design excellence."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuJr4e354FJTOdk--18Uws3ftnTg6CBUMgOY8_WL2OAsfuJFuPfvFON35Tj-Hf97h6KlHrxmlCINowMlL_cRXYIdHJNwM4ayL9UWrS5r6jbG_QvMS1XjYvnMItaX3qVSdw4c3OuKLkZ2lOBx_dqlVDHR0AMJbHTctq-tFPeXUpVONHUKj6YE00apu7LFXB4fwW4ol-z1lpbpIou2rSsBKnN8W4JZK7_pDdW8ECdmugzvruclvQKgreII09hnztcg59m5cZuoO6gQ">
-                <img alt="Netflix" class="h-8"
-                    data-alt="Official Netflix logo in a minimalist grayscale vector format, emphasizing digital-first performance and streaming technology alignment."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkfKLpqnuzOwguoiJa7AkAK1IoJWmb-vGrDvGwUfuaFVGTLDOxRC0qC_UER9QaOYCnlyW3Dmq4-BFMeBSaHe5Y-zCVPGIHXvRew2n3_HkUONmjZFEAoUBTjDFXJqOtPV2i657WqGz06yCJpjDFoEaUevPOZcOId7SX2K9P8Q2vdqW-zR3BoBOOJcwhLVOYbRxsSTBHCbJik7FkE0r3Vjaq7dqLa2xzON-fNPFZcdTLZsl831xXJcqQvo1oAHCUFpHaS26kjLF5HA">
-            </div>
-        </div>
-    </section> -->
-    <section class="flex flex-col items-center justify-center px-4 md:px-0 w-full border-outline-variant/10 bg-surface-container-lowest py-16">
-        <h3 class="text-center text-body-sm font-label-md uppercase tracking-widest text-outline mb-xl">Trusted by world's leading companies</h3>
-        <div class="max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-full mt-14">
-            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
-                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/clickup.svg"
-                    alt="Logo" />
-            </div>
-            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
-                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/airtable.svg"
-                    alt="Logo" />
-            </div>
-            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
-                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/miro.svg"
-                    alt="Logo" />
-            </div>
-            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
-                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/slack.svg"
-                    alt="Logo" />
-            </div>
-            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
-                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/huawei.svg"
-                    alt="Logo" />
-            </div>
-            <div class="border border-gray-200 p-4 h-15 grid place-content-center rounded-md hover:-translate-y-0.5 transition duration-200">
-                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/companyLogo/asana.svg"
-                    alt="Logo" />
-            </div>
-        </div>
-    </section>
-    <!-- 4. Services Section -->
-    <!-- <section class="py-3xl px-12" id="services">
-        <div class="max-w-screen-2xl mx-auto">
-            <div class="text-center mb-2xl reveal">
-                <h2 class="font-headline-xl text-headline-xl mb-md">Our Expertise</h2>
-                <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Full-stack solutions tailored to your
-                    unique business challenges and goals.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-lg">
-                
-                <div
-                    class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 border-t-2 border-t-primary reveal">
-                    <span class="material-symbols-outlined text-primary text-4xl mb-md">code</span>
-                    <h3 class="font-headline-sm text-headline-sm mb-sm">Custom Web Dev</h3>
-                    <p class="text-body-md text-on-surface-variant">High-performance React/Next.js architectures built
-                        for speed and scalability.</p>
-                </div>
-                
-                <div class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 reveal">
-                    <span class="material-symbols-outlined text-primary text-4xl mb-md">devices</span>
-                    <h3 class="font-headline-sm text-headline-sm mb-sm">Web App Dev</h3>
-                    <p class="text-body-md text-on-surface-variant">Complex SaaS platforms and internal tools with
-                        seamless user management.</p>
-                </div>
-                
-                <div class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 reveal">
-                    <span class="material-symbols-outlined text-primary text-4xl mb-md">shopping_cart</span>
-                    <h3 class="font-headline-sm text-headline-sm mb-sm">eCommerce</h3>
-                    <p class="text-body-md text-on-surface-variant">Conversion-optimized stores built on Shopify,
-                        Headless CMS, or Custom builds.</p>
-                </div>
-                
-                <div class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 reveal">
-                    <span class="material-symbols-outlined text-primary text-4xl mb-md">palette</span>
-                    <h3 class="font-headline-sm text-headline-sm mb-sm">UI/UX Design</h3>
-                    <p class="text-body-md text-on-surface-variant">Modern, editorial designs that emphasize clarity and
-                        technical precision.</p>
-                </div>
-                
-                <div class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 reveal">
-                    <span class="material-symbols-outlined text-primary text-4xl mb-md">search</span>
-                    <h3 class="font-headline-sm text-headline-sm mb-sm">SEO Strategy</h3>
-                    <p class="text-body-md text-on-surface-variant">Technical SEO audits and performance tuning to
-                        ensure search dominance.</p>
-                </div>
-                
-                <div class="glass p-xl rounded-2xl hover:translate-y-[-8px] transition-all duration-300 reveal">
-                    <span class="material-symbols-outlined text-primary text-4xl mb-md">settings</span>
-                    <h3 class="font-headline-sm text-headline-sm mb-sm">Maintenance</h3>
-                    <p class="text-body-md text-on-surface-variant">Ongoing support, security updates, and performance
-                        monitoring 24/7.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-<section id="services" class="py-32 px-6 lg:px-12 relative overflow-hidden">
-    
-    <!-- Background Effects -->
-    <div class="absolute top-0 left-0 w-96 h-96 bg-primary/10 blur-[120px] rounded-full"></div>
-    <div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary/10 blur-[120px] rounded-full"></div>
+<body>
 
-    <div class="max-w-7xl mx-auto relative z-10">
+  <div class="progress" aria-hidden="true"></div>
 
-        <!-- Heading -->
-        <div class="text-center mb-20">
-            <span
-                class="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-5">
-                🚀 Services We Offer
-            </span>
-
-            <h2 class="text-5xl lg:text-6xl font-bold mb-6">
-                Websites Built for
-                <span class="gradient-text">Growth</span>
-
-            </h2>
-
-            <p class="max-w-2xl mx-auto text-lg text-gray-400">
-                From business websites to eCommerce stores, we create digital experiences that help brands grow online.
-
-
-            </p>
-        </div>
-
-        <!-- Services Grid -->
-
-<div class="grid lg:grid-cols-3 gap-8">
-
-    <!-- Business Websites -->
-    <div
-        class="group rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-8 hover:-translate-y-2 hover:border-primary/40 transition-all duration-500">
-
-        <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-cyan-400 flex items-center justify-center mb-6">
-            <span class="material-symbols-outlined text-white text-3xl">business_center</span>
-        </div>
-
-        <h3 class="text-2xl font-semibold mb-3">
-            Business Websites
-        </h3>
-
-        <p class="text-gray-400">
-            Professional websites designed to build credibility,
-            showcase your services, and generate more leads.
-        </p>
-
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="../index.html" aria-label="VoltVave Services home">
+        <img src="https://voltvave.com/images/voltvave.png" alt="VoltVave logo" width="42">
+        <span>VoltVave<small>Web Development</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <i class="bi bi-list"></i>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="Page sections">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary" href="#quote">Get a Free Quote</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Landing Pages -->
-    <div
-        class="group rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-8 hover:-translate-y-2 hover:border-primary/40 transition-all duration-500">
+  <main>
 
-        <div
-            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-5">
-            <span class="material-symbols-outlined text-white">rocket_launch</span>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge"><span class="pulse-dot"></span> Website Development Studio · Bengaluru</span>
+
+          <h1>
+            Websites that turn visitors into
+            <span class="sr-only">customers</span>
+            <span class="rotator" aria-hidden="true"><span>customers</span><span>enquiries</span><span>sales</span></span>
+          </h1>
+
+          <p class="lead">We design and build fast, mobile-first websites that look stunning, rank on Google and give your visitors every reason to contact you.</p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary btn-lg" href="#quote">Get a Free Quote <i class="bi bi-arrow-right"></i></a>
+            <a class="btn btn-ghost btn-lg" href="#work"><i class="bi bi-play-circle"></i> See Our Work</a>
+          </div>
+
+          <ul class="hero-points">
+            <li><i class="bi bi-check-circle-fill"></i> Free consultation</li>
+            <li><i class="bi bi-check-circle-fill"></i> Mobile-first &amp; SEO-ready</li>
+            <li><i class="bi bi-check-circle-fill"></i> Plans from ₹9,999</li>
+          </ul>
         </div>
 
-        <h3 class="text-2xl font-semibold mb-3">
-            Landing Pages
-        </h3>
+        <!-- animated: a website building itself -->
+        <div class="hv" aria-hidden="true">
+          <div class="browser">
+            <div class="browser-top">
+              <span></span><span></span><span></span>
+              <div class="url"><i class="bi bi-lock-fill"></i> your-business.com</div>
+            </div>
+            <div class="site">
+              <div class="s-nav">
+                <span class="s-logo b" style="--d: 0s"></span>
+                <span class="bar g" style="width: 50px; --d: 0.1s"></span>
+                <span class="s-links">
+                  <span class="bar g" style="--d: 0.2s"></span>
+                  <span class="bar g" style="--d: 0.3s"></span>
+                  <span class="bar g" style="--d: 0.4s"></span>
+                </span>
+                <span class="s-btn b" style="--d: 0.5s"></span>
+              </div>
 
-        <p class="text-gray-400">
-            High-converting landing pages crafted to capture leads,
-            promote campaigns, and drive business growth.
-        </p>
-    </div>
-
-    <!-- eCommerce Stores -->
-    <div
-        class="group rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-8 hover:-translate-y-2 hover:border-primary/40 transition-all duration-500">
-
-        <div
-            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center mb-5">
-            <span class="material-symbols-outlined text-white">shopping_cart</span>
-        </div>
-
-        <h3 class="text-2xl font-semibold mb-3">
-            eCommerce Stores
-        </h3>
-
-        <p class="text-gray-400">
-            Online stores built to showcase products, simplify
-            purchases, and maximize sales opportunities.
-        </p>
-    </div>
-
-    <!-- UI/UX Design -->
-    <div
-        class="group rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-8 hover:-translate-y-2 hover:border-primary/40 transition-all duration-500">
-
-        <div
-            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center mb-5">
-            <span class="material-symbols-outlined text-white">palette</span>
-        </div>
-
-        <h3 class="text-2xl font-semibold mb-3">
-            UI/UX Design
-        </h3>
-
-        <p class="text-gray-400">
-            Modern, user-focused designs that create engaging
-            experiences and improve customer satisfaction.
-        </p>
-    </div>
-
-    <!-- SEO Optimization -->
-    <div
-        class="group rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-8 hover:-translate-y-2 hover:border-primary/40 transition-all duration-500">
-
-        <div
-            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mb-5">
-            <span class="material-symbols-outlined text-white">search</span>
-        </div>
-
-        <h3 class="text-2xl font-semibold mb-3">
-            SEO Optimization
-        </h3>
-
-        <p class="text-gray-400">
-            Technical SEO and performance improvements that help
-            your website rank higher and attract more visitors.
-        </p>
-    </div>
-
-    <!-- Maintenance & Support -->
-    <div
-        class="group rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-8 hover:-translate-y-2 hover:border-primary/40 transition-all duration-500">
-
-        <div
-            class="w-14 h-14 rounded-2xl bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center mb-5">
-            <span class="material-symbols-outlined text-white">settings</span>
-        </div>
-
-        <h3 class="text-2xl font-semibold mb-3">
-            Maintenance & Support
-        </h3>
-
-        <p class="text-gray-400">
-            Keep your website secure, updated, and performing at its
-            best with ongoing maintenance and support.
-        </p>
-    </div>
-
-</div>
-
-
-
-    </div>
-</section>
-
-
-
-
-    <!-- 5. Process Section -->
-    <section class="py-3xl px-12 bg-surface-container-low" id="process">
-        <div class="max-w-screen-2xl mx-auto">
-            <h2 class="font-headline-xl text-headline-xl text-center mb-2xl reveal">Simple 6 Step Process</h2>
-            <img
-  src="../ASSETS/five-step-process-2.png"
-  alt="Five Step Process"
-  class="w-full h-auto max-w-5xl mx-auto"
-/>
-            <!-- <div class="relative">
-                <div class="hidden md:block absolute top-1/2 w-full h-[2px] bg-outline-variant/30 -translate-y-1/2 z-0">
-                </div>
-                
-                <div class="grid md:grid-cols-6 gap-md relative z-10">
-                    <div class="text-center group reveal">
-                        <div
-                            class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
-                            1</div>
-                        <h4 class="font-label-md text-headline-sm">Discovery</h4>
-                    </div>
-                    <div class="text-center group reveal">
-                        <div
-                            class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
-                            2</div>
-                        <h4 class="font-label-md text-headline-sm">Strategy</h4>
-                    </div>
-                    <div class="text-center group reveal">
-                        <div
-                            class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
-                            3</div>
-                        <h4 class="font-label-md text-headline-sm">Design</h4>
-                    </div>
-                    <div class="text-center group reveal">
-                        <div
-                            class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
-                            4</div>
-                        <h4 class="font-label-md text-headline-sm">Dev</h4>
-                    </div>
-                    <div class="text-center group reveal">
-                        <div
-                            class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
-                            5</div>
-                        <h4 class="font-label-md text-headline-sm">Testing</h4>
-                    </div>
-                    <div class="text-center group reveal">
-                        <div
-                            class="w-16 h-16 bg-secondary text-on-primary rounded-full flex items-center justify-center mx-auto mb-md border-4 border-surface shadow-xl transition-transform group-hover:scale-110">
-                            6</div>
-                        <h4 class="font-label-md text-headline-sm">Launch</h4>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </section>
-    <!-- 6. Feature Showcase -->
-    <section class="py-3xl px-12 overflow-hidden">
-        <div class="max-w-screen-2xl mx-auto space-y-3xl">
-            <!-- Feature 1 -->
-            <div class="grid md:grid-cols-2 gap-2xl items-center reveal">
+              <div class="s-hero">
                 <div>
-                    <span class="text-primary font-label-md tracking-widest uppercase mb-sm block">Performance
-                        First</span>
-                    <h2 class="font-headline-xl text-headline-xl mb-md">Built For Performance</h2>
-                    <p class="text-body-lg text-on-surface-variant mb-xl">Speed is a feature. We optimize every line of
-                        code to ensure your site loads instantly, improving both SEO and user retention.</p>
-                    <ul class="space-y-md">
-                        <li class="flex items-center gap-sm"><span class="material-symbols-outlined text-primary"
-                                style="font-variation-settings: 'FILL' 1;">check_circle</span> 99+ Core Web Vitals</li>
-                        <li class="flex items-center gap-sm"><span class="material-symbols-outlined text-primary"
-                                style="font-variation-settings: 'FILL' 1;">check_circle</span> Static Site Generation
-                        </li>
-                    </ul>
+                  <div class="s-tag b" style="--d: 0.7s"></div>
+                  <div class="s-h g" style="width: 92%; --d: 0.9s"></div>
+                  <div class="s-h two g" style="width: 70%; --d: 1.2s"></div>
+                  <div class="s-p">
+                    <span class="bar g" style="width: 96%; --d: 1.5s"></span>
+                    <span class="bar g" style="width: 84%; --d: 1.6s"></span>
+                    <span class="bar g" style="width: 58%; --d: 1.7s"></span>
+                  </div>
+                  <div class="s-ctas">
+                    <span class="s-cta b" style="--d: 2s"></span>
+                    <span class="s-cta o b" style="--d: 2.15s"></span>
+                  </div>
                 </div>
-                <div class="rounded-2xl overflow-hidden shadow-2xl">
-                    <img alt="Data performance dashboard"
-                        data-alt="A sophisticated data visualization dashboard shown on a high-resolution display. The UI features sleek charts, glowing blue data points, and a clean white background. The aesthetic is ultra-modern and corporate, emphasizing precision and technical depth."
-                        src="../ASSETS/perfomance.svg">
+                <div class="s-img b" style="--d: 2.4s">
+                  <div class="s-chart">
+                    <span class="bar"></span>
+                    <svg viewBox="0 0 120 34" preserveAspectRatio="none"><path d="M0 30 C15 26 22 18 36 20 S58 10 72 13 S98 2 120 4" fill="none" stroke="#14b8a6" stroke-width="3" stroke-linecap="round"/></svg>
+                  </div>
                 </div>
+              </div>
+
+              <div class="s-cards">
+                <div class="s-card b" style="--d: 2.8s; --c: #c7d2fe"><i></i><span class="bar"></span><span class="bar"></span></div>
+                <div class="s-card b" style="--d: 3s; --c: #99f6e4"><i></i><span class="bar"></span><span class="bar"></span></div>
+                <div class="s-card b" style="--d: 3.2s; --c: #fde68a"><i></i><span class="bar"></span><span class="bar"></span></div>
+              </div>
+
+              <svg class="cursor" viewBox="0 0 24 24"><path d="M4 2 L4 19 L8.5 14.5 L11.5 21 L14 20 L11 13.5 L17 13.5 Z" fill="#0b1020" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg>
             </div>
-            <!-- Feature 2 -->
-            <div class="grid md:grid-cols-2 gap-2xl items-center reveal md:flex-row-reverse">
-                <div class="md:order-2">
-                    <span class="text-primary font-label-md tracking-widest uppercase mb-sm block">User
-                        Experience</span>
-                    <h2 class="font-headline-xl text-headline-xl mb-md">Designed For Conversion</h2>
-                    <p class="text-body-lg text-on-surface-variant mb-xl">Beautiful design means nothing if it doesn't
-                        convert. Our UX process focuses on guiding the user effortlessly toward your business goals.</p>
-                    <button
-                        class="bg-surface-container text-primary font-label-md px-lg py-md rounded-xl hover:bg-surface-container-high transition-colors">See
-                        UX Case Studies</button>
-                </div>
-                <div class="rounded-2xl overflow-hidden shadow-2xl md:order-1">
-                    <img alt="Design process sketches and screens"
-                        data-alt="A clean desktop workspace showing professional UI/UX design tools and mobile wireframes. Soft daylight illuminates the scene, highlighting a minimalist and elegant design atmosphere. The color palette is composed of soft whites and deep indigo accents."
-                        src="../ASSETS/user-experience.svg">
-                </div>
+          </div>
+
+          <div class="float f-speed">
+            <div class="ring">
+              <svg viewBox="0 0 52 52"><circle class="track" cx="26" cy="26" r="22"/><circle class="val" cx="26" cy="26" r="22" pathLength="100"/></svg>
+              <b>98</b>
             </div>
+            <div>
+              <div class="f-title">PageSpeed</div>
+              <div class="f-sub">Mobile performance</div>
+            </div>
+          </div>
+
+          <div class="float f-code">
+            <div><span class="k">&lt;section</span> <span class="t">class</span>=<span class="s">"hero"</span><span class="k">&gt;</span></div>
+            <div>&nbsp;&nbsp;<span class="k">&lt;h1&gt;</span>Grow online<span class="k">&lt;/h1&gt;</span></div>
+            <div><span class="k">&lt;/section&gt;</span><span class="caret"></span></div>
+          </div>
+
+          <div class="float f-lead">
+            <div class="ic"><i class="bi bi-envelope-check"></i></div>
+            <div>
+              <div class="f-title">New enquiry received</div>
+              <div class="f-sub">From your website · just now</div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- 7. Portfolio -->
-    <section class="py-3xl px-12 bg-surface-container-lowest" id="portfolio">
-        <div class="max-w-screen-2xl mx-auto">
-            <div class="flex justify-between items-end mb-2xl reveal">
-                <div>
-                    <h2 class="font-headline-xl text-headline-xl">Selected Projects</h2>
-                    <p class="text-body-lg text-on-surface-variant">Real results for real businesses.</p>
-                </div>
-                <button class="hidden md:block text-primary font-label-md border-b-2 border-primary pb-1">Browse All
-                    Work</button>
-            </div>
-            <div class="grid md:grid-cols-2 gap-xl">
-                <div class="group cursor-pointer reveal">
-                    <div class="rounded-2xl overflow-hidden mb-lg relative">
-                        <img alt="Fintech Project" class="group-hover:scale-105 transition-transform duration-500"
-                            data-alt="A high-end fintech application dashboard showcasing complex financial data with elegant glassmorphic components. The lighting is soft and ambient, casting gentle shadows that create a sense of depth and luxury in an ultra-modern corporate style."
-                            src="../ASSETS/gos-home.png">
-                        <div
-                            class="absolute bottom-md right-md glass px-md py-xs rounded-full font-label-md text-primary">
-                            +310% Leads</div>
-                    </div>
-                    <h3 class="font-headline-sm text-headline-sm mb-xs">Gos Website</h3>
-                    <p class="text-on-surface-variant">Website • Zoho CRM Integration • 2026</p>
-                </div>
-                <div class="group cursor-pointer reveal">
-                    <div class="rounded-2xl overflow-hidden mb-lg relative">
-                        <img alt="Fashion Store" class="group-hover:scale-105 transition-transform duration-500"
-                            data-alt="A minimalist eCommerce storefront for a premium fashion brand. The design is clean with ample white space, featuring high-quality product photography and sophisticated typography. The mood is editorial and high-end, using a refined light-mode aesthetic."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoMXkAmPuO0yfsf323-oAmYWOV8cK8CmcoEAEBSFJh-SosuXjDICgKAK0zAG46rkwItk1OCJNtpacTeqYGpjl4hMp3QGN8C8TpYwQIzCfZQeo2yN852y_n9HA_-8mhy5_umPkI3QHRtXdsJ8AJq4B1ZLHNDMXOHk6ittBWCmU7CQyFmfst11FUTGcBoz8b4Jc2GOpHGqRhWKy0CzDnKnzn4BM-DXp0HU7TVoymCUCd--YH1qL60STmYpRa5fu-gUc4zGys5jS-qg">
-                        <div
-                            class="absolute bottom-md right-md glass px-md py-xs rounded-full font-label-md text-primary">
-                            €2.4M Revenue Incr.</div>
-                    </div>
-                    <h3 class="font-headline-sm text-headline-sm mb-xs">Aura Fashion Haus</h3>
-                    <p class="text-on-surface-variant">eCommerce • Fashion • 2023</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 8. Testimonials -->
-    <section class="py-3xl px-12 overflow-hidden bg-primary text-on-primary">
-        <div class="max-w-screen-2xl mx-auto">
-            <h2 class="font-headline-xl text-headline-xl mb-2xl text-center reveal">What Our Partners Say</h2>
-            <div class="flex gap-lg overflow-x-auto pb-xl scroll-hide">
-                <div class="min-w-[350px] bg-white/10 backdrop-blur-md p-xl rounded-2xl border border-white/20 reveal">
-                    <div class="flex gap-xs text-yellow-400 mb-md">
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    </div>
-                    <p class="text-body-lg italic mb-xl">"VoltVave Services transformed our outdated site into a
-                        lead-generation machine. Their technical expertise is unmatched."</p>
-                    <div class="flex items-center gap-md">
-                        <div class="w-12 h-12 rounded-full bg-surface-container"></div>
-                        <div>
-                            <div class="font-label-md">Sarah Jenkins</div>
-                            <div class="text-body-sm opacity-70">CEO at SkyFlow</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="min-w-[350px] bg-white/10 backdrop-blur-md p-xl rounded-2xl border border-white/20 reveal">
-                    <div class="flex gap-xs text-yellow-400 mb-md">
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    </div>
-                    <p class="text-body-lg italic mb-xl">"The ROI we saw after launch was immediate. They didn't just
-                        build a site; they built a growth engine."</p>
-                    <div class="flex items-center gap-md">
-                        <div class="w-12 h-12 rounded-full bg-surface-container"></div>
-                        <div>
-                            <div class="font-label-md">Michael Chen</div>
-                            <div class="text-body-sm opacity-70">Founder of TechCore</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="min-w-[350px] bg-white/10 backdrop-blur-md p-xl rounded-2xl border border-white/20 reveal">
-                    <div class="flex gap-xs text-yellow-400 mb-md">
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-                    </div>
-                    <p class="text-body-lg italic mb-xl">"Professional, responsive, and insanely fast. They are our
-                        go-to partner for all things web development."</p>
-                    <div class="flex items-center gap-md">
-                        <div class="w-12 h-12 rounded-full bg-surface-container"></div>
-                        <div>
-                            <div class="font-label-md">David Miller</div>
-                            <div class="text-body-sm opacity-70">Head of Product at Nexus</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 9. Results/Stats -->
-    <section class="py-2xl px-12">
-        <div class="max-w-screen-2xl mx-auto grid md:grid-cols-3 gap-xl text-center">
-            <div class="reveal">
-                <div class="text-[80px] font-black text-primary leading-none mb-sm">100+</div>
-                <div class="text-headline-sm text-on-surface-variant">Projects Delivered</div>
-            </div>
-            <div class="reveal">
-                <div class="text-[80px] font-black text-primary leading-none mb-sm">98%</div>
-                <div class="text-headline-sm text-on-surface-variant">Client Satisfaction</div>
-            </div>
-            <div class="reveal">
-                <div class="text-[80px] font-black text-primary leading-none mb-sm">15+</div>
-                <div class="text-headline-sm text-on-surface-variant">Industry Awards</div>
-            </div>
-        </div>
-    </section>
-    <!-- 10. Pricing Preview -->
-    <section class="py-3xl px-12 bg-surface-container-low" id="pricing">
-        <div class="max-w-screen-2xl mx-auto">
-            <div class="text-center mb-2xl reveal">
-                <h2 class="font-headline-xl text-headline-xl mb-md">Simple, Transparent Pricing</h2>
-                <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Investment levels designed to grow
-                    with your business.</p>
-            </div>
-            <!-- <div class="grid md:grid-cols-3 gap-xl">
-                
-                <div class="glass p-2xl rounded-2xl flex flex-col reveal">
-                    <h4 class="font-headline-sm text-headline-sm mb-xs">Starter</h4>
-                    <p class="text-body-sm text-on-surface-variant mb-xl">Perfect for early startups.</p>
-                    <div class="text-headline-xl mb-xl">from $4,999</div>
-                    <ul class="space-y-md mb-2xl flex-grow">
-                        <li class="flex items-center gap-sm text-body-md"><span
-                                class="material-symbols-outlined text-primary text-sm">check</span> 5 Page Custom Site
-                        </li>
-                        <li class="flex items-center gap-sm text-body-md"><span
-                                class="material-symbols-outlined text-primary text-sm">check</span> SEO Optimized</li>
-                        <li class="flex items-center gap-sm text-body-md"><span
-                                class="material-symbols-outlined text-primary text-sm">check</span> CMS Integration</li>
-                    </ul>
-                    <button
-                        class="w-full py-md border border-outline text-on-surface rounded-xl font-label-md hover:bg-surface-container transition-colors">Choose
-                        Starter</button>
-                </div>
-                
-                <div
-                    class="bg-primary text-on-primary p-2xl rounded-2xl flex flex-col relative reveal scale-105 shadow-2xl">
-                    <div
-                        class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary px-md py-xs rounded-full text-xs font-black uppercase tracking-widest">
-                        Recommended</div>
-                    <h4 class="font-headline-sm text-headline-sm mb-xs">Growth</h4>
-                    <p class="text-body-sm opacity-80 mb-xl">For scale-ups needing results.</p>
-                    <div class="text-headline-xl mb-xl">from $9,999</div>
-                    <ul class="space-y-md mb-2xl flex-grow">
-                        <li class="flex items-center gap-sm text-body-md"><span
-                                class="material-symbols-outlined text-secondary-fixed text-sm">check</span> 10+ Page
-                            Site</li>
-                        <li class="flex items-center gap-sm text-body-md"><span
-                                class="material-symbols-outlined text-secondary-fixed text-sm">check</span> Conversion
-                            Optimization</li>
-                        <li class="flex items-center gap-sm text-body-md"><span
-                                class="material-symbols-outlined text-secondary-fixed text-sm">check</span> CRM &amp;
-                            API Integrations</li>
-                    </ul>
-                    <button
-                        class="w-full py-md bg-on-primary text-primary rounded-xl font-label-md hover:scale-[1.02] transition-transform">Get
-                        Started</button>
-                </div>
-                
-                <div class="glass p-2xl rounded-2xl flex flex-col reveal">
-                    <h4 class="font-headline-sm text-headline-sm mb-xs">Enterprise</h4>
-                    <p class="text-body-sm text-on-surface-variant mb-xl">Complex custom solutions.</p>
-                    <div class="text-headline-xl mb-xl">Custom</div>
-                    <ul class="space-y-md mb-2xl flex-grow">
-                        <li class="flex items-center gap-sm text-body-md"><span
-                                class="material-symbols-outlined text-primary text-sm">check</span> SaaS Development
-                        </li>
-                        <li class="flex items-center gap-sm text-body-md"><span
-                                class="material-symbols-outlined text-primary text-sm">check</span> Dedicated Team</li>
-                        <li class="flex items-center gap-sm text-body-md"><span
-                                class="material-symbols-outlined text-primary text-sm">check</span> Priority 24/7
-                            Support</li>
-                    </ul>
-                    <button
-                        class="w-full py-md border border-outline text-on-surface rounded-xl font-label-md hover:bg-surface-container transition-colors">Inquire
-                        Now</button>
-                </div>
-            </div> -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-lg">
-                    <!-- Basic -->
-                    <div class="bg-white p-xl rounded-3xl border border-outline-variant/30 flex flex-col">
-                        <div class="mb-xl">
-                            <h3 class="font-headline-sm text-headline-sm mb-sm">Starter</h3>
-                            <p class="text-on-surface-variant text-sm mt-md mb-2">Perfect for early startups..</p>
-                            <div class="flex items-baseline gap-xs">
-                                <div class="text-headline-xl mb-l"><span class="text-lg">from</span><br> ₹9,999</div>
-                            </div>
-                            
-                        </div>
-                        <ul class="space-y-md mb-xl flex-grow">
-                            <li class="flex items-center gap-sm text-body-md"><span
-                                    class="material-symbols-outlined text-primary text-sm">check</span> 5 Page Custom Site
-                            </li>
-                            <li class="flex items-center gap-sm text-body-md"><span
-                                    class="material-symbols-outlined text-primary text-sm">check</span> SEO Optimized</li>
-                            <li class="flex items-center gap-sm text-body-md"><span
-                                    class="material-symbols-outlined text-primary text-sm">check</span> CMS Integration</li>
-                            </ul>
-                        <button
-                            class="w-full py-md border border-outline-variant rounded-xl font-label-md hover:bg-surface-container transition-all">Get
-                            Started</button>
-                    </div>
-                    <!-- Growth - Highlighted -->
-                    <div
-                        class="bg-primary text-white p-xl rounded-3xl shadow-2xl shadow-primary/20 scale-105 relative z-10 flex flex-col border-2 border-primary">
-                        <div
-                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary px-lg py-xs rounded-full text-xs font-bold uppercase tracking-widest">
-                            Most Popular</div>
-                        <div class="mb-xl">
-                            <h3 class="font-headline-sm text-headline-sm mb-sm">Growth</h3>
-                             <p class="opacity-70 text-sm mt-md mb-2">For scale-ups needing results.</p>
-                            <div class="flex items-baseline gap-xs text-white">
-                                <div class="text-headline-xl mb-l"><span class="text-lg">from</span><br> ₹14,999</div>
-                            </div>
-                           
-                        </div>
-                        <ul class="space-y-md mb-xl flex-grow">
-                            <li class="flex items-center gap-sm text-body-md"><span
-                                class="material-symbols-outlined text-secondary-fixed text-sm">check</span> 10+ Page
-                                Site</li>
-                            <li class="flex items-center gap-sm text-body-md"><span
-                                    class="material-symbols-outlined text-secondary-fixed text-sm">check</span> Conversion
-                                Optimization</li>
-                            <li class="flex items-center gap-sm text-body-md"><span
-                                    class="material-symbols-outlined text-secondary-fixed text-sm">check</span> CRM &amp;
-                                API Integrations</li>
-                        </ul>
-                        <button
-                            class="w-full py-md bg-white text-primary rounded-xl font-label-md hover:shadow-xl transition-all">Select
-                            Plan</button>
-                    </div>
-                    <!-- Enterprise -->
-                    <div class="bg-white p-xl rounded-3xl border border-outline-variant/30 flex flex-col">
-                        <div class="mb-xl">
-                            <h3 class="font-headline-sm text-headline-sm mb-sm">Enterprise</h3>
-                             <p class="text-on-surface-variant text-sm mt-md mb-8">Complex custom solutions.</p>
-                            <div class="flex items-baseline gap-xs">
-                                 <div class="text-headline-xl mb-l">Custom</div>
-                            </div>
-                           
-                        </div>
-                        <ul class="space-y-md mb-xl flex-grow">
-                            <li class="flex items-center gap-sm text-body-md"><span
-                                class="material-symbols-outlined text-primary text-sm">check</span> SaaS Development
-                            </li>
-                            <li class="flex items-center gap-sm text-body-md"><span
-                                    class="material-symbols-outlined text-primary text-sm">check</span> Dedicated Team</li>
-                            <li class="flex items-center gap-sm text-body-md"><span
-                                    class="material-symbols-outlined text-primary text-sm">check</span> Priority 24/7
-                                Support</li>
-                        </ul>
-                        <button
-                            class="w-full py-md border border-outline-variant rounded-xl font-label-md hover:bg-surface-container transition-all">Talk
-                            to Sales</button>
-                    </div>
-                </div>
-        </div>
-    </section>
-    <!-- 11. FAQ -->
-    <section class="py-3xl px-12">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="font-headline-xl text-headline-xl text-center mb-2xl reveal">Common Questions</h2>
-            <div class="space-y-md reveal">
-                <details class="group glass p-lg rounded-2xl cursor-pointer">
-                    <summary class="flex justify-between items-center font-headline-sm text-headline-sm list-none">
-                        How long does a typical project take?
-                        <span
-                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-                    </summary>
-                    <p class="mt-md text-on-surface-variant text-body-md">Typical marketing websites take 4-6 weeks,
-                        while complex web applications can range from 3-6 months depending on the scope and features.
-                    </p>
-                </details>
-                <details class="group glass p-lg rounded-2xl cursor-pointer">
-                    <summary class="flex justify-between items-center font-headline-sm text-headline-sm list-none">
-                        Do you provide maintenance after launch?
-                        <span
-                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-                    </summary>
-                    <p class="mt-md text-on-surface-variant text-body-md">Yes, we offer ongoing maintenance packages
-                        that include security updates, speed optimization, and content updates.</p>
-                </details>
-                <details class="group glass p-lg rounded-2xl cursor-pointer">
-                    <summary class="flex justify-between items-center font-headline-sm text-headline-sm list-none">
-                        Can you work with our existing brand?
-                        <span
-                            class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-                    </summary>
-                    <p class="mt-md text-on-surface-variant text-body-md">Absolutely. We are experts at integrating
-                        existing brand guidelines into modern, high-performance web experiences.</p>
-                </details>
-            </div>
-        </div>
-    </section>
-    <!-- 12. Final CTA -->
-    <section class="py-3xl px-12">
-        <div
-            class="max-w-screen-2xl mx-auto rounded-3xl bg-gradient-to-br from-primary to-secondary p-3xl text-center text-on-primary reveal shadow-3xl">
-            <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-md">Ready To Build Something
-                Amazing?</h2>
-            <p class="text-body-lg mb-2xl max-w-2xl mx-auto opacity-90">Join 100+ businesses already growing with
-                VoltVave Services. Book your free strategy session today.</p>
-            <button
-                class="bg-on-primary text-primary px-3xl py-xl rounded-2xl font-headline-sm text-headline-sm hover:scale-105 active:scale-95 transition-all shadow-xl">
-                Book Your Call Now
-            </button>
-        </div>
+      </div>
     </section>
 
-
-
-
-
-<!-- Our Tech Stack -->
-<section id="tech-stack" class="py-8 overflow-hidden relative">
-
-    <!-- Background Glow -->
-    <!-- <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-primary/10 blur-[120px] rounded-full">
-    </div> -->
-
-    <!-- <div class="max-w-7xl mx-auto px-6 relative z-10">
-
-        <div class="text-center mb-16">
-
-            <h2 class="text-5xl font-bold mb-4">
-                Our Tech Stack
-            </h2>
-
+    <!-- ================= TECH ================= -->
+    <div class="tech">
+      <p class="tech-label">Built with modern, proven technology</p>
+      <div class="marquee-wrap">
+        <div class="marquee">
+          <span class="tech-item"><i class="devicon-wordpress-plain colored"></i> WordPress</span>
+          <span class="tech-item"><i class="devicon-react-original colored"></i> React</span>
+          <span class="tech-item"><i class="devicon-nextjs-plain"></i> Next.js</span>
+          <span class="tech-item"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+          <span class="tech-item"><i class="devicon-django-plain"></i> Django</span>
+          <span class="tech-item"><i class="devicon-fastapi-plain colored"></i> FastAPI</span>
+          <span class="tech-item"><i class="devicon-python-plain colored"></i> Python</span>
+          <span class="tech-item"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+          <span class="tech-item"><i class="devicon-tailwindcss-original colored"></i> Tailwind CSS</span>
+          <!-- duplicate set for a seamless loop -->
+          <span class="tech-item" aria-hidden="true"><i class="devicon-wordpress-plain colored"></i> WordPress</span>
+          <span class="tech-item" aria-hidden="true"><i class="devicon-react-original colored"></i> React</span>
+          <span class="tech-item" aria-hidden="true"><i class="devicon-nextjs-plain"></i> Next.js</span>
+          <span class="tech-item" aria-hidden="true"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+          <span class="tech-item" aria-hidden="true"><i class="devicon-django-plain"></i> Django</span>
+          <span class="tech-item" aria-hidden="true"><i class="devicon-fastapi-plain colored"></i> FastAPI</span>
+          <span class="tech-item" aria-hidden="true"><i class="devicon-python-plain colored"></i> Python</span>
+          <span class="tech-item" aria-hidden="true"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+          <span class="tech-item" aria-hidden="true"><i class="devicon-tailwindcss-original colored"></i> Tailwind CSS</span>
         </div>
-
-    </div> -->
-
-    <!-- Marquee Container -->
-    <div class="relative">
-
-        <!-- Marquee -->
-        <div class="flex overflow-hidden">
-
-            <div class="marquee flex gap-6">
-
-                <!-- WordPress -->
-                <div class="tech-card">
-                    <i class="devicon-wordpress-plain colored text-4xl"></i>
-                    <span>WordPress</span>
-                </div>
-
-                <!-- React -->
-                <div class="tech-card">
-                    <i class="devicon-react-original colored text-4xl"></i>
-                    <span>React JS</span>
-                </div>
-
-                <!-- Next -->
-                <div class="tech-card">
-                    <i class="devicon-nextjs-original text-4xl"></i>
-                    <span>Next.js</span>
-                </div>
-
-                <!-- Django -->
-                <div class="tech-card">
-                    <i class="devicon-django-plain colored text-4xl"></i>
-                    <span>Django</span>
-                </div>
-
-                <!-- Node -->
-                <div class="tech-card">
-                    <i class="devicon-nodejs-plain colored text-4xl"></i>
-                    <span>Node.js</span>
-                </div>
-
-                <!-- FastAPI -->
-                <div class="tech-card">
-                    <i class="devicon-fastapi-plain colored text-4xl"></i>
-                    <span>FastAPI</span>
-                </div>
-
-                <!-- Python -->
-                <div class="tech-card">
-                    <i class="devicon-python-plain colored text-4xl"></i>
-                    <span>Python</span>
-                </div>
-
-                <!-- JavaScript -->
-                <div class="tech-card">
-                    <i class="devicon-javascript-plain colored text-4xl"></i>
-                    <span>JavaScript</span>
-                </div>
-
-                <!-- Duplicate for seamless marquee -->
-
-                <div class="tech-card">
-                    <i class="devicon-wordpress-plain colored text-4xl"></i>
-                    <span>WordPress</span>
-                </div>
-
-                <div class="tech-card">
-                    <i class="devicon-react-original colored text-4xl"></i>
-                    <span>React JS</span>
-                </div>
-
-                <div class="tech-card">
-                    <i class="devicon-nextjs-original text-4xl"></i>
-                    <span>Next.js</span>
-                </div>
-
-                <div class="tech-card">
-                    <i class="devicon-django-plain colored text-4xl"></i>
-                    <span>Django</span>
-                </div>
-
-                <div class="tech-card">
-                    <i class="devicon-nodejs-plain colored text-4xl"></i>
-                    <span>Node.js</span>
-                </div>
-
-                <div class="tech-card">
-                    <i class="devicon-fastapi-plain colored text-4xl"></i>
-                    <span>FastAPI</span>
-                </div>
-
-                <div class="tech-card">
-                    <i class="devicon-python-plain colored text-4xl"></i>
-                    <span>Python</span>
-                </div>
-
-                <div class="tech-card">
-                    <i class="devicon-javascript-plain colored text-4xl"></i>
-                    <span>JavaScript</span>
-                </div>
-
-            </div>
-
-        </div>
-
+      </div>
     </div>
 
-</section>
+    <!-- ================= PROBLEMS ================= -->
+    <section class="problems" id="why">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow"><i class="bi bi-exclamation-circle"></i> Sound familiar?</span>
+          <h2>Is your website <span class="grad-text">costing you customers?</span></h2>
+          <p class="lead">Most visitors decide in seconds whether to stay. If your website isn't working for you, it's quietly sending people to your competitors.</p>
+        </div>
 
+        <div class="pain-grid">
+          <div data-reveal style="--d: 0s">
+            <div class="pain">
+              <div class="ic"><i class="bi bi-hourglass-split"></i></div>
+              <h3>Slow &amp; outdated</h3>
+              <p>Pages take ages to load and the design looks years old, so visitors leave before they read a word.</p>
+            </div>
+          </div>
+          <div data-reveal style="--d: 0.1s">
+            <div class="pain">
+              <div class="ic"><i class="bi bi-phone"></i></div>
+              <h3>Broken on mobile</h3>
+              <p>Most people browse on their phones. Tiny text and buttons that don't work lose them instantly.</p>
+            </div>
+          </div>
+          <div data-reveal style="--d: 0.2s">
+            <div class="pain">
+              <div class="ic"><i class="bi bi-search"></i></div>
+              <h3>Invisible on Google</h3>
+              <p>If customers can't find you when they search, they'll find someone else who shows up.</p>
+            </div>
+          </div>
+          <div data-reveal style="--d: 0.3s">
+            <div class="pain">
+              <div class="ic"><i class="bi bi-chat-square-dots"></i></div>
+              <h3>Visits, but no enquiries</h3>
+              <p>People land on your site and leave without calling, booking or buying anything.</p>
+            </div>
+          </div>
+        </div>
 
+        <div class="fix-banner" data-reveal>
+          <div>
+            <h3>That's exactly what we fix.</h3>
+            <p>We build websites that load fast, look great on every phone, get found on Google, and turn visitors into enquiries.</p>
+          </div>
+          <a class="btn btn-white" href="#quote">Fix My Website <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
 
+    <!-- ================= SERVICES ================= -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow"><i class="bi bi-stars"></i> What we build</span>
+          <h2>Websites built for <span class="grad-text">growth</span></h2>
+          <p class="lead">From a simple business website to a full online store, we handle design, development and launch, so you can focus on your business.</p>
+        </div>
 
+        <div class="svc-grid">
+          <div data-reveal style="--d: 0s">
+            <article class="svc">
+              <div class="ic" style="--c: linear-gradient(135deg, #004ac6, #38bdf8); --sh: rgba(0, 74, 198, 0.5)"><i class="bi bi-briefcase"></i></div>
+              <h3>Business Websites</h3>
+              <p>Professional websites that build trust, showcase your services and generate more leads.</p>
+              <a class="svc-link" href="#quote" data-need="Business website">Get a quote <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div data-reveal style="--d: 0.1s">
+            <article class="svc">
+              <div class="ic" style="--c: linear-gradient(135deg, #8b5cf6, #ec4899); --sh: rgba(139, 92, 246, 0.5)"><i class="bi bi-rocket-takeoff"></i></div>
+              <h3>Landing Pages</h3>
+              <p>High-converting pages crafted to capture leads, promote campaigns and maximise ad spend.</p>
+              <a class="svc-link" href="#quote" data-need="Landing page">Get a quote <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div data-reveal style="--d: 0.2s">
+            <article class="svc">
+              <div class="ic" style="--c: linear-gradient(135deg, #f59e0b, #ef4444); --sh: rgba(245, 158, 11, 0.5)"><i class="bi bi-bag-check"></i></div>
+              <h3>eCommerce Stores</h3>
+              <p>Online stores that showcase your products, make checkout easy and maximise sales.</p>
+              <a class="svc-link" href="#quote" data-need="eCommerce store">Get a quote <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div data-reveal style="--d: 0s">
+            <article class="svc">
+              <div class="ic" style="--c: linear-gradient(135deg, #06b6d4, #4b41e1); --sh: rgba(6, 182, 212, 0.5)"><i class="bi bi-palette"></i></div>
+              <h3>UI/UX Design</h3>
+              <p>Modern, user-focused designs that feel effortless and guide visitors to take action.</p>
+              <a class="svc-link" href="#quote" data-need="Website redesign">Get a quote <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div data-reveal style="--d: 0.1s">
+            <article class="svc">
+              <div class="ic" style="--c: linear-gradient(135deg, #22c55e, #0d9488); --sh: rgba(34, 197, 94, 0.5)"><i class="bi bi-graph-up-arrow"></i></div>
+              <h3>SEO Optimisation</h3>
+              <p>Technical SEO and speed improvements that help you rank higher and attract more visitors.</p>
+              <a class="svc-link" href="#quote" data-need="Business website">Get a quote <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+          <div data-reveal style="--d: 0.2s">
+            <article class="svc">
+              <div class="ic" style="--c: linear-gradient(135deg, #eab308, #f97316); --sh: rgba(234, 179, 8, 0.5)"><i class="bi bi-tools"></i></div>
+              <h3>Maintenance &amp; Support</h3>
+              <p>We keep your site secure, updated and running at its best long after launch day.</p>
+              <a class="svc-link" href="#quote" data-need="Other">Get a quote <i class="bi bi-arrow-right"></i></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ================= FEATURES (BENTO) ================= -->
+    <section id="features">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow"><i class="bi bi-lightning-charge"></i> Included in every project</span>
+          <h2>Everything your website needs to <span class="grad-text">win online</span></h2>
+          <p class="lead">No templates stuffed with plugins. Every site is hand-built for speed, search and sales.</p>
+        </div>
 
-    <!-- 13. Footer -->
-    <footer class="bg-surface-container-low pt-3xl pb-xl px-12 border-t border-outline-variant/20">
-        <div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-2xl mb-2xl">
-            <div class="col-span-1 md:col-span-1">
-                <div class="flex items-center gap-sm mb-lg">
-                    <img alt="Logo" class="h-8 w-8"
-                        src="https://voltvave.com/images/voltvave.png">VoltVave
-                        Services</span>
+        <div class="bento">
+          <div class="wide" data-reveal>
+            <div class="tile" data-anim>
+              <div class="viz">
+                <div class="speed-chips">
+                  <span class="chip"><i class="bi bi-check-circle-fill"></i> Optimised images</span>
+                  <span class="chip"><i class="bi bi-check-circle-fill"></i> Clean code</span>
+                  <span class="chip"><i class="bi bi-check-circle-fill"></i> Fast hosting setup</span>
                 </div>
-                <p class="text-body-sm text-on-surface-variant">Defining the future of high-performance web development
-                    for ambitious brands.</p>
+                <div class="gauge">
+                  <svg viewBox="0 0 210 120">
+                    <defs><linearGradient id="gGrad" x1="0" x2="1"><stop offset="0" stop-color="#004ac6"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs>
+                    <path class="g-track" d="M15 108 A90 90 0 0 1 195 108"/>
+                    <path class="g-val" d="M15 108 A90 90 0 0 1 195 108" pathLength="100"/>
+                  </svg>
+                  <span class="needle"></span>
+                </div>
+                <div class="gauge-label"><b>90+</b><span>PageSpeed target</span></div>
+              </div>
+              <h3>Lightning-fast loading</h3>
+              <p>Every second counts. We optimise images, code and hosting so pages appear almost instantly, which keeps visitors around and helps you rank.</p>
             </div>
-            <div>
-                <h5 class="font-label-md text-on-surface mb-lg">Navigation</h5>
-                <ul class="space-y-sm text-body-sm text-on-surface-variant">
-                    <li><a class="hover:text-primary transition-colors" href="#services">Services</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#portfolio">Portfolio</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#process">Process</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#pricing">Pricing</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-label-md text-on-surface mb-lg">Legal</h5>
-                <ul class="space-y-sm text-body-sm text-on-surface-variant">
-                    <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Cookie Policy</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-label-md text-on-surface mb-lg">Contact</h5>
-                <ul class="space-y-sm text-body-sm text-on-surface-variant">
-                    <li>hello@voltvave.io</li>
-                    <li>+1 (555) 000-0000</li>
-                    <li>San Francisco, CA</li>
-                </ul>
-            </div>
-        </div>
-        <div
-            class="max-w-screen-2xl mx-auto pt-xl border-t border-outline-variant/20 flex flex-col md:row justify-between items-center gap-md">
-            <p class="text-body-sm text-on-surface-variant">© 2026 VoltVave Services Agency. All rights reserved.</p>
-            <div class="flex gap-lg">
-                <span
-                    class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">language</span>
-                <span
-                    class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">share</span>
-                <span
-                    class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">public</span>
-            </div>
-        </div>
-    </footer>
-    <script>
-        // Reveal animation on scroll
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                }
-            }
-        }
-        window.addEventListener("scroll", reveal);
-        // Run once on load
-        window.onload = reveal;
+          </div>
 
-        // Smooth scroll implementation enhancement
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+          <div data-reveal style="--d: 0.1s">
+            <div class="tile">
+              <div class="viz">
+                <div class="phone">
+                  <div class="phone-feed">
+                    <span class="blk"></span>
+                    <span class="bar"></span><span class="bar short"></span>
+                    <span class="btnb"></span>
+                    <span class="blk" style="background: #e0e7ff"></span>
+                    <span class="bar"></span><span class="bar short"></span>
+                    <span class="blk" style="background: #ccfbf1"></span>
+                  </div>
+                </div>
+                <div class="tablet"><span class="blk" style="display:block"></span><span class="bar" style="display:block"></span><span class="bar" style="display:block; width: 60%"></span></div>
+              </div>
+              <h3>Mobile-first design</h3>
+              <p>Designed for phones first, then scaled up, so it looks perfect on every screen.</p>
+            </div>
+          </div>
+
+          <div data-reveal>
+            <div class="tile">
+              <div class="viz">
+                <div class="serp">
+                  <div class="serp-row r1"><span class="pos"><i class="bi bi-globe2"></i></span><span class="bar"></span></div>
+                  <div class="serp-row r2"><span class="pos"><i class="bi bi-globe2"></i></span><span class="bar"></span></div>
+                  <div class="serp-row you"><span class="pos"><i class="bi bi-star-fill"></i></span><span class="site-name">your-business.com</span></div>
+                </div>
+              </div>
+              <h3>SEO-ready from day one</h3>
+              <p>Clean structure, fast pages and proper meta tags give you the best start on Google.</p>
+            </div>
+          </div>
+
+          <div class="wide" data-reveal style="--d: 0.1s">
+            <div class="tile">
+              <div class="viz">
+                <div class="flow">
+                  <div class="flow-node"><i style="--c: var(--grad)" class="bi bi-ui-checks"></i>Website form</div>
+                  <div class="flow-line"><span></span><span></span></div>
+                  <div class="flow-node"><i style="--c: linear-gradient(135deg, #e11d48, #f59e0b)" class="bi bi-diagram-3"></i>Zoho CRM</div>
+                  <div class="flow-line"><span></span><span></span></div>
+                  <div class="flow-node"><i style="--c: linear-gradient(135deg, #22c55e, #0d9488)" class="bi bi-bell"></i>Your team</div>
+                </div>
+                <span class="chip flow-done"><i class="bi bi-check-circle-fill"></i> Lead created in CRM</span>
+              </div>
+              <h3>Connected to Zoho CRM &amp; your tools</h3>
+              <p>As Zoho specialists, we can send every enquiry straight into Zoho CRM and alert your team instantly, so no lead slips through the cracks.</p>
+            </div>
+          </div>
+
+          <div data-reveal>
+            <div class="tile" data-anim>
+              <div class="viz">
+                <span class="chip up bars-tag"><i class="bi bi-arrow-up-right"></i> More enquiries</span>
+                <div class="bars">
+                  <span style="--h: 30%; --d: 0s"></span>
+                  <span style="--h: 42%; --d: 0.1s"></span>
+                  <span style="--h: 38%; --d: 0.2s"></span>
+                  <span style="--h: 60%; --d: 0.3s"></span>
+                  <span style="--h: 74%; --d: 0.4s"></span>
+                  <span style="--h: 100%; --d: 0.5s"></span>
+                </div>
+              </div>
+              <h3>Built to convert</h3>
+              <p>Clear messaging, strong calls-to-action and easy contact forms that turn browsers into buyers.</p>
+            </div>
+          </div>
+
+          <div data-reveal style="--d: 0.1s">
+            <div class="tile">
+              <div class="viz">
+                <div class="shield"><i class="bi bi-shield-check"></i></div>
+                <div class="shield-chips">
+                  <span class="chip"><i class="bi bi-lock-fill"></i> SSL</span>
+                  <span class="chip"><i class="bi bi-arrow-repeat"></i> Updates</span>
+                  <span class="chip"><i class="bi bi-cloud-check"></i> Backups</span>
+                </div>
+              </div>
+              <h3>Secure &amp; reliable</h3>
+              <p>HTTPS, regular updates and backups keep your site and your customers' data safe.</p>
+            </div>
+          </div>
+
+          <div data-reveal style="--d: 0.2s">
+            <div class="tile">
+              <div class="viz">
+                <div class="editor">
+                  <div class="editor-bar"><span></span><span></span><span></span><span></span></div>
+                  <span class="typing">Diwali offer: 20% off today!</span>
+                  <span class="bar" style="display:block"></span>
+                  <span class="bar s" style="display:block"></span>
+                </div>
+                <span class="chip saved"><i class="bi bi-check-circle-fill"></i> Published</span>
+              </div>
+              <h3>Easy to update</h3>
+              <p>Change text, images and offers yourself in minutes, with no coding needed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK ================= -->
+    <section class="work" id="work">
+      <div class="container">
+        <div class="case">
+          <div data-reveal>
+            <div class="case-shot">
+              <div class="browser-top">
+                <span></span><span></span><span></span>
+                <div class="url"><i class="bi bi-lock-fill"></i> Gramodyog Operating System</div>
+              </div>
+              <img src="../ASSETS/gos-home-1400.jpg" alt="Homepage of the Gramodyog Operating System (GOS) website designed and developed by VoltVave" width="1400" height="727" loading="lazy">
+            </div>
+          </div>
+
+          <div data-reveal style="--d: 0.15s">
+            <span class="eyebrow"><i class="bi bi-award"></i> Featured project</span>
+            <h3>Gramodyog Operating System (GOS)</h3>
+            <div class="case-tags">
+              <span class="tag">Website</span>
+              <span class="tag t">Zoho CRM Integration</span>
+              <span class="tag a">2026</span>
+            </div>
+            <p>A modern website for a platform bringing organised production, direct markets and digital payments to rural India. Designed to explain a big idea simply and turn interest into registrations.</p>
+            <ul class="done-list" style="margin-top: 22px">
+              <li><i class="bi bi-check2-circle"></i> Custom design &amp; development</li>
+              <li><i class="bi bi-check2-circle"></i> Registrations connected to Zoho CRM</li>
+              <li><i class="bi bi-check2-circle"></i> Mobile-first, fast-loading build</li>
+            </ul>
+            <a class="btn btn-primary" href="#quote">Start a Similar Project <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow"><i class="bi bi-signpost-split"></i> How we work</span>
+          <h2>Simple 5-step process</h2>
+          <p class="lead">From the first payment to launch day, you always know exactly what happens next.</p>
+        </div>
+
+        <div class="proc" id="procTimeline">
+          <div class="proc-track" aria-hidden="true">
+            <div class="proc-fill"></div>
+            <span class="proc-runner"></span>
+          </div>
+          <ol class="proc-steps" style="list-style: none; margin: 0; padding: 0">
+            <li class="proc-step" style="--i: 0">
+              <div class="proc-node"><i class="bi bi-credit-card"></i></div>
+              <div class="proc-card"><span class="proc-num">01</span><h3>Payment</h3><p>Confirm the scope and book your project slot with a simple upfront payment.</p></div>
+            </li>
+            <li class="proc-step" style="--i: 1">
+              <div class="proc-node"><i class="bi bi-clipboard-check"></i></div>
+              <div class="proc-card"><span class="proc-num">02</span><h3>Requirement Gathering</h3><p>We learn your goals, audience and must-have features, then plan every page.</p></div>
+            </li>
+            <li class="proc-step" style="--i: 2">
+              <div class="proc-node"><i class="bi bi-eye"></i></div>
+              <div class="proc-card"><span class="proc-num">03</span><h3>First Look</h3><p>See the first version of your website and share your feedback with us.</p></div>
+            </li>
+            <li class="proc-step" style="--i: 3">
+              <div class="proc-node"><i class="bi bi-arrow-repeat"></i></div>
+              <div class="proc-card"><span class="proc-num">04</span><h3>Required Changes</h3><p>We refine the design and content until everything feels just right.</p></div>
+            </li>
+            <li class="proc-step" style="--i: 4">
+              <div class="proc-node"><i class="bi bi-rocket-takeoff"></i></div>
+              <div class="proc-card"><span class="proc-num">05</span><h3>Launch</h3><p>Your site goes live: fast, secure, SEO-ready and mobile-friendly.</p></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRICING ================= -->
+    <section id="pricing">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow"><i class="bi bi-tag"></i> Pricing</span>
+          <h2>Simple, transparent <span class="grad-text">pricing</span></h2>
+          <p class="lead">Clear starting prices, no hidden surprises. You'll get a fixed quote before any work begins.</p>
+        </div>
+
+        <div class="plans">
+          <div data-reveal>
+            <div class="plan">
+              <h3>Starter</h3>
+              <p class="plan-desc">Perfect for new and small businesses.</p>
+              <div class="price"><small>from</small>₹9,999</div>
+              <ul>
+                <li><i class="bi bi-check-lg"></i> 5-page custom website</li>
+                <li><i class="bi bi-check-lg"></i> SEO optimised</li>
+                <li><i class="bi bi-check-lg"></i> CMS integration</li>
+              </ul>
+              <a class="btn btn-ghost btn-block" href="#quote" data-plan="Starter (from ₹9,999)">Get Started</a>
+            </div>
+          </div>
+
+          <div data-reveal style="--d: 0.1s">
+            <div class="plan popular">
+              <span class="plan-badge">Most popular</span>
+              <h3>Growth</h3>
+              <p class="plan-desc">For growing businesses that need results.</p>
+              <div class="price"><small>from</small>₹14,999</div>
+              <ul>
+                <li><i class="bi bi-check-lg"></i> 10+ page website</li>
+                <li><i class="bi bi-check-lg"></i> Conversion optimisation</li>
+                <li><i class="bi bi-check-lg"></i> CRM &amp; API integrations</li>
+              </ul>
+              <a class="btn btn-white btn-block" href="#quote" data-plan="Growth (from ₹14,999)">Choose Growth <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div data-reveal style="--d: 0.2s">
+            <div class="plan">
+              <h3>Enterprise</h3>
+              <p class="plan-desc">Complex, custom-built solutions.</p>
+              <div class="price"><small>&nbsp;</small>Custom</div>
+              <ul>
+                <li><i class="bi bi-check-lg"></i> SaaS &amp; web app development</li>
+                <li><i class="bi bi-check-lg"></i> Dedicated team</li>
+                <li><i class="bi bi-check-lg"></i> Priority support</li>
+              </ul>
+              <a class="btn btn-ghost btn-block" href="#quote" data-plan="Enterprise / custom">Talk to Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan-note" data-reveal>
+          <p><b>Not sure which plan fits?</b> Tell us what you need and we'll recommend the right option in your free consultation.</p>
+          <a class="btn btn-primary" href="#quote" data-plan="Not sure yet">Help Me Choose <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ASSURANCE ================= -->
+    <section style="padding-top: 0">
+      <div class="container">
+        <div class="assure">
+          <div class="assure-item" data-reveal>
+            <span class="ic" style="--c: #004ac6; --t: #eef1ff"><i class="bi bi-chat-heart"></i></span>
+            <div><h3>Free consultation</h3><p>Talk through your idea with us before you commit to anything.</p></div>
+          </div>
+          <div class="assure-item" data-reveal style="--d: 0.1s">
+            <span class="ic" style="--c: #0d9488; --t: #ccfbf1"><i class="bi bi-receipt"></i></span>
+            <div><h3>Clear, fixed quote</h3><p>Know the price and timeline up front, before any work starts.</p></div>
+          </div>
+          <div class="assure-item" data-reveal style="--d: 0.2s">
+            <span class="ic" style="--c: #b45309; --t: #fef3c6"><i class="bi bi-person-check"></i></span>
+            <div><h3>Real people, real replies</h3><p>No bots. You work directly with the team building your site.</p></div>
+          </div>
+          <div class="assure-item" data-reveal style="--d: 0.3s">
+            <span class="ic" style="--c: #7e22ce; --t: #f3e8ff"><i class="bi bi-life-preserver"></i></span>
+            <div><h3>Support after launch</h3><p>We're here for updates, fixes and improvements once you're live.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-side" data-reveal>
+          <span class="eyebrow"><i class="bi bi-question-circle"></i> FAQ</span>
+          <h2 class="h2">Questions? We've got answers.</h2>
+          <p class="lead">Everything you need to know before starting your website project.</p>
+          <div class="faq-call">
+            <span class="ic"><i class="bi bi-telephone"></i></span>
+            <div>
+              <div style="font-size: 13px; color: var(--muted)">Prefer to talk?</div>
+              <a href="tel:+918431468340">+91 84314 68340</a>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal style="--d: 0.1s">
+          <details class="qa" open>
+            <summary>How long does it take to build a website? <i class="bi bi-plus-lg"></i></summary>
+            <div class="ans">Typical business websites take 4–6 weeks, while complex web applications can take 3–6 months depending on the scope and features.</div>
+          </details>
+          <details class="qa">
+            <summary>How much does a website cost? <i class="bi bi-plus-lg"></i></summary>
+            <div class="ans">Our Starter plan begins at ₹9,999 and our Growth plan at ₹14,999. Larger or custom projects are quoted after a free consultation, and you'll always get a fixed quote before work starts.</div>
+          </details>
+          <details class="qa">
+            <summary>Will my website work on mobile and be SEO-ready? <i class="bi bi-plus-lg"></i></summary>
+            <div class="ans">Yes. Every website is designed mobile-first and built with SEO best practices (fast loading, clean structure and proper meta tags) so it's ready to be found on Google.</div>
+          </details>
+          <details class="qa">
+            <summary>Can you connect my website to Zoho CRM or other tools? <i class="bi bi-plus-lg"></i></summary>
+            <div class="ans">Yes. As Zoho specialists, we can send your website enquiries straight into Zoho CRM and connect other tools you already use, like email, payments and analytics.</div>
+          </details>
+          <details class="qa">
+            <summary>Do you provide maintenance after launch? <i class="bi bi-plus-lg"></i></summary>
+            <div class="ans">Yes, we offer ongoing maintenance that includes security updates, speed optimisation and content updates.</div>
+          </details>
+          <details class="qa">
+            <summary>Can you work with our existing brand? <i class="bi bi-plus-lg"></i></summary>
+            <div class="ans">Absolutely. We follow your existing logo, colours and brand guidelines and bring them into a modern, high-performance website.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= QUOTE ================= -->
+    <section class="quote" id="quote">
+      <div class="container quote-grid">
+        <div class="quote-copy" data-reveal>
+          <span class="eyebrow"><i class="bi bi-send"></i> Get a free quote</span>
+          <h2>Let's build a website that grows your business.</h2>
+          <p class="lead">Tell us a little about your project. It takes under a minute, and there's no obligation.</p>
+
+          <ul class="next-steps">
+            <li><b>1</b><div><strong>We review your requirements</strong><span>Our team looks at what you need and your goals.</span></div></li>
+            <li><b>2</b><div><strong>Free consultation call</strong><span>We discuss ideas, features and the best approach.</span></div></li>
+            <li><b>3</b><div><strong>Clear quote &amp; timeline</strong><span>You get a fixed price and plan, with no surprises.</span></div></li>
+          </ul>
+
+          <div class="quote-contact">
+            <a href="tel:+918431468340"><i class="bi bi-telephone"></i> +91 84314 68340</a>
+            <a href="mailto:zoho@voltvave.com"><i class="bi bi-envelope"></i> zoho@voltvave.com</a>
+          </div>
+        </div>
+
+        <div class="form-card" id="formCard" data-reveal style="--d: 0.15s">
+          <h3>Tell us about your project</h3>
+          <p>We'll get back to you to schedule your free consultation.</p>
+
+          <form id="quoteForm" action="https://docs.google.com/forms/d/e/1FAIpQLSc7JFfM3SFYnT482qYLJ2QoCBAORgE82269kt5lPA1WAJUbow/formResponse" method="POST" target="quote_iframe">
+            <span class="f-label" id="needLabel">What do you need?</span>
+            <div class="need-chips" role="radiogroup" aria-labelledby="needLabel">
+              <input type="radio" name="need" id="n1" value="Business website" checked><label for="n1"><i class="bi bi-briefcase"></i> Business website</label>
+              <input type="radio" name="need" id="n2" value="Landing page"><label for="n2"><i class="bi bi-rocket-takeoff"></i> Landing page</label>
+              <input type="radio" name="need" id="n3" value="eCommerce store"><label for="n3"><i class="bi bi-bag"></i> eCommerce store</label>
+              <input type="radio" name="need" id="n4" value="Website redesign"><label for="n4"><i class="bi bi-magic"></i> Redesign</label>
+              <input type="radio" name="need" id="n5" value="Other"><label for="n5"><i class="bi bi-three-dots"></i> Other</label>
+            </div>
+
+            <div class="f-grid">
+              <div class="field">
+                <label class="f-label" for="q-name">Your name*</label>
+                <input id="q-name" name="entry.1121312151" type="text" autocomplete="name" placeholder="Full name" required>
+              </div>
+              <div class="field">
+                <label class="f-label" for="q-company">Company*</label>
+                <input id="q-company" name="entry.269971357" type="text" autocomplete="organization" placeholder="Business name" required>
+              </div>
+              <div class="field">
+                <label class="f-label" for="q-email">Email*</label>
+                <input id="q-email" name="entry.214954488" type="email" autocomplete="email" placeholder="you@company.com" required>
+              </div>
+              <div class="field">
+                <label class="f-label" for="q-phone">Phone*</label>
+                <input id="q-phone" name="entry.2107585185" type="tel" autocomplete="tel" placeholder="+91 98765 43210" required>
+              </div>
+              <div class="field f-full">
+                <label class="f-label" for="q-plan">Plan / budget</label>
+                <select id="q-plan" name="plan">
+                  <option>Not sure yet</option>
+                  <option>Starter (from ₹9,999)</option>
+                  <option>Growth (from ₹14,999)</option>
+                  <option>Enterprise / custom</option>
+                </select>
+              </div>
+              <div class="field f-full">
+                <label class="f-label" for="q-msg">Project details*</label>
+                <textarea id="q-msg" name="entry.1207277993" rows="4" placeholder="What does your business do, and what should your website achieve?" required></textarea>
+              </div>
+            </div>
+
+            <!-- the Google Form's product question -->
+            <input type="hidden" name="entry.2145460468" value="Custom Development">
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit" style="margin-top: 20px">Get My Free Quote <i class="bi bi-arrow-right"></i></button>
+            <p class="form-foot"><i class="bi bi-shield-lock"></i> Your details are only used to reply to your enquiry.</p>
+          </form>
+
+          <div class="form-success" role="status" aria-live="polite">
+            <div class="success-ic"><i class="bi bi-check-lg"></i></div>
+            <h3>Thank you! Your request is in.</h3>
+            <p>We'll review your project and get back to you soon to set up your free consultation.</p>
+          </div>
+          <iframe name="quote_iframe" id="quote_iframe" title="Form submission" hidden></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="../index.html">
+            <img src="https://voltvave.com/images/voltvave.png" alt="VoltVave logo" width="42" loading="lazy">
+            <span>VoltVave<small>Services</small></span>
+          </a>
+          <p style="font-size: 14.5px; max-width: 320px">Fast, beautiful, results-driven websites and Zoho solutions for growing businesses.</p>
+        </div>
+        <div>
+          <h4>This page</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Our work</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../services.html">All services</a></li>
+            <li><a href="../about.html">About us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li class="contact-li"><i class="bi bi-telephone"></i><a href="tel:+918431468340">+91 84314 68340</a></li>
+            <li class="contact-li"><i class="bi bi-envelope"></i><a href="mailto:zoho@voltvave.com">zoho@voltvave.com</a></li>
+            <li class="contact-li"><i class="bi bi-geo-alt"></i><span>609 Gallium at Brigade Eldorado, Bengaluru, Karnataka</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> VoltVave Innovations Private Limited. All rights reserved.</span>
+        <span><a href="https://voltvave.com/privacy/">Privacy Policy</a> &nbsp;·&nbsp; <a href="https://voltvave.com/terms/">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- mobile sticky call-to-action -->
+  <div class="mbar" id="mbar">
+    <a class="btn btn-primary" href="#quote">Get a Free Quote <i class="bi bi-arrow-right"></i></a>
+    <a class="call" href="tel:+918431468340" aria-label="Call VoltVave"><i class="bi bi-telephone"></i></a>
+  </div>
+
+  <script>
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var nav = document.getElementById('nav');
+      var toggle = nav.querySelector('.nav-toggle');
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // nav background + scroll progress bar
+      var ticking = false;
+      function onScroll() {
+        var y = window.scrollY;
+        var max = document.documentElement.scrollHeight - window.innerHeight;
+        nav.classList.toggle('scrolled', y > 10);
+        document.documentElement.style.setProperty('--sp', max > 0 ? y / max : 0);
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) { requestAnimationFrame(onScroll); ticking = true; }
+      }, { passive: true });
+      onScroll();
+
+      // mobile menu
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open);
+        toggle.innerHTML = open ? '<i class="bi bi-x-lg"></i>' : '<i class="bi bi-list"></i>';
+      });
+      nav.querySelectorAll('.nav-links a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.innerHTML = '<i class="bi bi-list"></i>';
         });
-    </script>
+      });
+
+      // reveal on scroll + start in-view animations
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('[data-reveal], [data-anim]').forEach(function (el) { io.observe(el); });
+
+      // spotlight follows the mouse on service cards
+      document.querySelectorAll('.svc').forEach(function (card) {
+        card.addEventListener('mousemove', function (e) {
+          var r = card.getBoundingClientRect();
+          card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+          card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+        });
+      });
+
+      // process timeline: steps light up one by one while on screen
+      (function () {
+        var el = document.getElementById('procTimeline');
+        var steps = Array.prototype.slice.call(el.querySelectorAll('.proc-step'));
+        var n = steps.length, i = 0, timer = null;
+
+        function set(k) {
+          steps.forEach(function (s, j) {
+            s.classList.toggle('done', j <= k);
+            s.classList.toggle('current', j === k);
+          });
+          el.style.setProperty('--p-prog', n > 1 ? k / (n - 1) : 1);
+        }
+        function start() {
+          if (timer) return;
+          if (reduce) { set(n - 1); return; }
+          set(i);
+          timer = setInterval(function () { i = (i + 1) % n; set(i); }, 2200);
+        }
+        function stop() { clearInterval(timer); timer = null; }
+
+        new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { el.classList.add('in-view'); start(); } else { stop(); }
+          });
+        }, { threshold: 0.3 }).observe(el);
+
+        steps.forEach(function (s, j) {
+          s.addEventListener('mouseenter', function () { stop(); i = j; set(j); });
+        });
+        el.addEventListener('mouseleave', function () { if (el.classList.contains('in-view')) start(); });
+      })();
+
+      // buttons that pre-fill the quote form
+      var plan = document.getElementById('q-plan');
+      document.querySelectorAll('[data-plan]').forEach(function (b) {
+        b.addEventListener('click', function () { plan.value = b.getAttribute('data-plan'); });
+      });
+      document.querySelectorAll('[data-need]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var v = b.getAttribute('data-need');
+          var r = document.querySelector('input[name="need"][value="' + v + '"]');
+          if (r) r.checked = true;
+        });
+      });
+
+      // quote form -> Google Form (through a hidden iframe)
+      var form = document.getElementById('quoteForm');
+      var card = document.getElementById('formCard');
+      var msg = document.getElementById('q-msg');
+      var submitted = false;
+      form.addEventListener('submit', function () {
+        var need = form.querySelector('input[name="need"]:checked');
+        msg.value = '[Website landing page] Need: ' + (need ? need.value : '-') +
+          ' | Plan: ' + plan.value + '\n\n' + msg.value;
+        submitted = true;
+      });
+      document.getElementById('quote_iframe').addEventListener('load', function () {
+        if (!submitted) return;
+        submitted = false;
+        form.reset();
+        card.classList.add('sent');
+      });
+
+      // hide the mobile bar while the quote form is on screen
+      var mbar = document.getElementById('mbar');
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { mbar.classList.toggle('hide', e.isIntersecting); });
+      }, { threshold: 0.2 }).observe(document.getElementById('quote'));
+    })();
+  </script>
 </body>
 
 </html>
