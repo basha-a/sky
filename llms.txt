@@ -1,0 +1,16 @@
+# VoltVave Services
+
+> VoltVave Services (VoltVave Innovations Private Limited) is a Bengaluru, India company that implements, customises and integrates Zoho (Zoho One, Zoho Creator, Zoho Books) and builds custom mobile apps and websites for growing businesses.
+
+Contact: +91 84314 68340 · zoho@voltvave.com · 609 Gallium at Brigade Eldorado, Gummanahalli, Bengaluru, Karnataka, India
+
+## Services
+
+- [Services overview](https://www.voltvaveservices.com/services.html): Zoho Creator custom apps, Zoho Books setup and automation, Zoho One implementation, mobile app and website development.
+- [Website development](https://www.voltvaveservices.com/Landing/webdevelopment.html): Fast, mobile-first, SEO-ready business websites, landing pages and eCommerce stores; plans from ₹9,999 (Starter) and ₹14,999 (Growth).
+
+## Company
+
+- [Home](https://www.voltvaveservices.com/): What VoltVave does, industries served and how projects work.
+- [About us](https://www.voltvaveservices.com/about.html): Story, mission, values and team.
+- [Contact](https://www.voltvaveservices.com/contact.html): Phone, email, office address and enquiry form for a free consultation.
