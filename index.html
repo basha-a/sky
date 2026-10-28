@@ -26,6 +26,7 @@
   <meta name="twitter:image" content="https://www.voltvaveservices.com/ASSETS/og-voltvave.png">
 
   <link rel="icon" href="favicon.ico">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -98,12 +99,22 @@
     {
       "@type": "Person",
       "name": "Riyazat Durrani",
-      "jobTitle": "Founder & CEO"
+      "jobTitle": "Founder & CEO",
+      "url": "https://www.voltvaveservices.com/about.html#team",
+      "image": "https://voltvave.com/images/riyazat-durrani.jpg",
+      "worksFor": {
+        "@id": "https://www.voltvaveservices.com/#organization"
+      }
     },
     {
       "@type": "Person",
       "name": "Ravi Kovind",
-      "jobTitle": "Founder & CTO"
+      "jobTitle": "Founder & CTO",
+      "url": "https://www.voltvaveservices.com/about.html#team",
+      "image": "https://voltvave.com/images/ravi-kovind.jpg",
+      "worksFor": {
+        "@id": "https://www.voltvaveservices.com/#organization"
+      }
     }
   ],
   "hasOfferCatalog": {
@@ -115,7 +126,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Zoho One implementation",
-          "url": "https://www.voltvaveservices.com/services.html#services"
+          "url": "https://www.voltvaveservices.com/services.html#zoho-one"
         }
       },
       {
@@ -123,7 +134,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Zoho Creator custom app development",
-          "url": "https://www.voltvaveservices.com/services.html#services"
+          "url": "https://www.voltvaveservices.com/services.html#zoho-creator"
         }
       },
       {
@@ -131,7 +142,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Zoho Books setup and automation",
-          "url": "https://www.voltvaveservices.com/services.html#services"
+          "url": "https://www.voltvaveservices.com/services.html#zoho-books"
         }
       },
       {
@@ -139,7 +150,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Mobile app development",
-          "url": "https://www.voltvaveservices.com/services.html#services"
+          "url": "https://www.voltvaveservices.com/services.html#mobile-app-development"
         }
       },
       {
@@ -162,7 +173,10 @@
   "url": "https://www.voltvaveservices.com/",
   "publisher": {
     "@id": "https://www.voltvaveservices.com/#organization"
-  }
+  },
+  "@id": "https://www.voltvaveservices.com/#website",
+  "description": "VoltVave Services helps businesses in Bengaluru and across India implement Zoho and build custom mobile apps and websites.",
+  "inLanguage": "en-IN"
 }
   </script>
 
@@ -186,7 +200,65 @@
     "url": "https://www.voltvaveservices.com/ASSETS/og-voltvave.png",
     "width": 1200,
     "height": 630
-  }
+  },
+  "dateModified": "2026-10-28"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.voltvaveservices.com/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Zoho One?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zoho One is Zoho's all-in-one suite of 40+ integrated business apps, including CRM, Books, Desk, People and Projects, under a single login. VoltVave sets up Zoho One for your business, connects the apps your teams need and automates the work between them, so everything runs from one place."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Zoho Creator used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zoho Creator is a low-code platform for building custom business apps with forms, workflows, reports and dashboards that work on web and mobile. VoltVave's Deluge developers use it to build apps around how your business actually runs, without the cost of fully custom software."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a Zoho implementation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on scope. A focused setup for one app can take a few weeks, while multi-app implementations with integrations take longer. After a free consultation, VoltVave gives you a clear plan and timeline before any work starts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you connect Zoho with the tools we already use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. VoltVave connects Zoho with tools such as Google Workspace, Microsoft 365, WhatsApp, payment gateways and custom APIs, so data moves automatically between your systems instead of being copied by hand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you only work with businesses in Bengaluru?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. VoltVave is based in Bengaluru and works with businesses across India. Wherever you are, you get regular updates and a direct line to the team building your solution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide support after go-live?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We stay with you after launch with fixes, improvements and training, so your team keeps getting value from Zoho as your business grows."
+      }
+    }
+  ]
 }
   </script>
   <!-- Google tag (gtag.js) -->
@@ -199,8 +271,25 @@
   gtag('config', 'G-VV3SNQ1L2D');
 </script>
 
-<!-- Collect.Chat bot -->
-<script>(function(w, d) { w.CollectId = "6ae0e3b94e2cf9561fca4735"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+<!-- Collect.Chat bot: loaded after the first interaction (or 6s) so it doesn't slow the first paint -->
+<script>
+  (function (w, d) {
+    var loaded = false;
+    function loadChat() {
+      if (loaded) return;
+      loaded = true;
+      w.CollectId = "6ae0e3b94e2cf9561fca4735";
+      var s = d.createElement("script");
+      s.async = true;
+      s.src = "https://collectcdn.com/launcher.js";
+      (d.head || d.getElementsByTagName("head")[0]).appendChild(s);
+    }
+    ["scroll", "mousemove", "touchstart", "keydown"].forEach(function (e) {
+      w.addEventListener(e, loadChat, { once: true, passive: true });
+    });
+    w.addEventListener("load", function () { setTimeout(loadChat, 6000); });
+  })(window, document);
+</script>
 
 </head>
 
@@ -401,10 +490,10 @@
   <div class="hero-strip mt-5 mb-4">
     <div class="text-center text-uppercase small fw-semibold ls-2 text-body-secondary mb-3">Solutions we deliver</div>
     <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-3">
-      <a class="hero-chip" href="services.html#services"><i class="bi bi-boxes"></i> Zoho One</a>
-      <a class="hero-chip" href="services.html#services"><i class="bi bi-ui-checks-grid"></i> Zoho Creator</a>
-      <a class="hero-chip" href="services.html#services"><i class="bi bi-journal-text"></i> Zoho Books</a>
-      <a class="hero-chip" href="services.html#services"><i class="bi bi-phone"></i> Mobile Apps</a>
+      <a class="hero-chip" href="services.html#zoho-one"><i class="bi bi-boxes"></i> Zoho One</a>
+      <a class="hero-chip" href="services.html#zoho-creator"><i class="bi bi-ui-checks-grid"></i> Zoho Creator</a>
+      <a class="hero-chip" href="services.html#zoho-books"><i class="bi bi-journal-text"></i> Zoho Books</a>
+      <a class="hero-chip" href="services.html#mobile-app-development"><i class="bi bi-phone"></i> Mobile Apps</a>
       <a class="hero-chip" href="Landing/webdevelopment.html"><i class="bi bi-globe2"></i> Websites</a>
     </div>
   </div>
@@ -427,7 +516,7 @@
 
   <div class="container text-center pt-5">
     <span class="eyebrow text-uppercase fw-semibold ls-1">How We Can Help You</span>
-    <h2 class="display-6 fw-bold mt-3 mb-2 services-title">Services that move your business forward</h2>
+    <h2 id="services-overview" class="display-6 fw-bold mt-3 mb-2 services-title">Services that move your business forward</h2>
     <p class="lead text-body-secondary mx-auto mb-0 services-subtitle">From Zoho implementations to custom apps and websites, we build the systems your business runs on.</p>
   </div>
 
@@ -445,7 +534,7 @@
           <img class="w-100 rounded-4 shadow-lg" src="ASSETS/zoho-creator-builder.svg" alt="Zoho Creator low-code app builder with form designer, workflow and Deluge script" width="1200" height="860" loading="lazy" decoding="async">
         </div>
 
-        <h2 class="display-5 fw-bold mt-4 mb-3">Build the custom app you want for Business</h2>
+        <h2 id="zoho-creator" class="display-5 fw-bold mt-4 mb-3">Build the custom app you want for Business</h2>
         <p class="lead text-body-secondary">Visualize key performance indicators, and analyze business data with interactive charts, gauges, tables, and more.</p>
 
         <ul class="service-features list-unstyled my-4 my-md-5">
@@ -469,7 +558,7 @@
           <img class="w-100 rounded-4 shadow-lg" src="ASSETS/zoho-books-dashboard.svg" alt="Zoho Books accounting dashboard with receivables, cash flow, expenses and invoices" width="1200" height="860" loading="lazy" decoding="async">
         </div>
 
-        <h2 class="display-5 fw-bold mt-4 mb-3">Single Accounting Software for your Business</h2>
+        <h2 id="zoho-books" class="display-5 fw-bold mt-4 mb-3">Single Accounting Software for your Business</h2>
         <p class="lead text-body-secondary">Manage invoices, expenses, taxes, and cash flow with automated accounting tools, real-time reports, and financial insights.</p>
 
         <ul class="service-features list-unstyled my-4 my-md-5">
@@ -493,7 +582,7 @@
           <img class="w-100 rounded-4 shadow-lg" src="ASSETS/zoho-one-dashboard.svg" alt="Zoho One dashboard showing connected apps, department activity, automated workflows and sales pipeline" width="1200" height="860" loading="lazy" decoding="async">
         </div>
 
-        <h2 class="display-5 fw-bold mt-4 mb-3">All-in-one Zoho suite for your Business</h2>
+        <h2 id="zoho-one" class="display-5 fw-bold mt-4 mb-3">All-in-one Zoho suite for your Business</h2>
         <p class="lead text-body-secondary">Power your entire business with 40+ integrated apps, automated processes, real-time insights, and a single unified platform.</p>
 
         <ul class="service-features list-unstyled my-4 my-md-5">
@@ -517,7 +606,7 @@
           <img class="w-100 rounded-4 shadow-lg" src="ASSETS/mobile-app-showcase.svg" alt="Custom business mobile app screens for iOS and Android" width="1200" height="860" loading="lazy" decoding="async">
         </div>
 
-        <h2 class="display-5 fw-bold mt-4 mb-3">Build the custom mobile app you want</h2>
+        <h2 id="mobile-app-development" class="display-5 fw-bold mt-4 mb-3">Build the custom mobile app you want</h2>
         <p class="lead text-body-secondary">Build powerful and user-friendly mobile applications that deliver seamless performance, intuitive experiences, and scalable functionality across platforms.</p>
 
         <ul class="service-features list-unstyled my-4 my-md-5">
@@ -541,7 +630,7 @@
           <img class="w-100 rounded-4 shadow-lg" src="ASSETS/website-development-showcase.svg" alt="Responsive business website on desktop and mobile with high page speed scores" width="1200" height="860" loading="lazy" decoding="async">
         </div>
 
-        <h2 class="display-5 fw-bold mt-4 mb-3">Modern Website that converts your Audience to Customers</h2>
+        <h2 id="website-development" class="display-5 fw-bold mt-4 mb-3">Modern Website that converts your Audience to Customers</h2>
         <p class="lead text-body-secondary">Design, develop, and maintain high-performance websites with modern UI/UX, responsive layouts, secure architecture, and scalable features tailored to your business needs.</p>
 
         <ul class="service-features list-unstyled my-4 my-md-5">
@@ -598,7 +687,7 @@
 
       <div class="col-lg-6">
         <span class="eyebrow text-uppercase fw-semibold ls-1">Why Choose Us</span>
-        <h2 class="display-6 fw-bold mt-3 mb-3">A partner that delivers, communicates, and sticks around</h2>
+        <h2 id="why-choose-us" class="display-6 fw-bold mt-3 mb-3">A partner that delivers, communicates, and sticks around</h2>
         <p class="lead text-body-secondary mb-4">We build business software the way you'd want it built: on schedule, in the open, and ready to grow with you.</p>
 
         <div class="row g-3">
@@ -667,7 +756,7 @@
     <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4 mb-md-5">
       <div>
         <span class="eyebrow text-uppercase fw-semibold ls-1">Industries We Serve</span>
-        <h2 class="display-6 fw-bold mt-3 mb-2">Support for Any Industry Type</h2>
+        <h2 id="industries" class="display-6 fw-bold mt-3 mb-2">Support for Any Industry Type</h2>
         <p class="lead text-body-secondary mb-0">Tailored Zoho and custom software solutions for the way your industry works.</p>
       </div>
       <div class="d-flex gap-2 flex-shrink-0">
@@ -851,6 +940,48 @@
 
 
 
+<!-- FAQ -->
+<section class="home-faq py-5" id="faq">
+  <div class="container py-md-4">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <span class="eyebrow text-uppercase fw-semibold ls-1">FAQ</span>
+        <h2 id="zoho-faq" class="display-6 fw-bold mt-3 mb-3">Zoho questions, answered</h2>
+        <p class="text-body-secondary mb-4">Quick answers about Zoho and how VoltVave helps. Have another question? Talk to us directly.</p>
+        <a href="contact.html" class="btn btn-primary rounded-pill px-4 py-2 fw-semibold">Ask Our Team <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+      <div class="col-lg-8">
+        <details class="home-faq-item" open>
+          <summary><h3 class="h6 fw-bold mb-0">What is Zoho One?</h3><i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+          <p class="mb-0 text-body-secondary">Zoho One is Zoho's all-in-one suite of 40+ integrated business apps, including CRM, Books, Desk, People and Projects, under a single login. VoltVave sets up Zoho One for your business, connects the apps your teams need and automates the work between them, so everything runs from one place.</p>
+        </details>
+        <details class="home-faq-item">
+          <summary><h3 class="h6 fw-bold mb-0">What is Zoho Creator used for?</h3><i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+          <p class="mb-0 text-body-secondary">Zoho Creator is a low-code platform for building custom business apps with forms, workflows, reports and dashboards that work on web and mobile. VoltVave's Deluge developers use it to build apps around how your business actually runs, without the cost of fully custom software.</p>
+        </details>
+        <details class="home-faq-item">
+          <summary><h3 class="h6 fw-bold mb-0">How long does a Zoho implementation take?</h3><i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+          <p class="mb-0 text-body-secondary">It depends on scope. A focused setup for one app can take a few weeks, while multi-app implementations with integrations take longer. After a free consultation, VoltVave gives you a clear plan and timeline before any work starts.</p>
+        </details>
+        <details class="home-faq-item">
+          <summary><h3 class="h6 fw-bold mb-0">Can you connect Zoho with the tools we already use?</h3><i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+          <p class="mb-0 text-body-secondary">Yes. VoltVave connects Zoho with tools such as Google Workspace, Microsoft 365, WhatsApp, payment gateways and custom APIs, so data moves automatically between your systems instead of being copied by hand.</p>
+        </details>
+        <details class="home-faq-item">
+          <summary><h3 class="h6 fw-bold mb-0">Do you only work with businesses in Bengaluru?</h3><i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+          <p class="mb-0 text-body-secondary">No. VoltVave is based in Bengaluru and works with businesses across India. Wherever you are, you get regular updates and a direct line to the team building your solution.</p>
+        </details>
+        <details class="home-faq-item">
+          <summary><h3 class="h6 fw-bold mb-0">Do you provide support after go-live?</h3><i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+          <p class="mb-0 text-body-secondary">Yes. We stay with you after launch with fixes, improvements and training, so your team keeps getting value from Zoho as your business grows.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 <!-- CTA  -->
 
 
@@ -861,7 +992,7 @@
 
         <div class="col-lg-6">
           <span class="cta-eyebrow text-uppercase fw-semibold ls-1"><i class="bi bi-lightning-charge-fill me-1"></i> Let's build together</span>
-          <h2 class="display-6 fw-bold text-white mt-3 mb-3">Stop Managing Chaos. Start Running Smart Systems.</h2>
+          <h2 id="get-started" class="display-6 fw-bold text-white mt-3 mb-3">Stop Managing Chaos. Start Running Smart Systems.</h2>
           <p class="lead cta-text mb-4">We help businesses implement powerful Zoho solutions that automate operations, improve visibility, and drive growth.</p>
 
           <div class="d-flex flex-wrap gap-3 mb-4">
@@ -943,10 +1074,10 @@
       <div class="col-6 col-lg-2">
         <h2 class="footer-title">Services</h2>
         <ul class="list-unstyled footer-links mb-0">
-          <li><a href="services.html#services">Zoho Creator</a></li>
-          <li><a href="services.html#services">Zoho Books</a></li>
-          <li><a href="services.html#services">Zoho One</a></li>
-          <li><a href="services.html#services">Mobile Apps</a></li>
+          <li><a href="services.html#zoho-creator">Zoho Creator</a></li>
+          <li><a href="services.html#zoho-books">Zoho Books</a></li>
+          <li><a href="services.html#zoho-one">Zoho One</a></li>
+          <li><a href="services.html#mobile-app-development">Mobile Apps</a></li>
           <li><a href="Landing/webdevelopment.html">Website Development</a></li>
         </ul>
       </div>
